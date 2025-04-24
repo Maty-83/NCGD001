@@ -5,6 +5,7 @@ public class ShootingBehaviour : MonoBehaviour
     public bool enableTracking;
     public float maxSpeed;
     public GameObject trackedGameObject;
+    public float maxSeekStartDist;
     public float maxRotationPerSec;//By how many degrees can the item rotate IN RADIANS
 
     private Rigidbody2D ownRB=null;   
@@ -17,6 +18,16 @@ public class ShootingBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (trackedGameObject != null && !enableTracking)
+        {
+            if ((transform.position - trackedGameObject.transform.position).magnitude <= maxSeekStartDist)
+            {
+                enableTracking = true;
+            }        
+        }
+        if (enableTracking) {
+            FrameSeek();
+        }
     }
     void FrameSeek()
     {
@@ -29,7 +40,7 @@ public class ShootingBehaviour : MonoBehaviour
             var deltaT = Time.deltaTime;
             float rotatableAngle = Mathf.Clamp(signedAngle, -maxRotationPerSec * deltaT, maxRotationPerSec * deltaT);
             var rotatedVec = util_rotate(velVect, signedAngle);
-            ownRB.linearVelocity.Set(rotatedVec.x, rotatedVec.y);
+            ownRB.linearVelocity.Set(rotatedVec.x*maxSpeed, rotatedVec.y*maxSpeed);
 
         }
         else if (enableTracking)
