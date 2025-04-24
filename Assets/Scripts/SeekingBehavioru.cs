@@ -17,12 +17,15 @@ public class ShootingBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enableTracking && ownRB!=null && trackedGameObject != null)
+    }
+    void FrameSeek()
+    {
+        if (enableTracking && ownRB != null && trackedGameObject != null)
         {
-            var velVect=ownRB.linearVelocity;
-            Vector2 positionDiff=trackedGameObject.transform.position - transform.position;
+            var velVect = ownRB.linearVelocity;
+            Vector2 positionDiff = trackedGameObject.transform.position - transform.position;
 
-            float signedAngle=Vector2.SignedAngle(velVect, positionDiff);//Huh, this is useful.
+            float signedAngle = Vector2.SignedAngle(velVect, positionDiff);//Huh, this is useful.
             var deltaT = Time.deltaTime;
             float rotatableAngle = Mathf.Clamp(signedAngle, -maxRotationPerSec * deltaT, maxRotationPerSec * deltaT);
             var rotatedVec = util_rotate(velVect, signedAngle);
