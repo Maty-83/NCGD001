@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\IDamager.cs" />
+    <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\SeekingBehavioru.cs" />
     <Compile Include="Assets\Scripts\PistolShoot.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
