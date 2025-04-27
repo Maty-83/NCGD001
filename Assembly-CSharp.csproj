@@ -64,7 +64,6 @@
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapon\Sword.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
-    <Compile Include="Assets\Scripts\IDamager.cs" />
     <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\SeekingBehavioru.cs" />
     <Compile Include="Assets\Scripts\Entities\BasicEnemyController.cs" />
