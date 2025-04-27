@@ -1,14 +1,5 @@
+using Assets.Core.Enums;
 using UnityEngine;
-
-public enum DamageType
-{
-    bullet,
-    melee,
-    fireMagic,
-    iceMagic,
-    earthMagic,
-    windMagic
-}
 
 public interface IDamager
 {

@@ -1,3 +1,4 @@
+using Assets.Core.Enums;
 using UnityEngine;
 
 public interface IDamageable
