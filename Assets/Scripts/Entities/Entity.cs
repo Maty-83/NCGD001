@@ -32,7 +32,7 @@ namespace Assets.Scripts.Entities
 
         internal void Update()
         {
-            if (HP < 0)
+            if (HP <= 0)
             {
                 OnDeath();
             }

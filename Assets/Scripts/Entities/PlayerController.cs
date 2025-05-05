@@ -19,6 +19,10 @@ public class PlayerController : Entity
 
     public GameObject projectile = null;
 
+    [Header("Status field")]
+    public BarController hpBarController;
+    public BarController manaController;
+
     private Rigidbody2D rb;
 
     private float moveInput;
@@ -33,6 +37,9 @@ public class PlayerController : Entity
         Resistancies = new();
         Weapons = new() { {"Sword", new Sword() },
                           {"Gun", new Gun()} };
+
+        hpBarController.SetValues(HP, true, 0, HP);
+        manaController.SetValues(Mana, true, 0, Mana);
     }
 
     private new void Update()
@@ -84,6 +91,7 @@ public class PlayerController : Entity
             OnMelee();
         }
     }
+
 
     public void OnMove(bool toRight)
     {
@@ -141,5 +149,11 @@ public class PlayerController : Entity
                 }
             }
         }
+    }
+
+    public override void RecieveDamage(IDamager weapon)
+    {
+        base.RecieveDamage(weapon);
+        hpBarController.SetValues(HP, true);
     }
 }

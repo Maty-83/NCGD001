@@ -64,9 +64,9 @@
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapon\Sword.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
-    <Compile Include="Assets\Scripts\IDamager.cs" />
     <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\SeekingBehavioru.cs" />
+    <Compile Include="Assets\Scripts\UI\BarController.cs" />
     <Compile Include="Assets\Scripts\Entities\BasicEnemyController.cs" />
     <Compile Include="Assets\Scripts\IObjectController.cs" />
     <Compile Include="Assets\Scripts\Objects\PistolShoot.cs" />
@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
     <Compile Include="Assets\Scripts\Objects\IProjectile.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
+    <Compile Include="Assets\TrapController.cs" />
     <Compile Include="Assets\Scripts\Objects\ProjectileController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Helpers\Enums\DamageType.cs" />
