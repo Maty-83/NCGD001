@@ -7,8 +7,8 @@ using UnityEngine;
 public class ProjectileController : MonoBehaviour, IObjectController, IProjectile
 {
     public Rigidbody2D rBody;
-    public float Speed { get; set; } = 300f;
-    public float TTL { get; set; } = 300;
+    public float Speed { get; set; } = 1000f;
+    public float TTL { get; set; } = 1000;
     public Vector2 Direction { get; set; }
 
     private IDamager Weapon = new Gun();

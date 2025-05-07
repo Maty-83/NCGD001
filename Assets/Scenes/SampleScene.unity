@@ -1610,12 +1610,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3986677855783635743, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
+      propertyPath: accel
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986677855783635743, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: jumpForce
-      value: 500
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 3986677855783635743, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: moveSpeed
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3986677855783635743, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: projectile
@@ -1623,7 +1627,7 @@ PrefabInstance:
       objectReference: {fileID: 8111694865685907830, guid: 7502cb4d9709cbf4cb2856a46964c3d1, type: 3}
     - target: {fileID: 3986677855783635743, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: moveSpeedCap
-      value: 300
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3986677855783635743, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: manaController
@@ -1651,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4211934062543942258, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: m_GravityScale
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7504498012404304138, guid: accba7c1df566d14aa3fdf97566f4b07, type: 3}
       propertyPath: m_Name

@@ -8,9 +8,8 @@ using UnityEngine;
 public class PlayerController : Entity
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 30f;
-    public float moveSpeedCap = 100f;
-    public float jumpForce = 300f;
+    public float moveSpeed = 100f;
+    public float jumpForce = 1000f;
 
     [Header("Ground Detection")]
     public Transform groundCheck;
