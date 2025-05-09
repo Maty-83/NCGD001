@@ -3,13 +3,18 @@ using Assets.Scripts.Entities;
 using Assets.Scripts.Objects;
 using Assets.Scripts.Objects.Weapon;
 using System.Collections.Generic;
+using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 
 public class PlayerController : Entity
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 100f;
-    public float jumpForce = 1000f;
+    public float accelPerSec = 80f;
+    public float maxMoveSpeed = 20f;
+    public float jumpSpeed=20f;
+    public float gravityNormal = 3f;
+    public float gravityMultNoUpKey = 2f;
+    public float maxFallSpeed = 30f;
 
     [Header("Ground Detection")]
     public Transform groundCheck;
@@ -17,6 +22,11 @@ public class PlayerController : Entity
     public float groundCheckRadius = 0.4f;
 
     public GameObject projectile = null;
+    public float minTimeBetweenBullets = 0.2f;
+    private float curTimeBetweenBullets = 0;
+    public float minTimeBetweenMelee = 0.4f;
+    private float curTimeBetweenMelee = 0;
+
 
     [Header("Status field")]
     public BarController hpBarController;
@@ -39,74 +49,120 @@ public class PlayerController : Entity
 
         hpBarController.SetValues(HP, true, 0, HP);
         manaController.SetValues(Mana, true, 0, Mana);
+
     }
 
     private new void Update()
     {
-        base.Update();
-        HandleInput();
+        base.Update();        
     }
 
     private void FixedUpdate()
-    {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+    {       
+        HandleInput();
     }
 
     private void HandleInput()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (Input.GetKeyDown(KeyCode.W))
+        bool left, right, up, shoot, melee;
+        //Old trick: You want to get key inputs all at once so it isn't inconsistent.
+        left = Input.GetKey(KeyCode.D);
+        right = Input.GetKey(KeyCode.A);
+        up = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space);
+        //Turn into continuous and enable repeat attacks?
+        shoot = Input.GetMouseButton(0);
+        melee = Input.GetMouseButton(1);
+
+        if (up)
         {
             if (isGrounded)
                 OnJump();
-        }
-
-        if (!isGrounded && rb.linearVelocityY == 0f)
-        {
-            return;
+            rb.gravityScale = gravityNormal;
         }
         else
         {
-            if (Input.GetKey(KeyCode.A))
-            {
-                isWatchingRight = false;
-                OnMove(false);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                isWatchingRight = true;
-                OnMove(true);
-            }
+            rb.gravityScale =gravityNormal*gravityMultNoUpKey;
+        }
+        bool activelyMoving=false;
+        if (right && !left)
+        {
+            isWatchingRight = false;
+            OnMove(false);
+            activelyMoving = true;
+        }
+        if (left && !right)
+        {
+            isWatchingRight = true;
+            OnMove(true);
+            activelyMoving = true;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        OnMoveDrag(activelyMoving);
+
+        curTimeBetweenBullets += Time.fixedDeltaTime;
+        curTimeBetweenMelee += Time.fixedDeltaTime; 
+        if (shoot)
         {
-            OnShoot();
+            if(curTimeBetweenBullets>minTimeBetweenBullets)
+                OnShoot();
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(melee)
         {
-            OnMelee();
+            if(curTimeBetweenMelee>minTimeBetweenMelee)
+                OnMelee();
         }
     }
 
-
+    public void OnMoveDrag(bool activelyMoving)
+    {
+        if (activelyMoving)
+        {        
+            if (rb.linearVelocityX > maxMoveSpeed)
+            {
+                rb.linearVelocityX -= Mathf.Min(rb.linearVelocityX - maxMoveSpeed, accelPerSec * Time.fixedDeltaTime * 2);
+            }
+            else if (rb.linearVelocityX < -maxMoveSpeed)
+            {
+                rb.linearVelocityX -= Mathf.Max(rb.linearVelocityX + maxMoveSpeed, accelPerSec * Time.fixedDeltaTime * -2);
+            }
+        }
+        else
+        {
+            if (rb.linearVelocityX > 0)
+            {
+                if(rb.linearVelocityX> accelPerSec * Time.fixedDeltaTime)
+                {
+                    rb.linearVelocityX -= accelPerSec * Time.fixedDeltaTime;
+                }
+                else rb.linearVelocityX = 0;
+            }
+            else if(rb.linearVelocityX < 0)
+            {
+                if(rb.linearVelocityX<-accelPerSec * Time.fixedDeltaTime)
+                {
+                    rb.linearVelocityX += accelPerSec * Time.fixedDeltaTime;
+                }
+                else rb.linearVelocityX = 0;
+            }
+        }
+        if (rb.linearVelocityY < -maxFallSpeed)
+        {
+            rb.linearVelocityY=-maxFallSpeed;//Here we just set it since excess falling speeds contribute to hitbox mis-detections
+        }
+    }
     public void OnMove(bool toRight)
     {
         var dir = toRight ? 1 : -1;
 
-        rb.AddForce(new Vector2(dir * moveSpeed, 0), ForceMode2D.Force);
-
-        if (Mathf.Abs(rb.linearVelocity.x) > moveSpeed)
-        {
-            rb.linearVelocity = new Vector2((Mathf.Sign(rb.linearVelocity.x) * moveSpeed), rb.linearVelocity.y);
-        }
+        rb.linearVelocityX += dir * accelPerSec * Time.fixedDeltaTime;//We use fixed delta to be correct
     }
     
     public void OnJump()
     {
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+        rb.linearVelocityY=jumpSpeed;
     }
 
     public void OnShoot()
@@ -122,7 +178,8 @@ public class PlayerController : Entity
             instance.GetComponent<Rigidbody2D>(),
             new Vector2(dir.x, dir.y));
 
-        controller.Shoot();        
+        controller.Shoot();
+        curTimeBetweenBullets=0;
     }
 
     public void OnMelee()
@@ -148,6 +205,7 @@ public class PlayerController : Entity
                 }
             }
         }
+        curTimeBetweenMelee = 0;
     }
 
     public override void RecieveDamage(IDamager weapon)
