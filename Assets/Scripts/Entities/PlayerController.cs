@@ -19,7 +19,7 @@ public class PlayerController : Entity
     [Header("Ground Detection")]
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public float groundCheckRadius = 0.4f;
+    public float groundCheckRadius = 2f;
 
     public GameObject projectile = null;
     public float minTimeBetweenBullets = 0.2f;
