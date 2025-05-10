@@ -17,6 +17,7 @@ public class PlayerController : Entity
     public float gravityNormal = 3f;
     public float gravityMultNoUpKey = 2f;
     public float maxFallSpeed = 30f;
+    public bool doNotReduceGravityGoingUp = true;
 
     [Header("Ground Detection")]
     public Transform groundCheck;
@@ -39,7 +40,7 @@ public class PlayerController : Entity
     private float moveInput;
     private bool isGrounded;
     private bool jumpPressed;
-    private bool isWatchingRight = false;
+    private bool isWatchingRight = false;    
 
     private new void Start()
     {
@@ -81,7 +82,14 @@ public class PlayerController : Entity
         {
             if (isGrounded)
                 OnJump();
-            rb.gravityScale = gravityNormal;
+            if (rb.linearVelocityY > 0 && doNotReduceGravityGoingUp)
+            {
+                rb.gravityScale = gravityMultNoUpKey * gravityNormal;
+            }
+            else
+            {
+                rb.gravityScale = gravityNormal;
+            }
         }
         else
         {
