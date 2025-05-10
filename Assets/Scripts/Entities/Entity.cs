@@ -24,6 +24,13 @@ namespace Assets.Scripts.Entities
             HP -= amount;
         }
 
+        public virtual void OnDeath()
+        {
+            //Some animation here
+
+            Destroy(gameObject);
+        }
+
         internal void Start()
         {
             Resistancies = new();
@@ -36,14 +43,6 @@ namespace Assets.Scripts.Entities
             {
                 OnDeath();
             }
-        }
-
-
-        public void OnDeath()
-        {
-            //Some animation here
-
-            Destroy(gameObject);
         }
     }
 }

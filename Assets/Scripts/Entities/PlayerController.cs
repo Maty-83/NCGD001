@@ -1,10 +1,12 @@
 using Assets.Core.Enums;
+using Assets.Scripts;
 using Assets.Scripts.Entities;
 using Assets.Scripts.Objects;
 using Assets.Scripts.Objects.Weapon;
 using System.Collections.Generic;
 using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : Entity
 {
@@ -212,5 +214,14 @@ public class PlayerController : Entity
     {
         base.RecieveDamage(weapon);
         hpBarController.SetValues(HP, true);
+    }
+
+    public override void OnDeath()
+    {
+        GameManager.Instance.EndPanel.Invoke("You died!", "Restart", () =>
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        });
     }
 }
