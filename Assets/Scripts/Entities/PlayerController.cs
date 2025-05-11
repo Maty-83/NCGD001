@@ -1,4 +1,5 @@
 using Assets.Core.Enums;
+using Assets.Helpers.Enums;
 using Assets.Scripts;
 using Assets.Scripts.Entities;
 using Assets.Scripts.Objects;
@@ -24,13 +25,6 @@ public class PlayerController : Entity
     public LayerMask groundLayer;
     public float groundCheckRadius = 2f;
 
-    public GameObject projectile = null;
-    public float minTimeBetweenBullets = 0.2f;
-    private float curTimeBetweenBullets = 0;
-    public float minTimeBetweenMelee = 0.4f;
-    private float curTimeBetweenMelee = 0;
-
-
     [Header("Status field")]
     public BarController hpBarController;
     public BarController manaController;
@@ -40,19 +34,18 @@ public class PlayerController : Entity
     private float moveInput;
     private bool isGrounded;
     private bool jumpPressed;
-    private bool isWatchingRight = false;    
+
+
+    public float Score { get; set; } = 0;
 
     private new void Start()
     {
         base.Start();
         rb = GetComponent<Rigidbody2D>();
         Resistancies = new();
-        Weapons = new() { {"Sword", new Sword() },
-                          {"Gun", new Gun()} };
 
         hpBarController.SetValues(HP, true, 0, HP);
         manaController.SetValues(Mana, true, 0, Mana);
-
     }
 
     private new void Update()
@@ -60,9 +53,12 @@ public class PlayerController : Entity
         base.Update();        
     }
 
-    private void FixedUpdate()
+    private new void FixedUpdate()
     {       
         HandleInput();
+        base.FixedUpdate();
+        manaController.SetValues(Mana, true);
+        hpBarController.SetValues(HP, true);
     }
 
     private void HandleInput()
@@ -74,9 +70,6 @@ public class PlayerController : Entity
         left = Input.GetKey(KeyCode.D);
         right = Input.GetKey(KeyCode.A);
         up = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space);
-        //Turn into continuous and enable repeat attacks?
-        shoot = Input.GetMouseButton(0);
-        melee = Input.GetMouseButton(1);
 
         if (up)
         {
@@ -110,20 +103,6 @@ public class PlayerController : Entity
         }
 
         OnMoveDrag(activelyMoving);
-
-        curTimeBetweenBullets += Time.fixedDeltaTime;
-        curTimeBetweenMelee += Time.fixedDeltaTime; 
-        if (shoot)
-        {
-            if(curTimeBetweenBullets>minTimeBetweenBullets)
-                OnShoot();
-        }
-
-        if(melee)
-        {
-            if(curTimeBetweenMelee>minTimeBetweenMelee)
-                OnMelee();
-        }
     }
 
     public void OnMoveDrag(bool activelyMoving)
@@ -173,55 +152,6 @@ public class PlayerController : Entity
     public void OnJump()
     {
         rb.linearVelocityY=jumpSpeed;
-    }
-
-    public void OnShoot()
-    {
-        Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        var instance = Instantiate(projectile);
-        instance.transform.position = gameObject.transform.position;
-        var controller = instance.AddComponent<ProjectileController>();
-        var dir = -1 * (gameObject.transform.position - mouse);
-
-        controller.Init(gameObject,
-            Weapons["Gun"],
-            instance.GetComponent<Rigidbody2D>(),
-            new Vector2(dir.x, dir.y));
-
-        controller.Shoot();
-        curTimeBetweenBullets=0;
-    }
-
-    public void OnMelee()
-    {
-        Vector2 dir = Vector2.left;
-        if(isWatchingRight) 
-            dir = Vector2.right;
-
-        var hits = Physics2D.RaycastAll(transform.position, Vector2.right, 3f);
-        Debug.DrawLine(transform.position, dir * 10f, Color.red);
-
-        if(hits.Length != 0)
-        {
-            foreach (var hit in hits)
-            {
-                if (hit.collider.gameObject == gameObject)
-                    continue;
-
-                var entity = hit.rigidbody.gameObject.GetComponent<Entity>();
-                if (entity && Weapons.ContainsKey("Sword"))
-                {
-                    entity.RecieveDamage(Weapons["Sword"]);
-                }
-            }
-        }
-        curTimeBetweenMelee = 0;
-    }
-
-    public override void RecieveDamage(IDamager weapon)
-    {
-        base.RecieveDamage(weapon);
-        hpBarController.SetValues(HP, true);
     }
 
     public override void OnDeath()

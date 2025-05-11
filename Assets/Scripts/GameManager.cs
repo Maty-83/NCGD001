@@ -1,9 +1,5 @@
-﻿using Assets.Scripts.Objects.Weapon;
-using System;
+﻿using Assets.Scripts.Objects.ScriptableObjects;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -12,7 +8,7 @@ namespace Assets.Scripts
     {
         [SerializeField] public EndGamePanelController EndPanel;
         [SerializeField] public PlayerController PlayerController;
-        [SerializeField] public List<Spell> damagers = new List<Spell>();
+        [SerializeField] public List<Weapon> damagers = new List<Weapon>();
 
         public CameraController Camera { get; set; }
         //public BackgroundController Background { get; set; }

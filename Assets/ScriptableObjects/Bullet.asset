@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
-  m_Name: FIreBall
+  m_Name: Bullet
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 339779074524817926, guid: 2a4703f668136eb4c9494afc9d1add95, type: 3}
-  PreviewImage: {fileID: 5777552420452043588, guid: 0dd0a3a8a9b6d794ead00d7b3b152fdb, type: 3}
+  Prefab: {fileID: 8111694865685907830, guid: 7502cb4d9709cbf4cb2856a46964c3d1, type: 3}
+  PreviewImage: {fileID: 0}
   Range: -1
-  Binding: 49
+  Binding: 323
   WeaponType: 1
-  ManaCost: 20
-  Decription: Some nice spell with fire!
+  ManaCost: 0
+  Decription: Basic range weapon.
   BuyCost: 0
   DamageType: 0
   Damage: 20

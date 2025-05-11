@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShootingBehaviour : MonoBehaviour
+public class SeekingBehaviour : MonoBehaviour
 {
     public bool enableTracking;
     public float maxSpeed;

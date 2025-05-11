@@ -41,5 +41,7 @@ public class PauseCanvasControll : MonoBehaviour
     {
         isShowingPanel = !isShowingPanel;
         magicPanel.gameObject.SetActive(isShowingPanel);
+        if (isShowingPanel)
+            magicPanel.Display();
     }
 }

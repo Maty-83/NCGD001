@@ -63,29 +63,31 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\MagicPanelController.cs" />
-    <Compile Include="Assets\Scripts\Objects\Weapon\Sword.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
-    <Compile Include="Assets\Scripts\ScriptableObjects\Spell.cs" />
     <Compile Include="Assets\Scripts\SeekingBehavioru.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Weapon.cs" />
     <Compile Include="Assets\Scripts\UI\BarController.cs" />
     <Compile Include="Assets\Scripts\Entities\BasicEnemyController.cs" />
     <Compile Include="Assets\Scripts\IObjectController.cs" />
-    <Compile Include="Assets\Scripts\Objects\PistolShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Weapons\Sword.cs" />
     <Compile Include="Assets\Scripts\Enviroment\CameraController.cs" />
     <Compile Include="Assets\Scripts\Objects\TrapController.cs" />
     <Compile Include="Assets\Scripts\UI\PauseCanvasControll.cs" />
     <Compile Include="Assets\EndGamePanelController.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\HealSpell.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Objects\Weapon\Gun.cs" />
+    <Compile Include="Assets\Scripts\Objects\Weapons\Gun.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
     <Compile Include="Assets\Scripts\Objects\IProjectile.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Objects\ProjectileController.cs" />
+    <Compile Include="Assets\Scripts\UI\SpellPanelController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Helpers\Enums\DamageType.cs" />
-    <Compile Include="Assets\Scripts\Objects\Weapon\FireBallControll.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\IProtectiveSpell.cs" />
+    <Compile Include="Assets\Helpers\Enums\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
