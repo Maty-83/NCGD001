@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 0}
   PreviewImage: {fileID: 0}
-  Range: 1
+  Range: 3
   Binding: 324
   WeaponType: 0
   ManaCost: 0
   Decription: Basic melee weapon.
   BuyCost: 0
   DamageType: 2
-  Damage: 10
+  Damage: 30
