@@ -5,7 +5,6 @@ using Assets.Scripts.Entities;
 using Assets.Scripts.Objects;
 using Assets.Scripts.Objects.Weapon;
 using System.Collections.Generic;
-using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
