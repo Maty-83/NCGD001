@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhostSamuraiSpriteSheet_0: 2228079365134150664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

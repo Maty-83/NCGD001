@@ -8,7 +8,7 @@ public class ProjectileController : MonoBehaviour, IObjectController, IProjectil
 {
     public Rigidbody2D rBody;
     public float Speed { get; set; } = 1000f;
-    public float TTL { get; set; } = 300;
+    public float TTL { get; set; } = 1f;
     public Vector2 Direction { get; set; }
 
     private IDamager Weapon = new Gun();
@@ -80,7 +80,7 @@ public class ProjectileController : MonoBehaviour, IObjectController, IProjectil
         {
             Destroy();
         }
-        TTL--;
+        TTL-=Time.deltaTime;
     }
 
 
