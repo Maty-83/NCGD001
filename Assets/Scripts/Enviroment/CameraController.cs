@@ -11,6 +11,11 @@ public class CameraController : MonoBehaviour, IObjectController
     private Vector3 startPosition;
     private int followTransformId;
 
+    //Note for the following values: Maximum camera offset for the level made for the alpha is roughly 13.6
+    public float screenshakeMaxOffset = 1.2f;//Fairly light shaking
+    public float mouseMaxOffset = 3.4f;
+    public float maxSpeedOffset = 3.4f;
+
     public void Initialize(Transform transform)
     {
         FollowTransform = transform;
