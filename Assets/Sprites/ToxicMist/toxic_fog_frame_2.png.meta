@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toxic_fog_frame_2_0: 7270871749705353730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
