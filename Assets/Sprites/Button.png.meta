@@ -116,10 +116,10 @@ TextureImporter:
       name: Button_0
       rect:
         serializedVersion: 2
-        x: 193
-        y: 29
-        width: 1533
-        height: 1022
+        x: 111
+        y: 0
+        width: 820
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Button_0: 649223268058989734
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

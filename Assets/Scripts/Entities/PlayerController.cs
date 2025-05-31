@@ -3,17 +3,22 @@ using Assets.Helpers.Enums;
 using Assets.Scripts;
 using Assets.Scripts.Entities;
 using Assets.Scripts.Objects;
+using Assets.Scripts.Objects.ScriptableObjects;
 using Assets.Scripts.Objects.Weapon;
+using NUnit.Framework.Constraints;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : Entity
 {
     [Header("Movement Settings")]
     public float accelPerSec = 80f;
     public float maxMoveSpeed = 20f;
-    public float jumpSpeed=20f;
+    public float jumpSpeed = 20f;
     public float gravityNormal = 3f;
     public float gravityMultNoUpKey = 2f;
     public float maxFallSpeed = 30f;
@@ -27,20 +32,34 @@ public class PlayerController : Entity
     [Header("Status field")]
     public BarController hpBarController;
     public BarController manaController;
+    public TMP_Text scoreText;
 
-    private Rigidbody2D rb;
+    [Header("Audio Clips")]
+    public AudioClip WoundedAudioClip;
+    public AudioClip DeathAudioClip;
 
     private float moveInput;
     private bool isGrounded;
     private bool jumpPressed;
 
-
-    public float Score { get; set; } = 0;
+    private int reloadTime = 0;
+    private float score = 0;
+    public float Score
+    {
+        get
+        {
+            return score;
+        }
+        set 
+        {
+            score = value;
+            scoreText.text = $"Score: {score.ToString()}";
+        }
+    }
 
     private new void Start()
     {
         base.Start();
-        rb = GetComponent<Rigidbody2D>();
         Resistancies = new();
 
         hpBarController.SetValues(HP, true, 0, HP);
@@ -49,15 +68,56 @@ public class PlayerController : Entity
 
     private new void Update()
     {
-        base.Update();        
+        base.Update();
     }
 
     private new void FixedUpdate()
-    {       
+    {
+        if(!IsAlive)
+            return;
+
+        Reload();
+        HandleAudio();
         HandleInput();
         base.FixedUpdate();
         manaController.SetValues(Mana, true);
         hpBarController.SetValues(HP, true);
+    }
+
+    private void Reload()
+    {
+        if(reloadTime == 1)
+        {
+            GameManager.Instance.BulletInfoController.Reload();
+            reloadTime = 0;
+        }
+        else if (reloadTime > 1)
+        {
+            reloadTime--;
+        }
+    }
+
+    private void HandleAudio()
+    {
+        if (AudioSource == null)
+            return;
+
+        if (AudioSource.isPlaying)
+            return;
+
+        if (HP < MaxHP / 2 && HP > 0)
+        {
+            AudioSource.clip = WoundedAudioClip;
+            AudioSource.Play();
+        }
+        else if(HP < 0)
+        {
+        }
+        else
+        {
+            AudioSource.clip = null;
+            AudioSource.Stop();
+        }
     }
 
     private void HandleInput()
@@ -85,9 +145,9 @@ public class PlayerController : Entity
         }
         else
         {
-            rb.gravityScale =gravityNormal*gravityMultNoUpKey;
+            rb.gravityScale = gravityNormal * gravityMultNoUpKey;
         }
-        bool activelyMoving=false;
+        bool activelyMoving = false;
         if (right && !left)
         {
             isWatchingRight = false;
@@ -107,7 +167,7 @@ public class PlayerController : Entity
     public void OnMoveDrag(bool activelyMoving)
     {
         if (activelyMoving)
-        {        
+        {
             if (rb.linearVelocityX > maxMoveSpeed)
             {
                 rb.linearVelocityX -= Mathf.Min(rb.linearVelocityX - maxMoveSpeed, accelPerSec * Time.fixedDeltaTime * 2);
@@ -121,15 +181,15 @@ public class PlayerController : Entity
         {
             if (rb.linearVelocityX > 0)
             {
-                if(rb.linearVelocityX> accelPerSec * Time.fixedDeltaTime)
+                if (rb.linearVelocityX > accelPerSec * Time.fixedDeltaTime)
                 {
                     rb.linearVelocityX -= accelPerSec * Time.fixedDeltaTime;
                 }
                 else rb.linearVelocityX = 0;
             }
-            else if(rb.linearVelocityX < 0)
+            else if (rb.linearVelocityX < 0)
             {
-                if(rb.linearVelocityX<-accelPerSec * Time.fixedDeltaTime)
+                if (rb.linearVelocityX < -accelPerSec * Time.fixedDeltaTime)
                 {
                     rb.linearVelocityX += accelPerSec * Time.fixedDeltaTime;
                 }
@@ -138,7 +198,7 @@ public class PlayerController : Entity
         }
         if (rb.linearVelocityY < -maxFallSpeed)
         {
-            rb.linearVelocityY=-maxFallSpeed;//Here we just set it since excess falling speeds contribute to hitbox mis-detections
+            rb.linearVelocityY = -maxFallSpeed;//Here we just set it since excess falling speeds contribute to hitbox mis-detections
         }
     }
     public void OnMove(bool toRight)
@@ -147,14 +207,59 @@ public class PlayerController : Entity
 
         rb.linearVelocityX += dir * accelPerSec * Time.fixedDeltaTime;//We use fixed delta to be correct
     }
-    
+
     public void OnJump()
     {
-        rb.linearVelocityY=jumpSpeed;
+        rb.linearVelocityY = jumpSpeed;
+    }
+
+    public override void OnShoot(Weapon weapon, Vector2 dir)
+    {
+        if(weapon.Type == DamageType.Bullet)
+        {
+            if (!GameManager.Instance.BulletInfoController.HasBullet())
+                return;
+
+            GameManager.Instance.BulletInfoController.Shoot();
+
+            if (!GameManager.Instance.BulletInfoController.HasBullet())
+                reloadTime = 100;
+        }
+        base.OnShoot(weapon, dir);
+    }
+
+    public override void OnMelee(Weapon weapon, Vector2 dir)
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weapon.Range);
+
+        foreach(var hit in hits)
+        {
+            Vector3 objectDirection = ( hit.transform.position - transform.position ).normalized;
+            float angleTo = Vector3.Angle(transform.forward, objectDirection);
+
+            if (angleTo > 180 || angleTo < 360)
+            {
+                var controller = hit.GetComponent<ProjectileController>();
+                if (controller != null)
+                {
+                    controller.Shooter = gameObject;
+                    controller.rBody.linearVelocityX = 0;
+                    controller.rBody.linearVelocityY = 0;
+                    controller.Direction = objectDirection;
+                    controller.Shoot();
+                }
+            }
+        }
+
+        base.OnMelee(weapon, dir);
     }
 
     public override void OnDeath()
     {
+        AudioSource.clip = DeathAudioClip;
+        AudioSource.loop = false;
+        AudioSource.Play();
+
         GameManager.Instance.EndPanel.Invoke("You died!", "Restart", () =>
         {
             string currentSceneName = SceneManager.GetActiveScene().name;

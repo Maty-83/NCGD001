@@ -1,0 +1,1006 @@
+fileFormatVersion: 2
+guid: 566900666718e614493f3438e2b232f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6029215001808807226
+    second: BlueGhost_0
+  - first:
+      213: 931180450618420877
+    second: BlueGhost_1
+  - first:
+      213: -3591016625712980190
+    second: BlueGhost_2
+  - first:
+      213: -7812901176336461474
+    second: BlueGhost_3
+  - first:
+      213: -8207766525501194574
+    second: BlueGhost_4
+  - first:
+      213: 1085722334980621271
+    second: BlueGhost_5
+  - first:
+      213: -3339910347960443631
+    second: BlueGhost_6
+  - first:
+      213: -3286797122874702684
+    second: BlueGhost_7
+  - first:
+      213: -3998691915666420663
+    second: BlueGhost_8
+  - first:
+      213: -3279096430959458075
+    second: BlueGhost_9
+  - first:
+      213: 6722285864298974039
+    second: BlueGhost_10
+  - first:
+      213: 5554534724228366534
+    second: BlueGhost_11
+  - first:
+      213: -6211720772638875576
+    second: BlueGhost_12
+  - first:
+      213: 3166726808442899284
+    second: BlueGhost_13
+  - first:
+      213: -6872099359058473359
+    second: BlueGhost_14
+  - first:
+      213: 1453428181023443706
+    second: BlueGhost_15
+  - first:
+      213: 3952798512473359800
+    second: BlueGhost_16
+  - first:
+      213: -4472693935893742381
+    second: BlueGhost_17
+  - first:
+      213: 8591474258609436970
+    second: BlueGhost_18
+  - first:
+      213: -6852886281700272084
+    second: BlueGhost_19
+  - first:
+      213: -4360878418656266859
+    second: BlueGhost_20
+  - first:
+      213: 6327595403123548178
+    second: BlueGhost_21
+  - first:
+      213: -5625488143222260330
+    second: BlueGhost_22
+  - first:
+      213: -6819034463537424078
+    second: BlueGhost_23
+  - first:
+      213: -8528189284561533192
+    second: BlueGhost_24
+  - first:
+      213: -6602351042138189872
+    second: BlueGhost_25
+  - first:
+      213: 6907873882812686297
+    second: BlueGhost_26
+  - first:
+      213: -6575278560538876227
+    second: BlueGhost_27
+  - first:
+      213: -1968036193390205994
+    second: BlueGhost_28
+  - first:
+      213: 8474735570317550859
+    second: BlueGhost_29
+  - first:
+      213: -4443132874728874111
+    second: BlueGhost_30
+  - first:
+      213: -2763706538213951451
+    second: BlueGhost_31
+  - first:
+      213: -428785301053625464
+    second: BlueGhost_32
+  - first:
+      213: 1805647649844542258
+    second: BlueGhost_33
+  - first:
+      213: -8093183025788067938
+    second: BlueGhost_34
+  - first:
+      213: 5941256087684351041
+    second: BlueGhost_35
+  - first:
+      213: 1708136345736586612
+    second: BlueGhost_36
+  - first:
+      213: 8667910803924086540
+    second: BlueGhost_37
+  - first:
+      213: -3966934494301389311
+    second: BlueGhost_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlueGhost_0
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1932
+        width: 261
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cadab666ece35ca0800000000000000
+      internalID: -6029215001808807226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_1
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1928
+        width: 261
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e26ecafa73cec00800000000000000
+      internalID: 931180450618420877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_2
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 2252
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f1bd9a7652a2ec0800000000000000
+      internalID: -3591016625712980190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_3
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 2252
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51db3f46cff29390800000000000000
+      internalID: -7812901176336461474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_4
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1931
+        width: 261
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2beb828e4d7281e80800000000000000
+      internalID: -8207766525501194574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1594
+        width: 263
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d34a3516b2411f00800000000000000
+      internalID: 1085722334980621271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_6
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1602
+        width: 261
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d9a20fb3146a1d0800000000000000
+      internalID: -3339910347960443631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_7
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1601
+        width: 261
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a407425e63f262d0800000000000000
+      internalID: -3286797122874702684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_8
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 1901
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c0a7083eac188c0800000000000000
+      internalID: -3998691915666420663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_9
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1901
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e809606b2f4e72d0800000000000000
+      internalID: -3279096430959458075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1594
+        width: 245
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b8b2c906b5a4d50800000000000000
+      internalID: 6722285864298974039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_11
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1594
+        width: 309
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0443a07eba51d40800000000000000
+      internalID: 5554534724228366534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_12
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1601
+        width: 261
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840e1fe4ed88bc9a0800000000000000
+      internalID: -6211720772638875576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_13
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1304
+        width: 261
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b02f5114972fb20800000000000000
+      internalID: 3166726808442899284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_14
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1275
+        width: 261
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e412afa0661a0a0800000000000000
+      internalID: -6872099359058473359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_15
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 1575
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afac174ea3d9b2410800000000000000
+      internalID: 1453428181023443706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_16
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1575
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5caa4ed492bd630800000000000000
+      internalID: 3952798512473359800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1298
+        width: 238
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc720a009ccde1c0800000000000000
+      internalID: -4472693935893742381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1298
+        width: 262
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29f351915c0b3770800000000000000
+      internalID: 8591474258609436970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_19
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1298
+        width: 386
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c289b152c38a5e0a0800000000000000
+      internalID: -6852886281700272084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_20
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 1275
+        width: 261
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5957353ee2c0b73c0800000000000000
+      internalID: -4360878418656266859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_21
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 994
+        width: 276
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210e29d7e7220d750800000000000000
+      internalID: 6327595403123548178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_22
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 986
+        width: 509
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69db01fb6504ee1b0800000000000000
+      internalID: -5625488143222260330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_24
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1000
+        width: 266
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6ca6ca709c5a980800000000000000
+      internalID: -8528189284561533192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_25
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 672
+        width: 278
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df4cea35bcbf54a0800000000000000
+      internalID: -6602351042138189872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_26
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 672
+        width: 459
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df9f3a62b2bddf50800000000000000
+      internalID: 6907873882812686297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_27
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 684
+        width: 356
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6a6db8cfaefb4a0800000000000000
+      internalID: -6575278560538876227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_28
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 368
+        width: 245
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d36ddb528120b4e0800000000000000
+      internalID: -1968036193390205994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_29
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 378
+        width: 316
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b052522a91f4c9570800000000000000
+      internalID: 8474735570317550859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_30
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 379
+        width: 540
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fdcefe032d652c0800000000000000
+      internalID: -4443132874728874111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_31
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 64
+        width: 330
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5283556db8755a9d0800000000000000
+      internalID: -2763706538213951451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_33
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 56
+        width: 302
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bb08688f2fe0910800000000000000
+      internalID: 1805647649844542258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueGhost_35
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 76
+        width: 559
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1448d020fe4937250800000000000000
+      internalID: 5941256087684351041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a13bf43699578934c94b62feeee75e20
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BlueGhost_0: -6029215001808807226
+      BlueGhost_1: 931180450618420877
+      BlueGhost_10: 6722285864298974039
+      BlueGhost_11: 5554534724228366534
+      BlueGhost_12: -6211720772638875576
+      BlueGhost_13: 3166726808442899284
+      BlueGhost_14: -6872099359058473359
+      BlueGhost_15: 1453428181023443706
+      BlueGhost_16: 3952798512473359800
+      BlueGhost_17: -4472693935893742381
+      BlueGhost_18: 8591474258609436970
+      BlueGhost_19: -6852886281700272084
+      BlueGhost_2: -3591016625712980190
+      BlueGhost_20: -4360878418656266859
+      BlueGhost_21: 6327595403123548178
+      BlueGhost_22: -5625488143222260330
+      BlueGhost_24: -8528189284561533192
+      BlueGhost_25: -6602351042138189872
+      BlueGhost_26: 6907873882812686297
+      BlueGhost_27: -6575278560538876227
+      BlueGhost_28: -1968036193390205994
+      BlueGhost_29: 8474735570317550859
+      BlueGhost_3: -7812901176336461474
+      BlueGhost_30: -4443132874728874111
+      BlueGhost_31: -2763706538213951451
+      BlueGhost_33: 1805647649844542258
+      BlueGhost_35: 5941256087684351041
+      BlueGhost_4: -8207766525501194574
+      BlueGhost_5: 1085722334980621271
+      BlueGhost_6: -3339910347960443631
+      BlueGhost_7: -3286797122874702684
+      BlueGhost_8: -3998691915666420663
+      BlueGhost_9: -3279096430959458075
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

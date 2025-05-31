@@ -49,6 +49,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 2792102346276373438}
+    - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: ShootingRange
       value: 15
       objectReference: {fileID: 0}
@@ -83,7 +87,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5500686644914601677}
+    - targetCorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -992260795354795127}
+    - targetCorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2051098390965942616}
+    - targetCorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2429213094212738174}
   m_SourcePrefab: {fileID: 100100000, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+--- !u!82 &2792102346276373438 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -8219171629449147316, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+  m_PrefabInstance: {fileID: 3121039318292991986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5402809596166251850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
@@ -113,3 +131,93 @@ MonoBehaviour:
   OnlyRespectHorizontal: 0
   MovementVelocity: 5
   CurrentPatrolPoint: 0
+--- !u!95 &-992260795354795127
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402809596166251850}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f83a656eed846194bb9421c59afd4cc7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &2051098390965942616
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402809596166251850}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!114 &2429213094212738174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402809596166251850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.754717, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 2
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}

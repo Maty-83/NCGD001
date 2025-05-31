@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using UnityEngine;
 
 public class SeekingBehaviour : MonoBehaviour
@@ -12,6 +13,8 @@ public class SeekingBehaviour : MonoBehaviour
     void Start()
     {
         ownRB = GetComponent<Rigidbody2D>();
+        if(trackedGameObject == null )
+            trackedGameObject = GameManager.Instance.PlayerController.gameObject;
     }
 
     // Update is called once per frame

@@ -10,9 +10,9 @@ public class ProjectileController : MonoBehaviour, IObjectController, IProjectil
     public float Speed { get; set; } = 1000f;
     public float TTL { get; set; } = 1f;
     public Vector2 Direction { get; set; }
+    public GameObject Shooter { get; set; }  
 
     private IDamager Weapon = new Gun();
-    private GameObject Shooter = null;  
 
     private bool isPaused = false;
 

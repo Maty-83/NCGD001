@@ -42,7 +42,7 @@ namespace Assets.Scripts.Entities
             var dir = -1 * ( gameObject.transform.position - player.transform.position);
             var distance = ( player.transform.position - transform.position ).magnitude;
 
-            if (curTimeBetweenMelee > minTimeBetweenMelee)
+            if (curTimeBetweenAttacks > minTimeBetweenMelee)
             {
                 foreach (var melee in MeleeWeapons)
                 {
@@ -54,7 +54,7 @@ namespace Assets.Scripts.Entities
                 }
             }
 
-            if (distance < ShootingRange && curTimeBetweenBullets > minTimeBetweenBullets)
+            if (distance < ShootingRange && curTimeBetweenAttacks > minTimeBetweenBullets)
             {
                 var weaponCount = RangeWeapons.Count;
                 if (weaponCount == 0)
@@ -65,8 +65,7 @@ namespace Assets.Scripts.Entities
             }
 
 
-            curTimeBetweenBullets += Time.fixedDeltaTime;
-            curTimeBetweenMelee += Time.fixedDeltaTime;
+            curTimeBetweenAttacks += Time.fixedDeltaTime;
         }
 
         public override void RecieveDamage(IDamager weapon)

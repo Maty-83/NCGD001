@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Heal
   m_EditorClassIdentifier: 
   Prefab: {fileID: 5461004825411389311, guid: 5721931f0d043444a80aa2f6b717da1e, type: 3}
-  PreviewImage: {fileID: 0}
+  PreviewImage: {fileID: -2113586774, guid: c2dc8677a54bf724f9c659e7510c1b7f, type: 3}
   Range: 0
-  Binding: 51
+  Binding: 0
   WeaponType: 2
   ManaCost: 50
   Decription: You can restore 20 health with this spell.

@@ -17,25 +17,23 @@ public class PauseMenuController : MonoBehaviour
 
     public void Pause()
     {
-        Time.timeScale = 0;
+        GameManager.Instance.Pause();
         CanvasControll.isPaused = true;
     }
 
     public void Resume()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.Resume();
         CanvasControll.Resume();
     }
 
     public void Reset()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
-        Time.timeScale = 1;
+        GameManager.Instance.Reset();
     }
 
     public void Quit()
     {
-        Application.Quit();
+        GameManager.Instance.Quit();
     }
 }

@@ -6,13 +6,19 @@ namespace Assets.Scripts.Objects.Spells
 {
     public class HealSpell : MonoBehaviour, IProtectiveSpell
     {
+        private Entity Caster = null;
         private bool casted = false;
-        private int TTL = 5;
+        private int TTL = 100;
 
         private void Update()
         {
             if (casted)
             {
+                if (Caster != null)
+                {
+                    transform.position = Caster.transform.position;
+                }
+
                 if (TTL <= 0)
                 {
                     AfterCast();
@@ -34,6 +40,7 @@ namespace Assets.Scripts.Objects.Spells
                 caster.HP += 20;
 
             casted = true;
+            Caster = caster;
         }
     }
 }

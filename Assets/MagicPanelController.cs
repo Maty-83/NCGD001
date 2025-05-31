@@ -1,6 +1,5 @@
 using Assets.Scripts;
 using Assets.Scripts.Objects.ScriptableObjects;
-using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -13,24 +12,24 @@ public class MagicPanelController : MonoBehaviour
     [SerializeField] TMP_Text ScoreText;
 
     private PlayerController playerController;
-    public void Display()
+    private List<SpellPanelController> panels = new List<SpellPanelController>();
+    private bool wasDisplayedFromUI = true;
+    public void Display(bool fromUI = true)
     {
+        wasDisplayedFromUI = fromUI;
+        if (!fromUI)
+        {
+            GameManager.Instance.Pause();
+        }
+        
+        Clear();
+
         playerController = GameManager.Instance.PlayerController;
         if (playerController == null)
             return;
 
-        var avalibleWeapons = new List<Weapon>();
-        foreach (var weapon in GameManager.Instance.damagers)
-        {
-            if (playerController.Weapons.Values.Contains(weapon))
-            {
-                continue;
-            }
-            avalibleWeapons.Add(weapon);
-        }
-
         ScoreText.text = $"XP: {playerController.Score.ToString()}";
-        Initialize(avalibleWeapons, playerController.Weapons.Values.ToList());
+        Initialize(GameManager.Instance.GetAvalibleWeapons(), playerController.OwnedWeapons.ToList());
     }
 
     private void Initialize(List<Weapon> avalibleWeapons, List<Weapon> owned)
@@ -39,12 +38,31 @@ public class MagicPanelController : MonoBehaviour
         {
             var panel = Instantiate(SpellPanelPrefab, Parent.transform).GetComponent<SpellPanelController>();
             panel.Initialize(playerController, false, weapon);
+            panels.Add(panel);
         }
 
         foreach (var weapon in owned)
         {
             var panel = Instantiate(SpellPanelPrefab, Parent.transform).GetComponent<SpellPanelController>();
-            panel.Initialize(playerController, false, weapon);
+            panel.Initialize(playerController, true, weapon);
+            panels.Add(panel);
+        }
+    }
+
+    private void Clear()
+    {
+        foreach(var panel in panels)
+            Destroy(panel.gameObject);
+
+        panels.Clear(); 
+    }
+
+    private void Update()
+    {
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Alpha0)) && !wasDisplayedFromUI)
+        {
+            gameObject.SetActive(false);
+            GameManager.Instance.Resume();
         }
     }
 }

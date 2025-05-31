@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
   m_Name: ToxicBall
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7482335333513631073, guid: eee180cdc178e5e4b9ace884cdc9f24d, type: 3}
+  Prefab: {fileID: 6263958480957022746, guid: 1a404b36285b9734bbf7e431ca0812f7, type: 3}
   PreviewImage: {fileID: 0}
+  Sound: {fileID: 8300000, guid: 7de38d9f7ad5b3f4b86f1994bd26a69f, type: 3}
   Range: -1
-  Binding: 50
+  Binding: 0
   WeaponType: 1
   ManaCost: 90
   Decription: Some dangerous toxic spell

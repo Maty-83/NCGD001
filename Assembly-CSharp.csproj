@@ -71,8 +71,10 @@
     <Compile Include="Assets\Scripts\Entities\BasicEnemyController.cs" />
     <Compile Include="Assets\Scripts\IObjectController.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapons\Sword.cs" />
+    <Compile Include="Assets\SpellPanel.cs" />
     <Compile Include="Assets\Scripts\Enviroment\CameraController.cs" />
     <Compile Include="Assets\Scripts\Objects\TrapController.cs" />
+    <Compile Include="Assets\Helpers\MathHelper.cs" />
     <Compile Include="Assets\Scripts\UI\PauseCanvasControll.cs" />
     <Compile Include="Assets\EndGamePanelController.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\HealSpell.cs" />
@@ -81,12 +83,16 @@
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
     <Compile Include="Assets\Scripts\Objects\IProjectile.cs" />
+    <Compile Include="Assets\BulletInfoPanelController.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
+    <Compile Include="Assets\BackgroundController.cs" />
     <Compile Include="Assets\Scripts\Objects\ProjectileController.cs" />
     <Compile Include="Assets\Scripts\UI\SpellPanelController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Helpers\Enums\DamageType.cs" />
+    <Compile Include="Assets\RaidTriggerTrapController.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\IProtectiveSpell.cs" />
+    <Compile Include="Assets\Scripts\UI\CardController.cs" />
     <Compile Include="Assets\Helpers\Enums\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>

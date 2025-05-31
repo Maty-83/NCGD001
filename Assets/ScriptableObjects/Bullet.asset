@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
   m_Name: Bullet
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 8111694865685907830, guid: 7502cb4d9709cbf4cb2856a46964c3d1, type: 3}
+  Prefab: {fileID: 6558058357626481252, guid: 128246ed4cff4b64593f29e735df73d1, type: 3}
   PreviewImage: {fileID: 0}
+  Sound: {fileID: 8300000, guid: ab98bdc78de58e44e925268c5e374be7, type: 3}
   Range: -1
   Binding: 323
   WeaponType: 1
   ManaCost: 0
   Decription: Basic range weapon.
   BuyCost: 0
-  DamageType: 0
+  DamageType: 1
   Damage: 20

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 19c19e61187e53146a2c0b7a3a954b95
+guid: 3052f148844eb364ea8fb85f3db043ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2228079365134150664
-    second: GhostSamuraiSpriteSheet_0
+      213: 1166018232260696046
+    second: Sundown_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GhostSamuraiSpriteSheet_0
+      name: Sundown_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80ce232b06abbee10800000000000000
-      internalID: 2228079365134150664
+      spriteID: ee7178787678e2010800000000000000
+      internalID: 1166018232260696046
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      GhostSamuraiSpriteSheet_0: 2228079365134150664
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

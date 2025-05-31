@@ -12,6 +12,9 @@ public class PauseCanvasControll : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            if (magicPanel.gameObject.activeSelf && !isShowingPanel)
+                return;
+
             if (isShowingPanel)
             {
                 ShowMagicTree();

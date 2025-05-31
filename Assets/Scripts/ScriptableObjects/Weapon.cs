@@ -10,6 +10,7 @@ namespace Assets.Scripts.Objects.ScriptableObjects
     {
         [SerializeField] public  GameObject Prefab;
         [SerializeField] public  Sprite PreviewImage;
+        [SerializeField] public  AudioClip Sound;
         [SerializeField] public  float Range; //Non-positive means unlimited
         [SerializeField] public  KeyCode Binding;
         [SerializeField] public  WeaponType WeaponType;

@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 22830c6153e8c5d4db778739b8ae32bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9117413599889066536
+    second: naginata-samurai_0
+  - first:
+      213: 3887094166211330295
+    second: naginata-samurai_1
+  - first:
+      213: -6897821576778876186
+    second: naginata-samurai_2
+  - first:
+      213: 4249539238678313292
+    second: naginata-samurai_3
+  - first:
+      213: 5361887128630569523
+    second: naginata-samurai_4
+  - first:
+      213: -4298409510183684119
+    second: naginata-samurai_5
+  - first:
+      213: 4005486603579031031
+    second: naginata-samurai_6
+  - first:
+      213: 3419729992521674966
+    second: naginata-samurai_7
+  - first:
+      213: -7822917771419237292
+    second: naginata-samurai_8
+  - first:
+      213: 7962611414671336387
+    second: naginata-samurai_9
+  - first:
+      213: -5729041304363071869
+    second: naginata-samurai_10
+  - first:
+      213: 8650638740603606271
+    second: naginata-samurai_11
+  - first:
+      213: 2162696309130359736
+    second: naginata-samurai_12
+  - first:
+      213: 5923962907542555282
+    second: naginata-samurai_13
+  - first:
+      213: -6228900994814342723
+    second: naginata-samurai_14
+  - first:
+      213: 3644841545277725459
+    second: naginata-samurai_15
+  - first:
+      213: -6403159343003867358
+    second: naginata-samurai_16
+  - first:
+      213: -4644072064045377247
+    second: naginata-samurai_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: naginata-samurai_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1566
+        width: 267
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5fb4413a0787180800000000000000
+      internalID: -9117413599889066536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1563
+        width: 315
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f00589ac8bb1f530800000000000000
+      internalID: 3887094166211330295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1571
+        width: 390
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49318c2c6569fa30800000000000000
+      internalID: 4249539238678313292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1262
+        width: 313
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdf9ee08d8569730800000000000000
+      internalID: 4005486603579031031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1251
+        width: 265
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0f0084f42557f20800000000000000
+      internalID: 3419729992521674966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_9
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1246
+        width: 441
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3a4f7d4e0e08e60800000000000000
+      internalID: 7962611414671336387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 955
+        width: 363
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38606e5994b5e70b0800000000000000
+      internalID: -5729041304363071869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_12
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 947
+        width: 502
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b373cea5d0730e10800000000000000
+      internalID: 2162696309130359736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naginata-samurai_17
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 622
+        width: 277
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12992472011fc8fb0800000000000000
+      internalID: -4644072064045377247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 63e0dfe04d16d354ebdb7dcda9e48cbb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      naginata-samurai_0: -9117413599889066536
+      naginata-samurai_1: 3887094166211330295
+      naginata-samurai_10: -5729041304363071869
+      naginata-samurai_12: 2162696309130359736
+      naginata-samurai_17: -4644072064045377247
+      naginata-samurai_3: 4249539238678313292
+      naginata-samurai_6: 4005486603579031031
+      naginata-samurai_7: 3419729992521674966
+      naginata-samurai_9: 7962611414671336387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

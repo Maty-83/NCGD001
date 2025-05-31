@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 0}
   PreviewImage: {fileID: 0}
-  Range: 3
+  Sound: {fileID: 0}
+  Range: 5
   Binding: 324
   WeaponType: 0
   ManaCost: 0

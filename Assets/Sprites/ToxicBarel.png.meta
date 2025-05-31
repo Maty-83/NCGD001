@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 8121c6477ced45f41becf0b8bf281fba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 945262082338401044
+    second: ToxicBarel_0
+  - first:
+      213: -5949858103540707369
+    second: ToxicBarel_1
+  - first:
+      213: 1688441279393297081
+    second: ToxicBarel_2
+  - first:
+      213: 5790860605426747188
+    second: ToxicBarel_3
+  - first:
+      213: 4420550355605307446
+    second: ToxicBarel_4
+  - first:
+      213: -3097719612741412136
+    second: ToxicBarel_5
+  - first:
+      213: 6993433129815070793
+    second: ToxicBarel_6
+  - first:
+      213: -7621491814937319355
+    second: ToxicBarel_7
+  - first:
+      213: -2602473398779715012
+    second: ToxicBarel_8
+  - first:
+      213: 8839040223788260628
+    second: ToxicBarel_9
+  - first:
+      213: -8284681459243573040
+    second: ToxicBarel_10
+  - first:
+      213: -1792474786273787694
+    second: ToxicBarel_11
+  - first:
+      213: 4699361418123132779
+    second: ToxicBarel_12
+  - first:
+      213: 7491785788707894524
+    second: ToxicBarel_13
+  - first:
+      213: 154842083691196085
+    second: ToxicBarel_14
+  - first:
+      213: 1155738080984586880
+    second: ToxicBarel_15
+  - first:
+      213: 5952321999953810689
+    second: ToxicBarel_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ToxicBarel_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 683
+        width: 293
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c37c36290baa284da2485adf591335a
+      internalID: -126971042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicBarel_1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 683
+        width: 293
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7854ab8db10e4fc478c9298e736b340a
+      internalID: 1025755052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicBarel_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 683
+        width: 293
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fa1f6959a39284c8a0d685a446d893
+      internalID: -333439475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicBarel_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 354
+        width: 293
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585d437fbf7e2454192df44df9f1468d
+      internalID: -998056552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicBarel_4
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 354
+        width: 293
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4bfb95aa4209c429effe6128eaf5d4
+      internalID: 932628803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicBarel_5
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 353
+        width: 293
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d939ca4acd52e246b22aaa8ffbc870a
+      internalID: 158595534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d683a8d181073947815cdd86254fc83
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ToxicBarel_0: -126971042
+      ToxicBarel_1: 1025755052
+      ToxicBarel_2: -333439475
+      ToxicBarel_3: -998056552
+      ToxicBarel_4: 932628803
+      ToxicBarel_5: 158595534
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
