@@ -141,11 +141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2521750018954228700, guid: a478150f7e255c140a34f9e93a9dd529, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.33
+      value: 47.346
       objectReference: {fileID: 0}
     - target: {fileID: 2521750018954228700, guid: a478150f7e255c140a34f9e93a9dd529, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.04
+      value: -9.523
       objectReference: {fileID: 0}
     - target: {fileID: 2521750018954228700, guid: a478150f7e255c140a34f9e93a9dd529, type: 3}
       propertyPath: m_LocalPosition.z
@@ -111846,6 +111846,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
+      propertyPath: minTimeBetweenMelee
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
+      propertyPath: minTimeBetweenBullets
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8924933565557208939, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: trackedGameObject
       value: 
@@ -118032,7 +118040,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2711612223485771261, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8911517964954938680}
   m_SourcePrefab: {fileID: 100100000, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
 --- !u!1001 &4211885981672809792
 PrefabInstance:
@@ -118705,6 +118716,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219dc938199836849ba833c31b416c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8911517964954938680
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655647213404499751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &9025310726407441823
 PrefabInstance:
   m_ObjectHideFlags: 0
