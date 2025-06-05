@@ -44,6 +44,7 @@ namespace Assets.Scripts.Entities
         internal Animator animator;
 
         private Vector3 previousPos = Vector3.zero;
+        private bool sameDir = false;
 
         public virtual void RecieveDamage(IDamager weapon)
         {
@@ -206,7 +207,8 @@ namespace Assets.Scripts.Entities
                         continue;
 
                     var entity = hit.rigidbody.gameObject.GetComponent<Entity>();
-                    entity.RecieveDamage(weapon);
+                    if(entity != null)
+                        entity.RecieveDamage(weapon);
                 }
             }
             curTimeBetweenAttacks = 0;
@@ -241,14 +243,14 @@ namespace Assets.Scripts.Entities
 
             if(rb.linearVelocityX == 0)
             {
-                if((previousPos - transform.position).x < 0)
+                if((previousPos - transform.position).x < - 0.1)
                     renderer.flipX = false;
-                else
+                else if (( previousPos - transform.position ).x > 0.1)
                     renderer.flipX = true;
             }
-            else if (rb.linearVelocityX > 0)
+            else if (rb.linearVelocityX > 1)
                 renderer.flipX = false;
-            else if (rb.linearVelocityX < 0)
+            else if (rb.linearVelocityX < 1)
                 renderer.flipX = true;
 
             previousPos = transform.position;

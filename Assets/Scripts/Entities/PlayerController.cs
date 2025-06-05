@@ -40,6 +40,7 @@ public class PlayerController : Entity
 
     private float moveInput;
     private bool isGrounded;
+    private bool isRunning;
     private bool jumpPressed;
 
     private int reloadTime = 0;
@@ -79,6 +80,7 @@ public class PlayerController : Entity
         Reload();
         HandleAudio();
         HandleInput();
+        HandleAnimations();
         base.FixedUpdate();
         manaController.SetValues(Mana, true);
         hpBarController.SetValues(HP, true);
@@ -120,6 +122,29 @@ public class PlayerController : Entity
         }
     }
 
+    private void HandleAnimations()
+    {
+        if (!isGrounded && !animator.GetBool("IsJumping"))
+        {
+            animator.SetBool("IsJumping", true);
+            animator.SetBool("IsRunning", false);
+        }
+        else if(isGrounded)
+        {
+            animator.SetBool("IsJumping", false);
+        }
+
+        if(isRunning && !animator.GetBool("IsRunning") && !animator.GetBool("IsJumping"))
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else if(!isRunning)
+        {
+            animator.SetBool("IsRunning", false);
+        }
+    }
+
+
     private void HandleInput()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -147,20 +172,27 @@ public class PlayerController : Entity
         {
             rb.gravityScale = gravityNormal * gravityMultNoUpKey;
         }
+
+
         bool activelyMoving = false;
         if (right && !left)
         {
+            isRunning = true;
             isWatchingRight = false;
             OnMove(false);
             activelyMoving = true;
         }
-        if (left && !right)
+        else if (left && !right)
         {
+            isRunning = true;
             isWatchingRight = true;
             OnMove(true);
             activelyMoving = true;
         }
-
+        else
+        {
+            isRunning = false;
+        }
         OnMoveDrag(activelyMoving);
     }
 
