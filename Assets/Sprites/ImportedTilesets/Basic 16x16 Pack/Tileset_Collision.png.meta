@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tileset_Collision_0: 2973153444438393181
+      Tileset_Collision_1: 4207399917307420667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
