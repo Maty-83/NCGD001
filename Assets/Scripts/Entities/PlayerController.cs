@@ -45,6 +45,7 @@ public class PlayerController : Entity
 
     private int reloadTime = 0;
     private float score = 0;
+
     public float Score
     {
         get
@@ -152,7 +153,7 @@ public class PlayerController : Entity
 
     private void HandleInput()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius*Mathf.Min(transform.localScale.x, transform.localScale.y), groundLayer);//Messy fix for wall climbing: We adjusted the spherecast and need to adjust for scaling.
 
         bool left, right, up, shoot, melee;
         //Old trick: You want to get key inputs all at once so it isn't inconsistent.
