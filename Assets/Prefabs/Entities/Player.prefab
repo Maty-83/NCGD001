@@ -121,7 +121,7 @@ MonoBehaviour:
   jumpSpeed: 26
   gravityNormal: 3
   gravityMultNoUpKey: 2
-  maxFallSpeed: 30
+  maxFallSpeed: 35
   doNotReduceGravityGoingUp: 1
   groundCheck: {fileID: 5658354648373703726}
   groundLayer:
