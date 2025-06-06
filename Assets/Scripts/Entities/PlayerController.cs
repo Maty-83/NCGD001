@@ -36,7 +36,7 @@ public class PlayerController : Entity
 
     [Header("Audio Clips")]
     public AudioClip WoundedAudioClip;
-    public AudioClip DeathAudioClip;
+    public AudioClip BulletBounce;
 
     private float moveInput;
     private bool isGrounded;
@@ -65,6 +65,11 @@ public class PlayerController : Entity
 
         hpBarController.SetValues(HP, true, 0, HP);
         manaController.SetValues(Mana, true, 0, Mana);
+
+        if(GameManager.LastCheckpoint.y != float.NegativeInfinity)
+        {
+            transform.position = GameManager.LastCheckpoint;
+        }
     }
 
     private new void Update()
@@ -178,14 +183,14 @@ public class PlayerController : Entity
         if (right && !left)
         {
             isRunning = true;
-            isWatchingRight = false;
+            IsMovingRight = false;
             OnMove(false);
             activelyMoving = true;
         }
         else if (left && !right)
         {
             isRunning = true;
-            isWatchingRight = true;
+            IsMovingRight = true;
             OnMove(true);
             activelyMoving = true;
         }
@@ -263,13 +268,14 @@ public class PlayerController : Entity
     public override void OnMelee(Weapon weapon, Vector2 dir)
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weapon.Range);
+        Vector2 forward = IsMovingRight ? Vector2.right : Vector2.left;
 
-        foreach(var hit in hits)
+        foreach (var hit in hits)
         {
             Vector3 objectDirection = ( hit.transform.position - transform.position ).normalized;
-            float angleTo = Vector3.Angle(transform.forward, objectDirection);
+            float angleTo = Vector3.Angle(forward, objectDirection);
 
-            if (angleTo > 180 || angleTo < 360)
+            if (angleTo <= 90f)
             {
                 var controller = hit.GetComponent<ProjectileController>();
                 if (controller != null)
@@ -279,6 +285,7 @@ public class PlayerController : Entity
                     controller.rBody.linearVelocityY = 0;
                     controller.Direction = objectDirection;
                     controller.Shoot();
+                    AudioSource.PlayOneShot(BulletBounce);
                 }
             }
         }
@@ -286,12 +293,12 @@ public class PlayerController : Entity
         base.OnMelee(weapon, dir);
     }
 
-    public override void OnDeath()
+    public override void OnDeath(bool destroy = false)
     {
-        AudioSource.clip = DeathAudioClip;
-        AudioSource.loop = false;
-        AudioSource.Play();
+        GameManager.PlayerDeathPosition = transform.position;
+        GameManager.DroppedScore = Score;
 
+        base.OnDeath(false);
         GameManager.Instance.EndPanel.Invoke("You died!", "Restart", () =>
         {
             string currentSceneName = SceneManager.GetActiveScene().name;

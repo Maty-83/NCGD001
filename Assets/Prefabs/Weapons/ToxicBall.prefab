@@ -25,6 +25,14 @@ PrefabInstance:
       value: ToxicBall
       objectReference: {fileID: 0}
     - target: {fileID: 7670486629499932020, guid: 128246ed4cff4b64593f29e735df73d1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670486629499932020, guid: 128246ed4cff4b64593f29e735df73d1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670486629499932020, guid: 128246ed4cff4b64593f29e735df73d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}

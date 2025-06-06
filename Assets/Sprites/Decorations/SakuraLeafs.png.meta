@@ -1,0 +1,880 @@
+fileFormatVersion: 2
+guid: 51021be10ad8aa8478e1ab5845a2bd89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6790204412751183009
+    second: SakuraLeafs_0
+  - first:
+      213: 519434034065765687
+    second: SakuraLeafs_1
+  - first:
+      213: 3344930431487665737
+    second: SakuraLeafs_2
+  - first:
+      213: -5145977179907112741
+    second: SakuraLeafs_3
+  - first:
+      213: -8284796503687908136
+    second: SakuraLeafs_4
+  - first:
+      213: 8539270086383269684
+    second: SakuraLeafs_5
+  - first:
+      213: 2178560287071518048
+    second: SakuraLeafs_6
+  - first:
+      213: 53679581272218299
+    second: SakuraLeafs_7
+  - first:
+      213: 6079913651279426321
+    second: SakuraLeafs_8
+  - first:
+      213: 299024390656710814
+    second: SakuraLeafs_9
+  - first:
+      213: -141270452685144671
+    second: SakuraLeafs_10
+  - first:
+      213: 5644390603692203664
+    second: SakuraLeafs_11
+  - first:
+      213: -3901350332696022259
+    second: SakuraLeafs_12
+  - first:
+      213: 177684649178822245
+    second: SakuraLeafs_13
+  - first:
+      213: -2507839950708204945
+    second: SakuraLeafs_14
+  - first:
+      213: 8139278264057290501
+    second: SakuraLeafs_15
+  - first:
+      213: -2450089429697954180
+    second: SakuraLeafs_16
+  - first:
+      213: 2373341790843130399
+    second: SakuraLeafs_17
+  - first:
+      213: -175610707369035704
+    second: SakuraLeafs_18
+  - first:
+      213: -4598864522438060335
+    second: SakuraLeafs_19
+  - first:
+      213: -7085398709715397415
+    second: SakuraLeafs_20
+  - first:
+      213: 5577752896448865972
+    second: SakuraLeafs_21
+  - first:
+      213: -8403586870824736413
+    second: SakuraLeafs_22
+  - first:
+      213: 948501661599529154
+    second: SakuraLeafs_23
+  - first:
+      213: 397543926681079377
+    second: SakuraLeafs_24
+  - first:
+      213: -6388587244056587485
+    second: SakuraLeafs_25
+  - first:
+      213: -7632597453037597648
+    second: SakuraLeafs_26
+  - first:
+      213: -9063508550587522259
+    second: SakuraLeafs_27
+  - first:
+      213: -5005216916377957795
+    second: SakuraLeafs_28
+  - first:
+      213: 70832286550711445
+    second: SakuraLeafs_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SakuraLeafs_0
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 2326
+        width: 56
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acf256ffe6ab3e50800000000000000
+      internalID: 6790204412751183009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_1
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 2325
+        width: 61
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735fcbc7086653700800000000000000
+      internalID: 519434034065765687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 2414
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946673751849b6e20800000000000000
+      internalID: 3344930431487665737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 2332
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0ce59f401d598b0800000000000000
+      internalID: -5145977179907112741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_4
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2332
+        width: 82
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4b841897d760d80800000000000000
+      internalID: -8284796503687908136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_5
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 2332
+        width: 79
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4377efb86e4918670800000000000000
+      internalID: 8539270086383269684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_6
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 2332
+        width: 82
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dbba0e90dcb3e10800000000000000
+      internalID: 2178560287071518048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2206
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba1c657b45beb000800000000000000
+      internalID: 53679581272218299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2206
+        width: 96
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113fe89c041306450800000000000000
+      internalID: 6079913651279426321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2206
+        width: 100
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9855485919562400800000000000000
+      internalID: 299024390656710814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 2206
+        width: 102
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad7172954b1a0ef0800000000000000
+      internalID: -141270452685144671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2206
+        width: 99
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e50aa4957e45e40800000000000000
+      internalID: 5644390603692203664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_12
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2206
+        width: 99
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d033d4bea8e9bd9c0800000000000000
+      internalID: -3901350332696022259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_13
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 2171
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566f75c3f33477200800000000000000
+      internalID: 177684649178822245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_14
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 2171
+        width: 87
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a11881adc523dd0800000000000000
+      internalID: -2507839950708204945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_15
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 2171
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f5139157684f070800000000000000
+      internalID: 8139278264057290501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_16
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 2172
+        width: 86
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ef9e215a88ffdd0800000000000000
+      internalID: -2450089429697954180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_17
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 2171
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f125bc5c8cdcfe020800000000000000
+      internalID: 2373341790843130399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_18
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 2171
+        width: 82
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8487388fdfa109df0800000000000000
+      internalID: -175610707369035704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_19
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 2030
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6dee9251d8d20c0800000000000000
+      internalID: -4598864522438060335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_20
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 2093
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4176fd96b9bad90800000000000000
+      internalID: -7085398709715397415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_21
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 2030
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6adb505b8286d40800000000000000
+      internalID: 5577752896448865972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_22
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 2093
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369ea5dd346706b80800000000000000
+      internalID: -8403586870824736413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_23
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 2030
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8f1806c31c92d00800000000000000
+      internalID: 948501661599529154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_24
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2030
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e8074581c548500800000000000000
+      internalID: 397543926681079377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_25
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 2093
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3235a6defbd2757a0800000000000000
+      internalID: -6388587244056587485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_26
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 2030
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c84224e01931690800000000000000
+      internalID: -7632597453037597648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_27
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2030
+        width: 91
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23e3876ef2f73280800000000000000
+      internalID: -9063508550587522259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_28
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1369
+        width: 802
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a048bbbb5e98ab0800000000000000
+      internalID: -5005216916377957795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraLeafs_29
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 983
+        width: 802
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cdb7ed695abf000800000000000000
+      internalID: 70832286550711445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

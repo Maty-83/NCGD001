@@ -73,14 +73,21 @@ public class ProjectileController : MonoBehaviour, IObjectController, IProjectil
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (TTL < 0)
         {
             Destroy();
+            return;
         }
-        TTL-=Time.deltaTime;
+
+        TTL -= Time.deltaTime;
+
+        if (rBody != null && rBody.linearVelocity.sqrMagnitude > 0.01f)
+        {
+            float angle = Mathf.Atan2(rBody.linearVelocity.y, rBody.linearVelocity.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
     }
 
 

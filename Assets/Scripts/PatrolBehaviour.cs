@@ -1,3 +1,4 @@
+using Assets.Scripts.Entities;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,9 +18,11 @@ public class PatrolBehaviour : MonoBehaviour
     private bool MoveInReverse = false;
     private float WaitTimeRemaining = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private BasicEnemyController enemyController;
+
     void Start()
     {
-        
+        enemyController = gameObject.GetComponent<BasicEnemyController>();
     }
 
     // Update is called once per frame
@@ -105,6 +108,14 @@ public class PatrolBehaviour : MonoBehaviour
 
     void MoveInDir(Vector3 dir, float distance)
     {
+        if(enemyController != null)
+        {
+            if(dir.x < 0)
+                enemyController.IsMovingRight = false;
+            else
+                enemyController.IsMovingRight=true;
+        }
+
         transform.position += dir * distance/Mathf.Abs(dir.magnitude);//A slightly convoluted way of allowing movement in any direction without normalization potentially aliasing vectors.
     }
 

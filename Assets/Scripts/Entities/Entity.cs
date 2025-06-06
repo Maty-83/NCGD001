@@ -5,6 +5,7 @@ using Assets.Helpers.Enums;
 using Assets.Scripts.Objects.ScriptableObjects;
 using Assets.Scripts.Objects.Spells;
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Assets.Scripts.Entities
 {
@@ -12,7 +13,7 @@ namespace Assets.Scripts.Entities
     {
         [Header("Common entity settings")]
         [SerializeField] public AudioSource AudioSource;
-        [SerializeField] public float HP = 100; 
+        [SerializeField] public float HP = 100;
         [SerializeField] public float Mana = 100;
         [SerializeField] public float ManaRecoverySpeed = 0.05f;
         [SerializeField] public float ShootKnockbackForce = 10f;
@@ -26,57 +27,78 @@ namespace Assets.Scripts.Entities
         public float minTimeBetweenMelee = 0.4f;
         internal float curTimeBetweenAttacks = 0;
 
+        [Header("Audio Clips")]
+        public AudioClip DeathAudioClip;
+
 
         internal bool isWatchingRight = false;
-        public Dictionary<DamageType, int> Resistancies {  get; set; }
+        public Dictionary<DamageType, int> Resistancies { get; set; }
         public List<Weapon> OwnedWeapons { get; set; }
-        public Dictionary<KeyCode, Weapon> BindedWeapons {  get; set; }
+        public Dictionary<KeyCode, Weapon> BindedWeapons { get; set; }
         public List<Weapon> MeleeWeapons { get; private set; }
         public List<Weapon> RangeWeapons { get; private set; }
         public List<Weapon> ProtectiveWeapons { get; private set; }
         public float MaxHP { get; private set; }
         public float MaxMana { get; private set; }
-        public bool IsAlive { get; internal set; } =  true;
+        public bool IsAlive { get; internal set; } = true;
         public bool IsMovingRight { get; internal set; } = true;
 
         internal SpriteRenderer renderer;
         internal Rigidbody2D rb;
         internal Animator animator;
 
-        private Vector3 previousPos = Vector3.zero;
-        private bool sameDir = false;
-
         public virtual void RecieveDamage(IDamager weapon)
         {
             var amount = weapon.BaseDamage;
             if (Resistancies.ContainsKey(weapon.Type))
             {
-                amount = amount * (1/Resistancies[weapon.Type] );
+                amount = amount * ( 1 / Resistancies[weapon.Type] );
             }
 
             HP -= amount;
         }
 
-        public virtual void OnDeath()
+        public virtual void OnDeath(bool destroy = true)
         {
-            Destroy(gameObject);
-            //DestroyWithAnimation();
+            if (IsAlive)
+            {
+                if (DeathAudioClip != null)
+                {
+                    AudioSource.clip = DeathAudioClip;
+                    AudioSource.loop = false;
+                    AudioSource.Play();
+                }
+                StartCoroutine(HandleDeath(destroy));
+            }
         }
 
-        public void DestroyWithAnimation()
+        private IEnumerator HandleDeath(bool destroy)
         {
-            animator.SetBool("IsAlive", false);
-            StartCoroutine(WaitForAnimationAndDestroy());
+            IsAlive = false;
+
+            animator.SetTrigger("Die");
+            yield return new WaitForSeconds(GetAnimationLength("Death"));
+
+            if(destroy)
+                Destroy(gameObject);
         }
 
-        IEnumerator WaitForAnimationAndDestroy()
+        float GetAnimationLength(string animationName)
         {
-            // Wait for the current state's duration
             AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-            yield return new WaitForSeconds(stateInfo.length); // Not always safe if the animation hasn't changed yet
+            int stateHash = stateInfo.shortNameHash;
 
-            Destroy(gameObject);
+            foreach (var clip in animator.runtimeAnimatorController.animationClips)
+            {
+                if (Animator.StringToHash(clip.name) == stateHash)
+                {
+                    return clip.length;
+                }
+            }
+
+            return 0f;
         }
+
 
         internal void Start()
         {
@@ -93,16 +115,14 @@ namespace Assets.Scripts.Entities
             renderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
 
-            previousPos = transform.position;
-
             foreach (var weapon in DefaultWeapons)
             {
                 BindedWeapons.Add(weapon.Binding, weapon);
-                if(weapon.WeaponType == WeaponType.Melee)
+                if (weapon.WeaponType == WeaponType.Melee)
                     MeleeWeapons.Add(weapon);
-                else if(weapon.WeaponType == WeaponType.Range)
+                else if (weapon.WeaponType == WeaponType.Range)
                     RangeWeapons.Add(weapon);
-                else if(weapon.WeaponType ==  WeaponType.Protective)
+                else if (weapon.WeaponType == WeaponType.Protective)
                     ProtectiveWeapons.Add(weapon);
             }
         }
@@ -133,7 +153,7 @@ namespace Assets.Scripts.Entities
                     if (curTimeBetweenAttacks > minTimeBetweenMelee)
                     {
                         Vector2 dir = Vector2.left;
-                        if (isWatchingRight)
+                        if (IsMovingRight)
                             dir = Vector2.right;
 
                         OnMelee(weapon.Value, dir);
@@ -159,7 +179,7 @@ namespace Assets.Scripts.Entities
                 }
             }
 
-            if(MaxMana > Mana)
+            if (MaxMana > Mana)
             {
                 Mana += ManaRecoverySpeed;
             }
@@ -174,7 +194,7 @@ namespace Assets.Scripts.Entities
 
             var instance = Instantiate(weapon.Prefab);
             instance.transform.position = gameObject.transform.position;
-            var controller = instance.GetComponent<ProjectileController>();        
+            var controller = instance.GetComponent<ProjectileController>();
 
             controller.Init(gameObject,
                 weapon,
@@ -182,7 +202,7 @@ namespace Assets.Scripts.Entities
                 new Vector2(dir.x, dir.y));
 
             animator.SetTrigger("Shoot");
-            MakeWeaponSound(instance, weapon);
+            MakeWeaponSound(weapon);
             controller.Shoot();
             ShootKnockBack(dir * -1, ShootKnockbackForce);
             curTimeBetweenAttacks = 0;
@@ -195,22 +215,28 @@ namespace Assets.Scripts.Entities
 
         public virtual void OnMelee(Weapon weapon, Vector2 dir)
         {
-            var hits = Physics2D.RaycastAll(transform.position, IsMovingRight ? Vector2.right : Vector2.left, weapon.Range);
-            Debug.DrawLine(transform.position, dir * 10f, Color.red);
+            Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weapon.Range);
+            Vector2 forward = IsMovingRight ? Vector2.right : Vector2.left;
+
             animator.SetTrigger("Melee");
 
-            if (hits.Length != 0)
+            foreach (var hit in hits)
             {
-                foreach (var hit in hits)
+                Vector3 objectDirection = ( hit.transform.position - transform.position ).normalized;
+                float angleTo = Vector3.Angle(forward, objectDirection);
+
+                if (angleTo <= 90f)
                 {
-                    if (hit.collider.gameObject == gameObject)
+                    if (hit.gameObject == gameObject)
                         continue;
 
-                    var entity = hit.rigidbody.gameObject.GetComponent<Entity>();
-                    if(entity != null)
+                    var entity = hit.gameObject.GetComponent<Entity>();
+                    if (entity != null)
                         entity.RecieveDamage(weapon);
                 }
             }
+
+            MakeWeaponSound(weapon);
             curTimeBetweenAttacks = 0;
         }
 
@@ -223,11 +249,11 @@ namespace Assets.Scripts.Entities
                 instance.transform.position.z);
 
             instance.GetComponent<IProtectiveSpell>().Cast(this, weapon);
-            MakeWeaponSound(instance, weapon);
+            MakeWeaponSound(weapon);
             curTimeBetweenAttacks = 0;
         }
 
-        public virtual void MakeWeaponSound(GameObject instance, Weapon weapon)
+        public virtual void MakeWeaponSound(Weapon weapon)
         {
             if (weapon.Sound == null)
                 return;
@@ -241,19 +267,10 @@ namespace Assets.Scripts.Entities
             if (renderer == null)
                 return;
 
-            if(rb.linearVelocityX == 0)
-            {
-                if((previousPos - transform.position).x < - 0.1)
-                    renderer.flipX = false;
-                else if (( previousPos - transform.position ).x > 0.1)
-                    renderer.flipX = true;
-            }
-            else if (rb.linearVelocityX > 1)
+            if (IsMovingRight)
                 renderer.flipX = false;
-            else if (rb.linearVelocityX < 1)
+            else
                 renderer.flipX = true;
-
-            previousPos = transform.position;
         }
     }
 }

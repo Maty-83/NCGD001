@@ -78,7 +78,7 @@ namespace Assets.Scripts.Entities
             timer = HealthBarTimer;
         }
 
-        public override void OnDeath()
+        public override void OnDeath(bool destroy = true)
         {
             base.OnDeath();
             var player = GameManager.Instance.PlayerController;

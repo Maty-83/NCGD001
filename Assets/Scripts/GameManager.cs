@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Objects.ScriptableObjects;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,12 +15,17 @@ namespace Assets.Scripts
         [SerializeField] public SpellPanel SpellPanel;
         [SerializeField] public PlayerController PlayerController;
         [SerializeField] public List<Weapon> damagers = new List<Weapon>();
+        [SerializeField] public GameObject PlayerDeathPlacePrefab;
 
         public CameraController Camera { get; set; }
         //public BackgroundController Background { get; set; }
         public Dictionary<int, IObjectController> ActiveObjects { get; set; }
         public Dictionary<int, GameObject> ActivePlayers { get; set; }
 
+
+        public static Vector3 PlayerDeathPosition = Vector3.negativeInfinity;
+        public static Vector3 LastCheckpoint = Vector3.negativeInfinity;
+        public static float DroppedScore = 0;
 
         public void Clear()
         {
@@ -70,6 +76,17 @@ namespace Assets.Scripts
             ActiveObjects = new Dictionary<int, IObjectController>();
             ActivePlayers = new Dictionary<int, GameObject> { };
             damagers = damagers.OrderBy(x => x.BuyCost).ToList();
+        }
+
+        private void Start()
+        {
+            if (PlayerDeathPosition.y != float.NegativeInfinity)
+            {
+                var controller = Instantiate(PlayerDeathPlacePrefab).GetComponent<SoulsDropController>();
+                controller.gameObject.transform.position = new Vector3(PlayerDeathPosition.x, PlayerDeathPosition.y, 0);
+                if (controller != null)
+                    controller.Init(DroppedScore);
+            }
         }
     }
 }
