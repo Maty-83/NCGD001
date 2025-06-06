@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 5461004825411389311, guid: 5721931f0d043444a80aa2f6b717da1e, type: 3}
   PreviewImage: {fileID: -2113586774, guid: c2dc8677a54bf724f9c659e7510c1b7f, type: 3}
+  Sound: {fileID: 0}
   Range: 0
-  Binding: 0
+  Binding: 55
   WeaponType: 2
-  ManaCost: 50
+  ManaCost: 30
   Decription: You can restore 20 health with this spell.
   BuyCost: 200
   DamageType: 0

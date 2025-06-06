@@ -339,7 +339,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f77209897b0a10648a9961582959ebfe, type: 2}
   - {fileID: 11400000, guid: 8986c73f2a9e330498c305f0e21d27b7, type: 2}
   - {fileID: 11400000, guid: e66003d319434f94a951bfcdbc86462b, type: 2}
-  - {fileID: 11400000, guid: 30041241edc57144683e3859b804dcd3, type: 2}
   PlayerDeathPlacePrefab: {fileID: 0}
 --- !u!1 &105735862
 GameObject:
@@ -111961,11 +111960,19 @@ PrefabInstance:
       objectReference: {fileID: 2000152085}
     - target: {fileID: 341638424339064107, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
       propertyPath: groundCheckRadius
-      value: 1.5
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 2711612223485771261, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658354648373703726, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658354648373703726, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 5658354648373703726, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
       propertyPath: m_LocalPosition.x
