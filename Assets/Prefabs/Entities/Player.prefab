@@ -196,12 +196,12 @@ MonoBehaviour:
   AudioSource: {fileID: 64954771372592039}
   HP: 100
   Mana: 100
-  ManaRecoverySpeed: 0.05
+  ManaRecoverySpeed: 0.1
   ShootKnockbackForce: 450
   DefaultWeapons:
   - {fileID: 11400000, guid: 16ae2ca8d053d5547941ace178934451, type: 2}
   - {fileID: 11400000, guid: 8964d319973db5d40a53ca5c14d5ec45, type: 2}
-  minTimeBetweenBullets: 0.2
+  minTimeBetweenBullets: 0.3
   minTimeBetweenMelee: 0.4
   DeathAudioClip: {fileID: 8300000, guid: aa8c8fd04cf370f48a17aa18b48414fd, type: 3}
   accelPerSec: 80
