@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CheckPointController.cs" />
+    <Compile Include="Assets\StormTrapController.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\AirBlast.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\Scripts\ScriptableObjects\Weapon.cs" />
     <Compile Include="Assets\Scripts\Objects\Decoration\SakuraLeafController.cs" />
     <Compile Include="Assets\Scripts\UI\BarController.cs" />
+    <Compile Include="Assets\LightningController.cs" />
     <Compile Include="Assets\Scripts\Entities\BasicEnemyController.cs" />
     <Compile Include="Assets\Scripts\IObjectController.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapons\Sword.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Assets\Scripts\Objects\TrapController.cs" />
     <Compile Include="Assets\Scripts\Entities\Behaviour\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\BackgroundController.cs" />
+    <Compile Include="Assets\WaterDropController.cs" />
     <Compile Include="Assets\Helpers\MathHelper.cs" />
     <Compile Include="Assets\Scripts\UI\PauseCanvasControll.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\HealSpell.cs" />
