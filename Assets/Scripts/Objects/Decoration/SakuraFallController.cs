@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Assets.Scripts;
 
 public class SakuraFallController : MonoBehaviour
 {
     [Header("References")]
-    public GameObject LeafPrefab;
+    public List<GameObject> LeafPrefabs;
     public Transform BackgroundLayer;
     public GameObject ParentLayer;
 
@@ -34,7 +35,6 @@ public class SakuraFallController : MonoBehaviour
 
     void Start()
     {
-        CalculateSpawnBounds();
         UpdateWind();
     }
 
@@ -59,9 +59,15 @@ public class SakuraFallController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        CalculateSpawnBounds();
+    }
+
     void CalculateSpawnBounds()
     {
-        Vector3 pos = BackgroundLayer.position;
+        
+        Vector3 pos = GameManager.Instance.Camera.transform.position;
 
         spawnMinX = pos.x - BackgroundWidth;
         spawnMaxX = pos.x + BackgroundWidth;
@@ -94,7 +100,7 @@ public class SakuraFallController : MonoBehaviour
             usedPositions.Add(x);
 
             Vector3 spawnPos = new Vector3(x, spawnY, 0f);
-            GameObject newLeaf = Instantiate(LeafPrefab, spawnPos, Quaternion.identity);
+            GameObject newLeaf = Instantiate(LeafPrefabs[Random.Range(0, LeafPrefabs.Count)], spawnPos, Quaternion.identity);
 
             var windFollower = newLeaf.GetComponent<SakuraLeafController>();
             if (windFollower != null)

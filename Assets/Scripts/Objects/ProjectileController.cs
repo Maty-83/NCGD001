@@ -100,10 +100,15 @@ public class ProjectileController : MonoBehaviour, IObjectController, IProjectil
         if (collided.gameObject == Shooter)
             return;
 
+
         var entity = collided.GetComponent <Entity>();
         if (entity)
         {
             entity.RecieveDamage(Weapon);
+        }
+        else if(collision.isTrigger)
+        {
+            return;
         }
         AfterHit();
     }

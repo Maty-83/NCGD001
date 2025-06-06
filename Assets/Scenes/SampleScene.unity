@@ -573,7 +573,7 @@ RectTransform:
   m_GameObject: {fileID: 121878058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 505}
-  m_LocalScale: {x: 3.2, y: 2.5, z: 1}
+  m_LocalScale: {x: 3.3, y: 2.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 859595380}
@@ -110477,14 +110477,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8311a693536964f9a1aa500821ee18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeafPrefab: {fileID: 2314915396919120391, guid: 94787841a13fb7546959f7879bae38a5, type: 3}
+  LeafPrefabs:
+  - {fileID: 2314915396919120391, guid: 94787841a13fb7546959f7879bae38a5, type: 3}
+  - {fileID: 2314915396919120391, guid: 730f5b62ebc56d046a28f3d361161fab, type: 3}
   BackgroundLayer: {fileID: 620784947}
   ParentLayer: {fileID: 0}
   BackgroundWidth: 20
   BackgroundHeight: 10
   SpawnInterval: 0.5
   MinLeaves: 1
-  MaxLeaves: 5
+  MaxLeaves: 10
   MinHorizontalGap: 0.5
   GlobalWindRange: {x: -1, y: 1}
   WindChangeInterval: 5
