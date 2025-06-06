@@ -1,4 +1,5 @@
 using Assets.Scripts.Entities;
+using Assets.Scripts.Entities.Behaviour;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public enum OnPatrolEndBehaviour
     Loop, Bounce, Kill
 }
 
-public class PatrolBehaviour : MonoBehaviour
+public class PatrolBehaviour : MonoBehaviour, IBehaviour
 {
     public List<Vector3> PatrolPoints;//Should this be vectors or Transforms?
     public List<float> PointDelays;
@@ -19,10 +20,12 @@ public class PatrolBehaviour : MonoBehaviour
     private float WaitTimeRemaining = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private BasicEnemyController enemyController;
+    private Rigidbody2D ownRB;
 
     void Start()
     {
         enemyController = gameObject.GetComponent<BasicEnemyController>();
+        ownRB = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -145,5 +148,11 @@ public class PatrolBehaviour : MonoBehaviour
                 GameObject.Destroy(gameObject);
                 break ;
             }
+    }
+
+    public void Push(Vector2 direction)
+    {
+        WaitTimeRemaining = 0.5f;
+        ownRB.AddForce(direction, ForceMode2D.Force);
     }
 }

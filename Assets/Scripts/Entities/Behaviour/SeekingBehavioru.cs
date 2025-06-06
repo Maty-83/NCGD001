@@ -1,14 +1,16 @@
 using Assets.Scripts;
 using Assets.Scripts.Entities;
+using Assets.Scripts.Entities.Behaviour;
 using UnityEngine;
 
-public class SeekingBehaviour : MonoBehaviour
+public class SeekingBehaviour : MonoBehaviour, IBehaviour
 {
     public bool enableTracking;
     public float maxSpeed;
     public GameObject trackedGameObject;
     public float maxSeekStartDist;
 
+    private float Pause = 0.5f;
     private Rigidbody2D ownRB=null;
     private BasicEnemyController enemyController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +25,12 @@ public class SeekingBehaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(Pause > 0)
+        {
+            Pause -= 0.01f;
+            return;
+        }
+
         if (trackedGameObject != null && !enableTracking)
         {
             if ((transform.position - trackedGameObject.transform.position).magnitude <= maxSeekStartDist)
@@ -53,5 +61,12 @@ public class SeekingBehaviour : MonoBehaviour
         {
             Debug.Log("Tracking fail. Either no rigidbody is present, or tracked object not present");
         }
+    }
+
+    public void Push(Vector2 direction)
+    {
+        Pause = 0.5f;
+        ownRB.linearVelocity = new Vector2(0,0);
+        ownRB.AddForce(direction, ForceMode2D.Force);
     }
 }

@@ -64,8 +64,7 @@
     <Compile Include="Assets\CheckPointController.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
-    <Compile Include="Assets\Scripts\PatrolBehaviour.cs" />
-    <Compile Include="Assets\Scripts\SeekingBehavioru.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\AirBlast.cs" />
     <Compile Include="Assets\Scripts\Objects\Decoration\SakuraFallController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Weapon.cs" />
     <Compile Include="Assets\Scripts\Objects\Decoration\SakuraLeafController.cs" />
@@ -76,6 +75,7 @@
     <Compile Include="Assets\Scripts\UI\EndGamePanelController.cs" />
     <Compile Include="Assets\Scripts\Enviroment\CameraController.cs" />
     <Compile Include="Assets\Scripts\Objects\TrapController.cs" />
+    <Compile Include="Assets\Scripts\Entities\Behaviour\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\BackgroundController.cs" />
     <Compile Include="Assets\Helpers\MathHelper.cs" />
     <Compile Include="Assets\Scripts\UI\PauseCanvasControll.cs" />
@@ -84,9 +84,11 @@
     <Compile Include="Assets\Scripts\Objects\Weapons\Gun.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
+    <Compile Include="Assets\Scripts\Entities\Behaviour\IBehaviour.cs" />
     <Compile Include="Assets\Scripts\Objects\IProjectile.cs" />
     <Compile Include="Assets\Scripts\UI\MagicPanelController.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
+    <Compile Include="Assets\Scripts\Entities\Behaviour\SeekingBehavioru.cs" />
     <Compile Include="Assets\Scripts\Objects\ProjectileController.cs" />
     <Compile Include="Assets\Scripts\UI\SpellPanelController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

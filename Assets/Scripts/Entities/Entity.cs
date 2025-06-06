@@ -6,6 +6,7 @@ using Assets.Scripts.Objects.ScriptableObjects;
 using Assets.Scripts.Objects.Spells;
 using System.Collections;
 using System.Security.Cryptography.X509Certificates;
+using Assets.Scripts.Objects;
 
 namespace Assets.Scripts.Entities
 {
@@ -194,7 +195,7 @@ namespace Assets.Scripts.Entities
 
             var instance = Instantiate(weapon.Prefab);
             instance.transform.position = gameObject.transform.position;
-            var controller = instance.GetComponent<ProjectileController>();
+            var controller = instance.GetComponent<IProjectile>();
 
             controller.Init(gameObject,
                 weapon,

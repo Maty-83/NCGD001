@@ -86,7 +86,7 @@ public class CameraController : MonoBehaviour, IObjectController
         //    if (FollowTransform == null)
         //        return;
 
-            transform.position = new Vector3(FollowTransform.position.x, FollowTransform.position.y + 3f, transform.position.z);
+            transform.position = new Vector3(FollowTransform.position.x, FollowTransform.position.y + 4f, transform.position.z);
         }
     }
 }

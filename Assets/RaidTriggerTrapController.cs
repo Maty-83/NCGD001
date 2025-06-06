@@ -59,8 +59,13 @@ public class RaidTriggerTrapController : MonoBehaviour
             {
                 var instance = Instantiate(EnemyPrefab);
                 instance.transform.position = position;
-                var seekerController = instance.GetComponent<SeekingBehaviour>();
                 enemies.Add(instance);
+
+                var animator = instance.GetComponent<Animator>();
+                if(animator != null)
+                {
+                    animator.SetTrigger("Spawn");
+                }
             }
         }
     }
