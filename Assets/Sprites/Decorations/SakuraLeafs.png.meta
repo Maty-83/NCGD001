@@ -872,7 +872,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SakuraLeafs_0: 6790204412751183009
+      SakuraLeafs_1: 519434034065765687
+      SakuraLeafs_10: -141270452685144671
+      SakuraLeafs_11: 5644390603692203664
+      SakuraLeafs_12: -3901350332696022259
+      SakuraLeafs_13: 177684649178822245
+      SakuraLeafs_14: -2507839950708204945
+      SakuraLeafs_15: 8139278264057290501
+      SakuraLeafs_16: -2450089429697954180
+      SakuraLeafs_17: 2373341790843130399
+      SakuraLeafs_18: -175610707369035704
+      SakuraLeafs_19: -4598864522438060335
+      SakuraLeafs_2: 3344930431487665737
+      SakuraLeafs_20: -7085398709715397415
+      SakuraLeafs_21: 5577752896448865972
+      SakuraLeafs_22: -8403586870824736413
+      SakuraLeafs_23: 948501661599529154
+      SakuraLeafs_24: 397543926681079377
+      SakuraLeafs_25: -6388587244056587485
+      SakuraLeafs_26: -7632597453037597648
+      SakuraLeafs_27: -9063508550587522259
+      SakuraLeafs_28: -5005216916377957795
+      SakuraLeafs_29: 70832286550711445
+      SakuraLeafs_3: -5145977179907112741
+      SakuraLeafs_4: -8284796503687908136
+      SakuraLeafs_5: 8539270086383269684
+      SakuraLeafs_6: 2178560287071518048
+      SakuraLeafs_7: 53679581272218299
+      SakuraLeafs_8: 6079913651279426321
+      SakuraLeafs_9: 299024390656710814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
