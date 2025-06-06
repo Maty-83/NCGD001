@@ -206,7 +206,7 @@ MonoBehaviour:
   DeathAudioClip: {fileID: 8300000, guid: aa8c8fd04cf370f48a17aa18b48414fd, type: 3}
   accelPerSec: 80
   maxMoveSpeed: 20
-  jumpSpeed: 34
+  jumpSpeed: 35
   gravityNormal: 6
   gravityMultNoUpKey: 2
   maxFallSpeed: 40
@@ -215,7 +215,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  groundCheckRadius: 1.3
+  groundCheckRadius: 1.25
   hpBarController: {fileID: 0}
   manaController: {fileID: 0}
   scoreText: {fileID: 0}
