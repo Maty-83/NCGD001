@@ -1744,6 +1744,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 79195921}
     m_Modifications:
+    - target: {fileID: 1192948544994938641, guid: 642ebb252e6c55f4381484c95afba15a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745691782647567331, guid: 642ebb252e6c55f4381484c95afba15a, type: 3}
+      propertyPath: m_UseDelaunayMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8445711845245097526, guid: 642ebb252e6c55f4381484c95afba15a, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 14704
