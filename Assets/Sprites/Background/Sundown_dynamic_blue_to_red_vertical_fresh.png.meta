@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sundown_dynamic_blue_to_red_vertical_fresh_0: -7224176787297817853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
