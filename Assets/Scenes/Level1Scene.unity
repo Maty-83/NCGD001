@@ -6947,7 +6947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5500686644914601677, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: PatrolPoints.Array.data[1].y
-      value: -38.3
+      value: -25.3
       objectReference: {fileID: 0}
     - target: {fileID: -5500686644914601677, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: PatrolPoints.Array.data[2].x
