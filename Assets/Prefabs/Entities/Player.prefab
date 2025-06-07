@@ -206,7 +206,7 @@ MonoBehaviour:
   DeathAudioClip: {fileID: 8300000, guid: aa8c8fd04cf370f48a17aa18b48414fd, type: 3}
   accelPerSec: 80
   maxMoveSpeed: 20
-  jumpSpeed: 35
+  jumpSpeed: 34
   gravityNormal: 6
   gravityMultNoUpKey: 2
   maxFallSpeed: 40
