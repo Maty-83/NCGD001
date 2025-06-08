@@ -100,7 +100,15 @@ public class SakuraFallController : MonoBehaviour
             usedPositions.Add(x);
 
             Vector3 spawnPos = new Vector3(x, spawnY, 0f);
-            GameObject newLeaf = Instantiate(LeafPrefabs[Random.Range(0, LeafPrefabs.Count)], spawnPos, Quaternion.identity);
+            GameObject newLeaf = null;
+            if (ParentLayer != null)
+            {
+               newLeaf = Instantiate(LeafPrefabs[Random.Range(0, LeafPrefabs.Count)], spawnPos, Quaternion.identity, ParentLayer.transform);
+            }
+            else
+            {
+                newLeaf = Instantiate(LeafPrefabs[Random.Range(0, LeafPrefabs.Count)], spawnPos, Quaternion.identity);
+            }
 
             var windFollower = newLeaf.GetComponent<SakuraLeafController>();
             if (windFollower != null)

@@ -132,17 +132,37 @@ PrefabInstance:
       propertyPath: 'DefaultWeapons.Array.data[1]'
       value: 
       objectReference: {fileID: 11400000, guid: 8964d319973db5d40a53ca5c14d5ec45, type: 2}
+    - target: {fileID: 1329657017107801892, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2067406357437494756, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8591474258609436970, guid: 566900666718e614493f3438e2b232f5, type: 3}
+    - target: {fileID: 5066928797618597652, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066928797618597652, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 5717646113254734274, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5860522697424041340, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: m_Name
       value: SeekerEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624341575800566350, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

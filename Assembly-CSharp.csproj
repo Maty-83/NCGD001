@@ -65,6 +65,7 @@
     <Compile Include="Assets\StormTrapController.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\AirBlast.cs" />
     <Compile Include="Assets\Scripts\Objects\Decoration\SakuraFallController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Weapon.cs" />

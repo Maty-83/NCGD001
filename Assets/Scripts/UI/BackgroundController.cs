@@ -1,4 +1,5 @@
 using Assets.Helpers;
+using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -14,7 +15,9 @@ public class BackgroundController : MonoBehaviour
     [SerializeField] public float MaxIntensity = 0.65f;
     [SerializeField] public float LengthOfTransition = 2;
 
-    public bool HasFinishedTransition {  get; private set; } = false;
+    public bool IsInScaryMode { get; private set; }
+    public bool HasFinishedTransition { get; private set; }
+    public float ScaryTTL { get; private set; } = 0;
 
     private bool transitionToNormal = false;
     private bool transitionToScary = false;
@@ -30,6 +33,16 @@ public class BackgroundController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ScaryTTL > 0)
+        {
+            ScaryTTL -= Time.deltaTime;
+        }
+        else if (ScaryTTL <= 0 && IsInScaryMode)
+        {
+            ScaryTTL = 0;
+            SwitchToNormal();
+        }
+
         if (transitionToNormal)
         {
             actualTransition += Time.deltaTime;
@@ -38,7 +51,7 @@ public class BackgroundController : MonoBehaviour
                 HasFinishedTransition = true;
                 actualTransition = LengthOfTransition;
                 SetTransitionState();
-                transitionToNormal= false;
+                transitionToNormal = false;
                 return;
             }
             SetTransitionState();
@@ -62,19 +75,29 @@ public class BackgroundController : MonoBehaviour
     }
 
 
-    public void SwitchToScary()
+    public void SwitchToScary(float TTL = 10f)
     {
-        HasFinishedTransition = false;
-        transitionToNormal = false;
-        transitionToScary = true;
-        actualTransition = LengthOfTransition;
-        AudioSource.clip = ScaryClip;
-        AudioSource.Play();
+        if (IsInScaryMode)
+        {
+            ScaryTTL += TTL;
+        }
+        else
+        {
+            ScaryTTL = TTL;
+            IsInScaryMode = true;
+            HasFinishedTransition = false;
+            transitionToNormal = false;
+            transitionToScary = true;
+            actualTransition = LengthOfTransition;
+            AudioSource.clip = ScaryClip;
+            AudioSource.Play();
+        }
     }
 
 
     public void SwitchToNormal()
     {
+        IsInScaryMode = false;
         HasFinishedTransition = false;
         transitionToScary = false;
         transitionToNormal = true;
@@ -90,7 +113,7 @@ public class BackgroundController : MonoBehaviour
             MaskLayer.color.r,
             MaskLayer.color.g,
             MaskLayer.color.b,
-            MathHelper.Remap(255 - (255 * remaped ), 255f, 0f, 1f, 0f)
+            MathHelper.Remap(255 - ( 255 * remaped ), 255f, 0f, 1f, 0f)
         );
 
         Light.intensity = 1 * remaped;

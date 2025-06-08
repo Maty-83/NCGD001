@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour, IObjectController
     private int followTransformId;
 
     //Note for the following values: Maximum camera offset for the level made for the alpha is roughly 13.6
+    public float verticalOffset = 4f;
     public float screenshakeMaxOffset = 1.2f;//Fairly light shaking
     public float mouseMaxOffset = 3.4f;
     public float maxSpeedOffset = 3.4f;
@@ -86,7 +87,7 @@ public class CameraController : MonoBehaviour, IObjectController
         //    if (FollowTransform == null)
         //        return;
 
-            transform.position = new Vector3(FollowTransform.position.x, FollowTransform.position.y + 4f, transform.position.z);
+            transform.position = new Vector3(FollowTransform.position.x, FollowTransform.position.y + verticalOffset, transform.position.z);
         }
     }
 }

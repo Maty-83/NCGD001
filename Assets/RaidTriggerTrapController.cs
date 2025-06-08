@@ -9,6 +9,9 @@ public class RaidTriggerTrapController : MonoBehaviour
     [SerializeField] private List<GameObject> Spawners;
     [SerializeField] private GameObject EnemyPrefab;
     [SerializeField] private int EnemiesPerSpawn = 5;
+    [SerializeField] private Animator Animator;
+    [SerializeField] private AudioSource Source;
+    [SerializeField] private AudioClip ScreamClip;
 
 
     private List<GameObject> enemies = new List<GameObject>();
@@ -17,20 +20,12 @@ public class RaidTriggerTrapController : MonoBehaviour
 
     private void Update()
     {
-        if (HasBeenActivated && TTL > 0)
+        if (HasBeenActivated && GameManager.Instance.BackgroundController.ScaryTTL > 0)
         {
             if (GameManager.Instance.BackgroundController.HasFinishedTransition && !HasSpawned)
             {
                 SpawnEnemies();
                 HasSpawned = true;
-            }
-
-            TTL -= Time.deltaTime;
-            if (TTL <= 0)
-            {
-                
-
-                GameManager.Instance.BackgroundController.SwitchToNormal();
             }
         }
     }
@@ -43,6 +38,9 @@ public class RaidTriggerTrapController : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>() == null)
             return;
 
+
+        Animator.SetTrigger("Triggered");
+        Source.PlayOneShot(ScreamClip);
         GameManager.Instance.BackgroundController.SwitchToScary();
         HasBeenActivated = true;
     }
