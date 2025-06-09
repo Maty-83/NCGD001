@@ -19,7 +19,7 @@ MonoBehaviour:
   Binding: 0
   WeaponType: 1
   ManaCost: 90
-  Decription: Some dangerous toxic spell
-  BuyCost: 10000
-  DamageType: 0
-  Damage: 30
+  Decription: A highly dangerous toxic spell!
+  BuyCost: 2000
+  DamageType: 5
+  Damage: 100
