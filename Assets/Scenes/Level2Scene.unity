@@ -81697,6 +81697,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7659325651280178946, guid: 9955988fd1b56c044a71bd0392a79e8b, type: 3}
+      propertyPath: BackgroundHeight
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659325651280178946, guid: 9955988fd1b56c044a71bd0392a79e8b, type: 3}
       propertyPath: LightningMaxInterval
       value: 7
       objectReference: {fileID: 0}
@@ -83236,6 +83240,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 848644522893074352, guid: 1485a2bf7a05d2b41a49b0f835862cd7, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1390437438890727735, guid: 1485a2bf7a05d2b41a49b0f835862cd7, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1654853031724148226, guid: 1485a2bf7a05d2b41a49b0f835862cd7, type: 3}
@@ -87134,6 +87142,10 @@ PrefabInstance:
     - target: {fileID: 7122226239416409540, guid: 9955988fd1b56c044a71bd0392a79e8b, type: 3}
       propertyPath: m_Volume
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659325651280178946, guid: 9955988fd1b56c044a71bd0392a79e8b, type: 3}
+      propertyPath: BackgroundHeight
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 7659325651280178946, guid: 9955988fd1b56c044a71bd0392a79e8b, type: 3}
       propertyPath: LightningMaxInterval
