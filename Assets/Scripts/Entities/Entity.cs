@@ -81,10 +81,12 @@ namespace Assets.Scripts.Entities
             }
         }
 
+        //TODO: fix
         float GetCurrentStateLength()
         {
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-            return stateInfo.length;
+            //AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            //return stateInfo.length;
+            return 0f;
         }
 
         internal void Start()

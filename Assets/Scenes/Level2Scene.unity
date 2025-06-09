@@ -2857,6 +2857,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: Resistances.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 119663a3eeb5cac4a91cba9565642ce8, type: 2}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f1f98c1e31a6164e8f3d94b52578209, type: 2}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 268c9ffff67fac54485a06c09427960d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3287,6 +3303,22 @@ PrefabInstance:
       propertyPath: EnemiesPerSpawn
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: Resistances.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 119663a3eeb5cac4a91cba9565642ce8, type: 2}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f1f98c1e31a6164e8f3d94b52578209, type: 2}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 268c9ffff67fac54485a06c09427960d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86372,9 +86404,25 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: Resistances.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Spawners.Array.data[2]'
       value: 
       objectReference: {fileID: 310003147}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 119663a3eeb5cac4a91cba9565642ce8, type: 2}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f1f98c1e31a6164e8f3d94b52578209, type: 2}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: 'Resistances.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 268c9ffff67fac54485a06c09427960d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
