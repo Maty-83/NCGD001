@@ -6,7 +6,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void OnNewGameClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("StoryTelling");
     }
 
     public void OnQuitClick()
