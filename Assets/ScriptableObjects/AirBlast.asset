@@ -18,9 +18,8 @@ MonoBehaviour:
   Range: -1
   Binding: 49
   WeaponType: 1
-  ManaCost: 10
-  Decription: When you are surrounded by enemies, you can use this spell to gain
-    some breathing room.
+  ManaCost: 30
+  Decription: Not very deadly, but it pushes enemies away!
   BuyCost: 0
   DamageType: 6
-  Damage: 20
+  Damage: 10

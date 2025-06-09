@@ -18,8 +18,8 @@ MonoBehaviour:
   Range: -1
   Binding: 49
   WeaponType: 1
-  ManaCost: 20
-  Decription: Some nice spell with fire!
+  ManaCost: 40
+  Decription: Burn your enemies with a ball of flames!
   BuyCost: 0
   DamageType: 0
-  Damage: 20
+  Damage: 50
