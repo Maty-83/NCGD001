@@ -36,9 +36,9 @@ namespace Assets.Scripts.Entities
         public Dictionary<DamageType, int> Resistancies { get; set; }
         public List<Weapon> OwnedWeapons { get; set; }
         public Dictionary<KeyCode, Weapon> BindedWeapons { get; set; }
-        public List<Weapon> MeleeWeapons { get; private set; }
-        public List<Weapon> RangeWeapons { get; private set; }
-        public List<Weapon> ProtectiveWeapons { get; private set; }
+        public List<Weapon> MeleeWeapons { get; internal set; }
+        public List<Weapon> RangeWeapons { get; internal set; }
+        public List<Weapon> ProtectiveWeapons { get; internal set; }
         public float MaxHP { get; private set; }
         public float MaxMana { get; private set; }
         public bool IsAlive { get; internal set; } = true;

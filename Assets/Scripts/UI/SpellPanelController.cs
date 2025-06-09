@@ -72,6 +72,7 @@ public class SpellPanelController : MonoBehaviour
                 continue;
 
             BindKeyToSpell(key);
+            BindingText.text = $"Bind: {weapon.Binding}";
             return;
         }
     }

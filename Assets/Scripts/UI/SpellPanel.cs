@@ -15,7 +15,17 @@ public class SpellPanel : MonoBehaviour
     [SerializeField] Color skillTreeColorAvalible;
     [SerializeField] Color skillTreeColorUnAvalible;
     [SerializeField] List<CardController> Cards;
- 
+
+
+   private KeyCode[] defaultKeysToCheck = {
+        KeyCode.Alpha1,
+        KeyCode.Alpha2,
+        KeyCode.Alpha3,
+        KeyCode.Alpha4,
+        KeyCode.Alpha5,
+        KeyCode.Alpha6,
+        KeyCode.Alpha7
+    };
 
     public void OnSkillTreeClick()
     {
@@ -26,8 +36,11 @@ public class SpellPanel : MonoBehaviour
         }
     }
 
-    public void UpdatePanel(KeyCode[] avalibleKeys)
+    public void UpdatePanel(KeyCode[] avalibleKeys = null)
     { 
+        if(avalibleKeys == null)
+            avalibleKeys = defaultKeysToCheck;
+
         KeyCode[] sortedKeys = avalibleKeys.OrderBy(k => k.ToString()).ToArray();
         var index = 0;
         foreach (var key in avalibleKeys) 

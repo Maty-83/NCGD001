@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Entities\Behaviour\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\BackgroundController.cs" />
     <Compile Include="Assets\WaterDropController.cs" />
+    <Compile Include="Assets\LevelFinishController.cs" />
     <Compile Include="Assets\Helpers\MathHelper.cs" />
     <Compile Include="Assets\Scripts\UI\PauseCanvasControll.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\HealSpell.cs" />

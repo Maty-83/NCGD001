@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.Entities
 {
-    class BasicEnemyController : Entity
+    public class BasicEnemyController : Entity
     {
         [SerializeField] int HealthBarTimer = 10;
         [SerializeField] BarController barControll = null;

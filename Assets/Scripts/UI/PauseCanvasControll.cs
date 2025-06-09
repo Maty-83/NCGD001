@@ -3,7 +3,8 @@ using UnityEngine;
 public class PauseCanvasControll : MonoBehaviour
 {
     [SerializeField] private PauseMenuController controll;
-    [SerializeField] private UIVolumeController magicPanel;
+    [SerializeField] private MagicPanelController magicPanel;
+    [SerializeField] private UIVolumeController VolumePanel;
 
     public bool isPaused = false;
     private bool isShowingPanel = false;
@@ -12,7 +13,7 @@ public class PauseCanvasControll : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (magicPanel.gameObject.activeSelf && !isShowingPanel)
+            if (VolumePanel.gameObject.activeSelf && !isShowingPanel || magicPanel.gameObject.activeSelf)
                 return;
 
             if (isShowingPanel)
@@ -43,6 +44,6 @@ public class PauseCanvasControll : MonoBehaviour
     public void ShowVolume()
     {
         isShowingPanel = !isShowingPanel;
-        magicPanel.gameObject.SetActive(isShowingPanel);
+        VolumePanel.gameObject.SetActive(isShowingPanel);
     }
 }

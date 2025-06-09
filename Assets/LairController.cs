@@ -4,38 +4,108 @@ using Assets.Scripts.Objects.ScriptableObjects;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LairController : Entity
+public class LairController : BasicEnemyController
 {
     [SerializeField] private GameObject EnemyPrefab;
     [SerializeField] private float SpawnRate;
     [SerializeField] private float TriggerDistance = 1f;
     [SerializeField] private List<GameObject> Spawners;
     [SerializeField] private int EnemiesPerSpawn = 5;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private float FadeDuration = 1f;
 
     private List<GameObject> enemies = new List<GameObject>();
-    private float timer = 0f;
+    private float timer = 5f;
+
+    // Fade variables
+    private bool isFadingOut = false;
+    private float fadeTimer = 0f;
+    private bool pendingDestroy = false;
+    private bool pendingDestroyFlag = false;
 
     public override void OnDeath(bool destroy = true)
     {
+        if (isFadingOut) return;
+
+        isFadingOut = true;
+        pendingDestroy = destroy;
+        fadeTimer = 0f;
+
         for (int i = 0; i < GameManager.Instance.Lairs.Count; i++)
         {
-            if(GameManager.Instance.Lairs[i].GetInstanceID() == gameObject.GetInstanceID())
+            if (GameManager.Instance.Lairs[i].GetInstanceID() == gameObject.GetInstanceID())
+            {
                 GameManager.Instance.Lairs.RemoveAt(i);
+                break;
+            }
         }
-
-        base.OnDeath(destroy);
     }
 
     protected new void Update()
     {
         base.Update();
-        if (timer > SpawnRate && IsPlayerInRange())
+
+        if (isFadingOut)
         {
-            SpawnEnemies();
-            timer = 0f;
+            if (spriteRenderer != null)
+            {
+                fadeTimer += Time.deltaTime;
+                float t = Mathf.Clamp01(fadeTimer / FadeDuration);
+                Color color = spriteRenderer.color;
+                color.a = Mathf.Lerp(1f, 0f, t);
+                spriteRenderer.color = color;
+
+                if (t >= 1f && !pendingDestroyFlag)
+                {
+                    pendingDestroyFlag = true;
+                    base.OnDeath(pendingDestroy);
+                }
+            }
+            else
+            {
+                if (!pendingDestroyFlag)
+                {
+                    pendingDestroyFlag = true;
+                    base.OnDeath(pendingDestroy);
+                }
+            }
+
+            return;
         }
 
-        timer += Time.deltaTime;
+        bool playerInRange = IsPlayerInRange();
+        if (playerInRange)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= SpawnRate && IsSpawnerReady())
+            {
+                SpawnEnemies();
+                timer = 0f;
+            }
+        }
+        else
+        {
+            timer = 0f;
+        }
+    }
+    private bool IsSpawnerReady()
+    {
+        if (Spawners == null || Spawners.Count == 0)
+            return false;
+
+        var firstSpawner = Spawners[0];
+        Collider2D[] hits = Physics2D.OverlapCircleAll(firstSpawner.transform.position, 1f);
+
+        foreach (var hit in hits)
+        {
+            if (hit.gameObject.CompareTag("Enemy"))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private bool IsPlayerInRange()
@@ -46,7 +116,8 @@ public class LairController : Entity
             if (hit.gameObject == gameObject)
                 continue;
 
-            return hit.gameObject.GetComponent<PlayerController>() != null;
+            if(hit.gameObject.GetComponent<PlayerController>() != null)
+                return true;
         }
 
         return false;

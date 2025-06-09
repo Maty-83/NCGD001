@@ -37,6 +37,7 @@ public class PlayerController : Entity
     [Header("Audio Clips")]
     public AudioClip WoundedAudioClip;
     public AudioClip BulletBounce;
+    public AudioClip RecievedDamage;
 
     private float moveInput;
     private bool isGrounded;
@@ -70,6 +71,12 @@ public class PlayerController : Entity
         if(GameManager.LastCheckpoint.y != float.NegativeInfinity)
         {
             transform.position = GameManager.LastCheckpoint;
+            OwnedWeapons = GameManager.Player.OwnedWeapons;
+            BindedWeapons = GameManager.Player.BindedWeapons;
+            MeleeWeapons = GameManager.Player.MeleeWeapons;
+            RangeWeapons = GameManager.Player.RangeWeapons;
+            ProtectiveWeapons = GameManager.Player.ProtectiveWeapons;
+            GameManager.Instance.SpellPanel.UpdatePanel();
         }
     }
 
@@ -294,8 +301,14 @@ public class PlayerController : Entity
         base.OnMelee(weapon, dir);
     }
 
+    public override void RecieveDamage(IDamager weapon)
+    {
+        AudioSource.PlayOneShot(RecievedDamage);
+        base.RecieveDamage(weapon);
+    }
     public override void OnDeath(bool destroy = false)
     {
+        GameManager.Player = this;
         GameManager.PlayerDeathPosition = transform.position;
         GameManager.DroppedScore = Score;
 
