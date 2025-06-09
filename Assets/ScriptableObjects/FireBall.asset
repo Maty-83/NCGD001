@@ -19,7 +19,8 @@ MonoBehaviour:
   Binding: 49
   WeaponType: 1
   ManaCost: 40
-  Decription: Burn your enemies with a ball of flames!
+  Decription: 'Fireball: Burn your enemies with a ball of flames!\n Cost:40 Mana
+    Damage: 50'
   BuyCost: 0
   DamageType: 0
   Damage: 50

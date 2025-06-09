@@ -16,10 +16,11 @@ MonoBehaviour:
   PreviewImage: {fileID: -2113586774, guid: c2dc8677a54bf724f9c659e7510c1b7f, type: 3}
   Sound: {fileID: 8300000, guid: 950ddb9690d0d624e8cf5fb8265e4a12, type: 3}
   Range: 0
-  Binding: 55
+  Binding: 50
   WeaponType: 2
   ManaCost: 30
-  Decription: You can restore 20 health with this spell.
+  Decription: 'Heal: Because a healthy demon slayer kills more demons!\n Cost: 30
+    Mana Healing: 20 HP'
   BuyCost: 200
   DamageType: 0
   Damage: 0

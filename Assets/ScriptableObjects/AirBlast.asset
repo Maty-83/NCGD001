@@ -19,7 +19,8 @@ MonoBehaviour:
   Binding: 49
   WeaponType: 1
   ManaCost: 30
-  Decription: Not very deadly, but it pushes enemies away!
-  BuyCost: 0
+  Decription: 'Air Blast: Not very deadly, but it pushes enemies away!\nCost: 30
+    Mana Damage:10 Special: Pushes enemies'
+  BuyCost: 500
   DamageType: 6
   Damage: 10
