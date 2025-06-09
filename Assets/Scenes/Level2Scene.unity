@@ -83385,6 +83385,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6571348349070954726, guid: 1485a2bf7a05d2b41a49b0f835862cd7, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 920412377}
     - target: {fileID: 7051648842902938151, guid: 1485a2bf7a05d2b41a49b0f835862cd7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -84926,7 +84930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5500686644914601677, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: PointDelays.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -5500686644914601677, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: PatrolPoints.Array.size
@@ -84942,7 +84946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5500686644914601677, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: 'PointDelays.Array.data[2]'
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5500686644914601677, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: PatrolPoints.Array.data[0].x
