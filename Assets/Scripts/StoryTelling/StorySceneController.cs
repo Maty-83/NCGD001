@@ -137,7 +137,7 @@ public class StorySceneController : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Level1Scene");
         }
     }
 

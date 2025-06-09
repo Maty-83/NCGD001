@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Objects.ScriptableObjects;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,9 @@ namespace Assets.Scripts
         [SerializeField] public List<Weapon> damagers = new List<Weapon>();
         [SerializeField] public GameObject PlayerDeathPlacePrefab;
 
+        [SerializeField] public List<LairController> Lairs = new List<LairController>();
+        [SerializeField] public TMP_Text text;
+
         public CameraController Camera { get; set; }
         //public BackgroundController Background { get; set; }
         public Dictionary<int, IObjectController> ActiveObjects { get; set; }
@@ -26,6 +30,15 @@ namespace Assets.Scripts
         public static Vector3 PlayerDeathPosition = Vector3.negativeInfinity;
         public static Vector3 LastCheckpoint = Vector3.negativeInfinity;
         public static float DroppedScore = 0;
+
+        public void DestroyLair(GameObject lair)
+        {
+            for (int i = 0; i < GameManager.Instance.Lairs.Count; i++)
+            {
+                if (GameManager.Instance.Lairs[i].GetInstanceID() == lair.GetInstanceID())
+                    GameManager.Instance.Lairs.RemoveAt(i);
+            }
+        }
 
         public void Clear()
         {

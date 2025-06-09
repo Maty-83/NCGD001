@@ -78,6 +78,7 @@
     <Compile Include="Assets\UIVolumeController.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapons\Sword.cs" />
     <Compile Include="Assets\Scripts\UI\EndGamePanelController.cs" />
+    <Compile Include="Assets\LairController.cs" />
     <Compile Include="Assets\Scripts\Enviroment\CameraController.cs" />
     <Compile Include="Assets\Scripts\Objects\TrapController.cs" />
     <Compile Include="Assets\Scripts\Entities\Behaviour\PatrolBehaviour.cs" />
