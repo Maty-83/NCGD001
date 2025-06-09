@@ -34,10 +34,10 @@ namespace Assets.Scripts.Objects.Spells
 
         public void Cast(Entity caster, ScriptableObjects.Weapon spell)
         {
-            if (caster.HP + 20 > caster.MaxHP)
+            if (caster.HP + 50 > caster.MaxHP)
                 caster.HP = caster.MaxHP;
             else
-                caster.HP += 20;
+                caster.HP += 50;
 
             casted = true;
             Caster = caster;

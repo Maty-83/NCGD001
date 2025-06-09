@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
+  m_Name: BulletProtection
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 5461004825411389311, guid: f74b659e647e44f4d80b1b63b61caf4d, type: 3}
+  PreviewImage: {fileID: 5202340993051365280, guid: 331380bbd58907449ae5b1906a38ed5c, type: 3}
+  Sound: {fileID: 8300000, guid: 950ddb9690d0d624e8cf5fb8265e4a12, type: 3}
+  Range: 0
+  Binding: 55
+  WeaponType: 2
+  ManaCost: 70
+  Decription: With this spell you gain 70% protection against bullets.
+  BuyCost: 200
+  DamageType: 0
+  Damage: 0

@@ -1,6 +1,6 @@
-﻿using System.Threading;
+﻿using Assets.Scripts.ScriptableObjects;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.Entities
 {
@@ -10,6 +10,7 @@ namespace Assets.Scripts.Entities
         [SerializeField] BarController barControll = null;
         [SerializeField] float ShootingRange = 5f;
         [SerializeField] float KillReward = 500f;
+        [SerializeField] List<ResistanceObject> Resistances = null;
 
         private int timer = 0;
 
@@ -17,6 +18,11 @@ namespace Assets.Scripts.Entities
         {
             base.Start();
             barControll.SetValues(HP, false, 0, HP);
+
+            foreach (ResistanceObject obj in Resistances)
+            {
+                Resistancies.Add(obj.DamageType, obj);
+            }
         }
         private new void Update()
         {

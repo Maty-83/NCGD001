@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ProtectionViewPanel.cs" />
     <Compile Include="Assets\CheckPointController.cs" />
     <Compile Include="Assets\StormTrapController.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\Objects\Decoration\SakuraFallController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Weapon.cs" />
     <Compile Include="Assets\Scripts\Objects\Decoration\SakuraLeafController.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\IResistance.cs" />
     <Compile Include="Assets\Scripts\UI\BarController.cs" />
     <Compile Include="Assets\LightningController.cs" />
     <Compile Include="Assets\Scripts\Entities\BasicEnemyController.cs" />
@@ -78,9 +80,11 @@
     <Compile Include="Assets\UIVolumeController.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapons\Sword.cs" />
     <Compile Include="Assets\Scripts\UI\EndGamePanelController.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\ResistanceObject.cs" />
     <Compile Include="Assets\LairController.cs" />
     <Compile Include="Assets\Scripts\Enviroment\CameraController.cs" />
     <Compile Include="Assets\Scripts\Objects\TrapController.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\ResistanceSpell.cs" />
     <Compile Include="Assets\Scripts\Entities\Behaviour\PatrolBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\BackgroundController.cs" />
     <Compile Include="Assets\WaterDropController.cs" />
@@ -93,6 +97,7 @@
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
     <Compile Include="Assets\Scripts\Entities\Behaviour\IBehaviour.cs" />
+    <Compile Include="Assets\ProtectionPanelManager.cs" />
     <Compile Include="Assets\Scripts\Objects\IProjectile.cs" />
     <Compile Include="Assets\Scripts\StoryTelling\StorySceneController.cs" />
     <Compile Include="Assets\Scripts\UI\MagicPanelController.cs" />

@@ -32,7 +32,7 @@ public class LevelFinishController : MonoBehaviour
     void Update()
     {
         if (playerTransform == null) return;
-        if (GameManager.Instance.Lairs.Count != 0 ) return;
+        if (GameManager.Instance.Lairs.Count != 0 && IsTeleporting) return;
 
         float distance = Vector3.Distance(playerTransform.position, transform.position);
         bool shouldScaleUp = distance <= TriggerDistance;
@@ -63,7 +63,7 @@ public class LevelFinishController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (GameManager.Instance.Lairs.Count != 0) return;
+        if (GameManager.Instance.Lairs.Count != 0 && IsTeleporting) return;
 
         var controller = other.gameObject.GetComponent<PlayerController>();
         if (controller != null && PortalDestination != "" && IsTeleporting)

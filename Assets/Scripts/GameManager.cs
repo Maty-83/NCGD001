@@ -25,9 +25,11 @@ namespace Assets.Scripts
         [SerializeField] public List<LairController> Lairs = new List<LairController>();
         [SerializeField] public TMP_Text MissonDesciprion;
         [SerializeField] public string MissonDesciprionText;
+        [SerializeField] public ProtectionPanelManager ProtectionPanel;
 
         [SerializeField] private Image Mask;
         [SerializeField] private float MaskTransitionDuration;
+
 
         public CameraController Camera { get; set; }
         //public BackgroundController Background { get; set; }
@@ -44,11 +46,11 @@ namespace Assets.Scripts
 
         public void DestroyLair(GameObject lair)
         {
-            for (int i = 0; i < GameManager.Instance.Lairs.Count; i++)
+            for (int i = 0; i < Lairs.Count; i++)
             {
-                if (GameManager.Instance.Lairs[i].GetInstanceID() == lair.GetInstanceID())
+                if (Lairs[i].gameObject.GetInstanceID() == lair.GetInstanceID())
                 {
-                    GameManager.Instance.Lairs.RemoveAt(i);
+                    Lairs.RemoveAt(i);
                     MissonDesciprion.text = $"{MissonDesciprionText} {Lairs.Count}/{lairCount}";
                 }
             }
@@ -87,7 +89,10 @@ namespace Assets.Scripts
 
         public void LoadNextLevel()
         {
-
+            PlayerDeathPosition = Vector3.negativeInfinity;
+            CheckPointController = null;
+            LastCheckpoint = Vector3.negativeInfinity;
+            DroppedScore = 0;
         }
 
         public void ClearCheckpoint()

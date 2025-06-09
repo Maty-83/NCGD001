@@ -64,5 +64,6 @@ public class MagicPanelController : MonoBehaviour
             gameObject.SetActive(false);
             GameManager.Instance.Resume();
         }
+        ScoreText.text = $"XP: {playerController.Score.ToString()}";
     }
 }

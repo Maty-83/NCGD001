@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: 892d32374f5e34b41811c30dc026ac51
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 22964151023195514
+    second: ProtectionSpell_0
+  - first:
+      213: -9131046741559903984
+    second: ProtectionSpell_1
+  - first:
+      213: -8227046846568915442
+    second: ProtectionSpell_2
+  - first:
+      213: -7595517451612088195
+    second: ProtectionSpell_3
+  - first:
+      213: -270460097320711472
+    second: ProtectionSpell_4
+  - first:
+      213: 7633415077637170383
+    second: ProtectionSpell_5
+  - first:
+      213: 8200556864904263769
+    second: ProtectionSpell_6
+  - first:
+      213: -5496004509086877815
+    second: ProtectionSpell_7
+  - first:
+      213: -6314768349004150464
+    second: ProtectionSpell_8
+  - first:
+      213: -7462059286683138107
+    second: ProtectionSpell_9
+  - first:
+      213: -3670992266625875235
+    second: ProtectionSpell_10
+  - first:
+      213: 7802283667371621951
+    second: ProtectionSpell_11
+  - first:
+      213: -5018901029743436440
+    second: ProtectionSpell_12
+  - first:
+      213: -6395300873673963428
+    second: ProtectionSpell_13
+  - first:
+      213: 8680538321613263298
+    second: ProtectionSpell_14
+  - first:
+      213: 3350011878888306043
+    second: ProtectionSpell_15
+  - first:
+      213: 6223358793840947257
+    second: ProtectionSpell_16
+  - first:
+      213: -2741594180594982590
+    second: ProtectionSpell_17
+  - first:
+      213: 7593452153751892744
+    second: ProtectionSpell_18
+  - first:
+      213: -7395517785960639614
+    second: ProtectionSpell_19
+  - first:
+      213: 8085583289198374878
+    second: ProtectionSpell_20
+  - first:
+      213: -7778480201467255773
+    second: ProtectionSpell_21
+  - first:
+      213: -5987372695778542076
+    second: ProtectionSpell_22
+  - first:
+      213: -6770906916750604391
+    second: ProtectionSpell_23
+  - first:
+      213: 8401729220004633499
+    second: ProtectionSpell_24
+  - first:
+      213: 4603417800403460078
+    second: ProtectionSpell_25
+  - first:
+      213: -3964034526697251022
+    second: ProtectionSpell_26
+  - first:
+      213: -5256242810738600028
+    second: ProtectionSpell_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ProtectionSpell_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 563
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da084579f12f3cf0800000000000000
+      internalID: -270460097320711472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 563
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4acadc1965fe960800000000000000
+      internalID: 7633415077637170383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 563
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958720d250b3ec170800000000000000
+      internalID: 8200556864904263769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 563
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0494ab6c4af6d58a0800000000000000
+      internalID: -6314768349004150464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_21
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 215
+        width: 235
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324a22b08794d0490800000000000000
+      internalID: -7778480201467255773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_22
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 218
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e3f32714498eca0800000000000000
+      internalID: -5987372695778542076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 218
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99748d37808e802a0800000000000000
+      internalID: -6770906916750604391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_24
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 352
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b55691630f89470800000000000000
+      internalID: 8401729220004633499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_25
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 218
+        width: 227
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef12c97910a2ef30800000000000000
+      internalID: 4603417800403460078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 323
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f93dea99becf8c0800000000000000
+      internalID: -3964034526697251022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtectionSpell_27
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 297
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a799bc23031e07b0800000000000000
+      internalID: -5256242810738600028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c96841bc98d21194badbc27aa84f7c65
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ProtectionSpell_21: -7778480201467255773
+      ProtectionSpell_22: -5987372695778542076
+      ProtectionSpell_23: -6770906916750604391
+      ProtectionSpell_24: 8401729220004633499
+      ProtectionSpell_25: 4603417800403460078
+      ProtectionSpell_26: -3964034526697251022
+      ProtectionSpell_27: -5256242810738600028
+      ProtectionSpell_4: -270460097320711472
+      ProtectionSpell_5: 7633415077637170383
+      ProtectionSpell_6: 8200556864904263769
+      ProtectionSpell_8: -6314768349004150464
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

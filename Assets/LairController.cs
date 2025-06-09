@@ -30,15 +30,7 @@ public class LairController : BasicEnemyController
         isFadingOut = true;
         pendingDestroy = destroy;
         fadeTimer = 0f;
-
-        for (int i = 0; i < GameManager.Instance.Lairs.Count; i++)
-        {
-            if (GameManager.Instance.Lairs[i].GetInstanceID() == gameObject.GetInstanceID())
-            {
-                GameManager.Instance.Lairs.RemoveAt(i);
-                break;
-            }
-        }
+        GameManager.Instance.DestroyLair(gameObject);
     }
 
     protected new void Update()
@@ -59,6 +51,7 @@ public class LairController : BasicEnemyController
                 {
                     pendingDestroyFlag = true;
                     base.OnDeath(pendingDestroy);
+                    Destroy(gameObject);
                 }
             }
             else
@@ -67,6 +60,7 @@ public class LairController : BasicEnemyController
                 {
                     pendingDestroyFlag = true;
                     base.OnDeath(pendingDestroy);
+                    Destroy(gameObject);
                 }
             }
 

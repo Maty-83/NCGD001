@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 64954771372592039}
-  HP: 100
+  HP: 500
   Mana: 100
   ManaRecoverySpeed: 0.1
   ShootKnockbackForce: 450
@@ -221,6 +221,7 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   WoundedAudioClip: {fileID: 8300000, guid: ea91bf8a910aaeb459f96d46ac267e1d, type: 3}
   BulletBounce: {fileID: 8300000, guid: 5817bab62a88304499ac7d399de6c2fc, type: 3}
+  RecievedDamage: {fileID: 0}
 --- !u!70 &6150122180170731750
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
