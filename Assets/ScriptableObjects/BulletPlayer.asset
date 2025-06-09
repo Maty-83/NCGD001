@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
-  m_Name: Bullet
+  m_Name: BulletPlayer
   m_EditorClassIdentifier: 
   Prefab: {fileID: 6558058357626481252, guid: 128246ed4cff4b64593f29e735df73d1, type: 3}
   PreviewImage: {fileID: 0}
@@ -19,7 +19,7 @@ MonoBehaviour:
   Binding: 323
   WeaponType: 1
   ManaCost: 0
-  Decription: Basic range weapon.
+  Decription: Basic ranged weapon.
   BuyCost: 0
   DamageType: 1
   Damage: 25

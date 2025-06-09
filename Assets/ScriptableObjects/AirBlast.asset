@@ -16,10 +16,11 @@ MonoBehaviour:
   PreviewImage: {fileID: -1993207295, guid: 5c3efc8aaedc1c945bf76bbf55468c2a, type: 3}
   Sound: {fileID: 8300000, guid: 611f17cf6d4bb1240b8a4af4949305a7, type: 3}
   Range: -1
-  Binding: 49
+  Binding: 51
   WeaponType: 1
   ManaCost: 30
-  Decription: Not very deadly, but it pushes enemies away!
-  BuyCost: 0
+  Decription: 'Air Blast: Not very deadly, but it pushes enemies away!\nCost: 30
+    Mana Damage:10; Pushes/Stuns enemies'
+  BuyCost: 500
   DamageType: 6
   Damage: 10

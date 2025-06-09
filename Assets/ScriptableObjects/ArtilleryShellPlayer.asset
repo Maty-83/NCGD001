@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
-  m_Name: ToxicBall
+  m_Name: ArtilleryShellPlayer
   m_EditorClassIdentifier: 
   Prefab: {fileID: 6263958480957022746, guid: 1a404b36285b9734bbf7e431ca0812f7, type: 3}
-  PreviewImage: {fileID: -5246403653703427829, guid: e1cff6b0bc1a2f84aa8b1105f88ec8c7, type: 3}
+  PreviewImage: {fileID: -2346302928887187388, guid: 11ee2b7f3e97cf54283fb09d52e8b18f, type: 3}
   Sound: {fileID: 8300000, guid: 7de38d9f7ad5b3f4b86f1994bd26a69f, type: 3}
   Range: -1
-  Binding: 51
+  Binding: 0
   WeaponType: 1
-  ManaCost: 20
-  Decription: A highly dangerous toxic spell!
-  BuyCost: 2000
+  ManaCost: 80
+  Decription: 'Arcane Artillery: Summon an artillery shell! Guaranteed kill on a
+    ghost, but at what price?\nCost: 80 mana Damage:200'
+  BuyCost: 4000
   DamageType: 5
-  Damage: 35
+  Damage: 200

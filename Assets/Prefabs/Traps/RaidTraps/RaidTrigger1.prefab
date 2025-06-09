@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TTL: 10
   Spawners: []
-  EnemyPrefab: {fileID: 608048487261427747, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
+  EnemyPrefab: {fileID: 1421157834462635517, guid: 52cbcdefe13d2f946bdad7d82e50f65d, type: 3}
   EnemiesPerSpawn: 5
   Animator: {fileID: 1248155396456730365}
   Source: {fileID: 1654283888604598563}
