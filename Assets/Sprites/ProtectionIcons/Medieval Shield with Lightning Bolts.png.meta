@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Medieval Shield with Lightning Bolts_0: 6240166569078178296
+      Medieval Shield with Lightning Bolts_1: 7564366919405604153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

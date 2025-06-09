@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Deflecting Bullet and Shield_0: 5202340993051365280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,17 +1,14 @@
 using Assets.Core.Enums;
-using Assets.Helpers.Enums;
+
 using Assets.Scripts;
 using Assets.Scripts.Entities;
-using Assets.Scripts.Objects;
+
 using Assets.Scripts.Objects.ScriptableObjects;
-using Assets.Scripts.Objects.Weapon;
-using NUnit.Framework.Constraints;
-using System.Collections.Generic;
+
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
+
 
 public class PlayerController : Entity
 {
