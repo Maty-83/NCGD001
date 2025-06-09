@@ -1049,7 +1049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &955988469
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2075,7 +2075,11 @@ MonoBehaviour:
   damagers: []
   PlayerDeathPlacePrefab: {fileID: 0}
   Lairs: []
-  text: {fileID: 0}
+  MissonDesciprion: {fileID: 0}
+  MissonDesciprionText: 
+  ProtectionPanel: {fileID: 0}
+  Mask: {fileID: 0}
+  MaskTransitionDuration: 0
 --- !u!114 &1325619673
 MonoBehaviour:
   m_ObjectHideFlags: 0
