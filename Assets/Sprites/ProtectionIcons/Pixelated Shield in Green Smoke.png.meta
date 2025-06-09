@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pixelated Shield in Green Smoke_0: -2736350022254653863
+      Pixelated Shield in Green Smoke_1: 633053222213992959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
