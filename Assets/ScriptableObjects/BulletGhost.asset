@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
-  m_Name: ToxicBall
+  m_Name: BulletGhost
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 6263958480957022746, guid: 1a404b36285b9734bbf7e431ca0812f7, type: 3}
+  Prefab: {fileID: 6558058357626481252, guid: 128246ed4cff4b64593f29e735df73d1, type: 3}
   PreviewImage: {fileID: 0}
-  Sound: {fileID: 8300000, guid: 7de38d9f7ad5b3f4b86f1994bd26a69f, type: 3}
+  Sound: {fileID: 8300000, guid: ab98bdc78de58e44e925268c5e374be7, type: 3}
   Range: -1
-  Binding: 0
+  Binding: 323
   WeaponType: 1
-  ManaCost: 20
-  Decription: A highly dangerous toxic spell!
-  BuyCost: 2000
-  DamageType: 5
-  Damage: 35
+  ManaCost: 0
+  Decription: Basic ranged weapon.
+  BuyCost: 0
+  DamageType: 1
+  Damage: 15

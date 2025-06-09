@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -1206,7 +1206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -1672,7 +1672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -1794,6 +1794,22 @@ PrefabInstance:
       propertyPath: EnemiesPerSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4095119953515715339, guid: 4c24d202987aa754897f0594c019b1b9, type: 3}
+      propertyPath: Spawners.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4095119953515715339, guid: 4c24d202987aa754897f0594c019b1b9, type: 3}
+      propertyPath: 'Spawners.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1454710929}
+    - target: {fileID: -4095119953515715339, guid: 4c24d202987aa754897f0594c019b1b9, type: 3}
+      propertyPath: 'Spawners.Array.data[1]'
+      value: 
+      objectReference: {fileID: 759127969}
+    - target: {fileID: -4095119953515715339, guid: 4c24d202987aa754897f0594c019b1b9, type: 3}
+      propertyPath: 'Spawners.Array.data[2]'
+      value: 
+      objectReference: {fileID: 233704753}
     - target: {fileID: 5605604279890984998, guid: 4c24d202987aa754897f0594c019b1b9, type: 3}
       propertyPath: m_Name
       value: RaidTrigger1 (1)
@@ -3063,7 +3079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -8072,7 +8088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -8880,7 +8896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -9705,7 +9721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -10117,6 +10133,22 @@ PrefabInstance:
       propertyPath: EnemiesPerSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4095119953515715339, guid: b0cd3def67e50ac41a6cf1df8598e545, type: 3}
+      propertyPath: Spawners.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4095119953515715339, guid: b0cd3def67e50ac41a6cf1df8598e545, type: 3}
+      propertyPath: 'Spawners.Array.data[0]'
+      value: 
+      objectReference: {fileID: 825902210}
+    - target: {fileID: -4095119953515715339, guid: b0cd3def67e50ac41a6cf1df8598e545, type: 3}
+      propertyPath: 'Spawners.Array.data[1]'
+      value: 
+      objectReference: {fileID: 338553756}
+    - target: {fileID: -4095119953515715339, guid: b0cd3def67e50ac41a6cf1df8598e545, type: 3}
+      propertyPath: 'Spawners.Array.data[2]'
+      value: 
+      objectReference: {fileID: 237361807}
     - target: {fileID: 5605604279890984998, guid: b0cd3def67e50ac41a6cf1df8598e545, type: 3}
       propertyPath: m_Name
       value: RaidTrigger4
@@ -10530,6 +10562,10 @@ PrefabInstance:
       propertyPath: ManaRecoverySpeed
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 341638424339064107, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
+      propertyPath: 'DefaultWeapons.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a8654be1e309de498d5a09489ec3c1e, type: 2}
     - target: {fileID: 2711612223485771261, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
       propertyPath: m_Name
       value: Player
@@ -11450,7 +11486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -11916,7 +11952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -12524,7 +12560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -14623,6 +14659,18 @@ PrefabInstance:
       propertyPath: EnemiesPerSpawn
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -4095119953515715339, guid: 8ba1883d73afeb84bbc144f6be4713cf, type: 3}
+      propertyPath: Spawners.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4095119953515715339, guid: 8ba1883d73afeb84bbc144f6be4713cf, type: 3}
+      propertyPath: 'Spawners.Array.data[0]'
+      value: 
+      objectReference: {fileID: 350772140}
+    - target: {fileID: -4095119953515715339, guid: 8ba1883d73afeb84bbc144f6be4713cf, type: 3}
+      propertyPath: 'Spawners.Array.data[1]'
+      value: 
+      objectReference: {fileID: 876781190}
     - target: {fileID: 5605604279890984998, guid: 8ba1883d73afeb84bbc144f6be4713cf, type: 3}
       propertyPath: m_Name
       value: RaidTrigger2 (1)
@@ -14825,7 +14873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -15538,7 +15586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -15777,7 +15825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -16138,7 +16186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -16603,7 +16651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -16995,7 +17043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
