@@ -1,10 +1,11 @@
 ﻿using Assets.Core.Enums;
-using System.Collections.Generic;
-using UnityEngine;
 using Assets.Helpers.Enums;
 using Assets.Scripts.Objects.ScriptableObjects;
 using Assets.Scripts.Objects.Spells;
 using Assets.Scripts.Objects;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Collections;
 
 namespace Assets.Scripts.Entities
 {
@@ -21,6 +22,7 @@ namespace Assets.Scripts.Entities
         [SerializeField] private List<Weapon> DefaultWeapons;
 
         [Header("Timers")]
+        //internal float curTimeBetweenBullets = 0;
         public float minTimeBetweenBullets = 0.2f;
         public float minTimeBetweenMelee = 0.4f;
         internal float curTimeBetweenAttacks = 0;
@@ -44,17 +46,12 @@ namespace Assets.Scripts.Entities
         internal Rigidbody2D rb;
         internal Animator animator;
 
-        // Death handling state
-        private bool isDying = false;
-        private float deathTimer = 0f;
-        private bool _destroyOnDeathComplete = true;
-
         public virtual void RecieveDamage(IDamager weapon)
         {
             var amount = weapon.BaseDamage;
             if (Resistancies.ContainsKey(weapon.Type))
             {
-                amount *= ( 1 / Resistancies[weapon.Type].GetResistance() );
+                amount = amount * ( 1 / Resistancies[weapon.Type].GetResistance() );
             }
 
             HP -= amount;
@@ -62,7 +59,7 @@ namespace Assets.Scripts.Entities
 
         public virtual void OnDeath(bool destroy = true)
         {
-            if (IsAlive && !isDying)
+            if (IsAlive)
             {
                 if (DeathAudioClip != null)
                 {
@@ -70,24 +67,37 @@ namespace Assets.Scripts.Entities
                     AudioSource.loop = false;
                     AudioSource.Play();
                 }
-
-                IsAlive = false;
-                isDying = true;
-                _destroyOnDeathComplete = destroy;
-
-                animator.SetTrigger("Die");
-                animator.Update(0f);
-                deathTimer = GetCurrentStateLength();
+                StartCoroutine(HandleDeath(destroy));
             }
         }
 
-        //TODO: fix
-        float GetCurrentStateLength()
+        private IEnumerator HandleDeath(bool destroy)
         {
-            //AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-            //return stateInfo.length;
+            IsAlive = false;
+
+            animator.SetTrigger("Die");
+            yield return new WaitForSeconds(GetAnimationLength("Death"));
+
+            if (destroy)
+                Destroy(gameObject);
+        }
+
+        float GetAnimationLength(string animationName)
+        {
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            int stateHash = stateInfo.shortNameHash;
+
+            foreach (var clip in animator.runtimeAnimatorController.animationClips)
+            {
+                if (Animator.StringToHash(clip.name) == stateHash)
+                {
+                    return clip.length;
+                }
+            }
+
             return 0f;
         }
+
 
         internal void Start()
         {
@@ -118,25 +128,13 @@ namespace Assets.Scripts.Entities
 
         internal void Update()
         {
-            if (isDying)
-            {
-                deathTimer -= Time.deltaTime;
-                if (deathTimer <= 0f)
-                {
-                    if (_destroyOnDeathComplete)
-                        Destroy(gameObject);
-                }
-
-                return;
-            }
-
             if (!IsAlive)
                 return;
 
             if (HP <= 0)
             {
                 OnDeath();
-                return;
+                IsAlive = false;
             }
 
             HandleOrientation();
@@ -144,9 +142,6 @@ namespace Assets.Scripts.Entities
 
         internal void FixedUpdate()
         {
-            if (!IsAlive || isDying)
-                return;
-
             foreach (var weapon in BindedWeapons)
             {
                 if (!Input.GetKey(weapon.Key))
@@ -156,7 +151,10 @@ namespace Assets.Scripts.Entities
                 {
                     if (curTimeBetweenAttacks > minTimeBetweenMelee)
                     {
-                        Vector2 dir = IsMovingRight ? Vector2.right : Vector2.left;
+                        Vector2 dir = Vector2.left;
+                        if (IsMovingRight)
+                            dir = Vector2.right;
+
                         OnMelee(weapon.Value, dir);
                     }
                 }
@@ -262,12 +260,16 @@ namespace Assets.Scripts.Entities
             AudioSource.PlayOneShot(weapon.Sound);
         }
 
+
         private void HandleOrientation()
         {
             if (renderer == null)
                 return;
 
-            renderer.flipX = !IsMovingRight;
+            if (IsMovingRight)
+                renderer.flipX = false;
+            else
+                renderer.flipX = true;
         }
     }
 }

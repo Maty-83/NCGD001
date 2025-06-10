@@ -69,4 +69,12 @@ public class SeekingBehaviour : MonoBehaviour, IBehaviour
         ownRB.linearVelocity = new Vector2(0,0);
         ownRB.AddForce(direction, ForceMode2D.Force);
     }
+
+    void IBehaviour.Pause(bool isPaused)
+    {
+        if(isPaused)
+            Pause = float.MaxValue;
+        else
+            Pause = 0f;
+    }
 }

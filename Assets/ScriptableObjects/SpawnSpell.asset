@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
+  m_Name: SpawnSpell
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 6558058357626481252, guid: faaea39bbf0a9dc4e97d48ad84007193, type: 3}
+  PreviewImage: {fileID: -6208306851959256142, guid: d3901cf96d7da8846b31d015959c858f, type: 3}
+  Sound: {fileID: 8300000, guid: 611f17cf6d4bb1240b8a4af4949305a7, type: 3}
+  Range: -1
+  Binding: 51
+  WeaponType: 1
+  ManaCost: 30
+  Decription: 
+  BuyCost: 500
+  DamageType: 0
+  Damage: 10

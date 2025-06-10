@@ -155,4 +155,12 @@ public class PatrolBehaviour : MonoBehaviour, IBehaviour
         WaitTimeRemaining = 0.5f;
         ownRB.AddForce(direction, ForceMode2D.Force);
     }
+
+    public void Pause(bool isPaused)
+    {
+        if (isPaused)
+            WaitTimeRemaining = float.MaxValue;
+        else
+            WaitTimeRemaining = 0f;
+    }
 }

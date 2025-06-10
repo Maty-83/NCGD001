@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
     <Compile Include="Assets\Scripts\Entities\Behaviour\IBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\SpawnSpell.cs" />
     <Compile Include="Assets\ProtectionPanelManager.cs" />
     <Compile Include="Assets\Scripts\Objects\IProjectile.cs" />
     <Compile Include="Assets\Scripts\StoryTelling\StorySceneController.cs" />

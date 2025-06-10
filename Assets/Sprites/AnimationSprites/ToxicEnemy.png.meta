@@ -1,0 +1,998 @@
+fileFormatVersion: 2
+guid: d3901cf96d7da8846b31d015959c858f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8310087194268279742
+    second: ToxicEnemy_0
+  - first:
+      213: -1870276952872876417
+    second: ToxicEnemy_1
+  - first:
+      213: -8149784538095092945
+    second: ToxicEnemy_2
+  - first:
+      213: 9053888251624716385
+    second: ToxicEnemy_3
+  - first:
+      213: 3869478828769962259
+    second: ToxicEnemy_4
+  - first:
+      213: -4930834875144628097
+    second: ToxicEnemy_5
+  - first:
+      213: -3594055667001372375
+    second: ToxicEnemy_6
+  - first:
+      213: 2285444598982512476
+    second: ToxicEnemy_7
+  - first:
+      213: 8851320913689431808
+    second: ToxicEnemy_8
+  - first:
+      213: -4934095069545705673
+    second: ToxicEnemy_9
+  - first:
+      213: -6208306851959256142
+    second: ToxicEnemy_10
+  - first:
+      213: 7543037347918288345
+    second: ToxicEnemy_11
+  - first:
+      213: 7802585570915286755
+    second: ToxicEnemy_12
+  - first:
+      213: -629134844147629917
+    second: ToxicEnemy_13
+  - first:
+      213: -6140471925643385973
+    second: ToxicEnemy_14
+  - first:
+      213: -8922424435816703498
+    second: ToxicEnemy_15
+  - first:
+      213: -475324258471876720
+    second: ToxicEnemy_16
+  - first:
+      213: 2937106776611815565
+    second: ToxicEnemy_17
+  - first:
+      213: 3602997334757422982
+    second: ToxicEnemy_18
+  - first:
+      213: 7246388760181378067
+    second: ToxicEnemy_19
+  - first:
+      213: 3661607003512260639
+    second: ToxicEnemy_20
+  - first:
+      213: -4790068904659344653
+    second: ToxicEnemy_21
+  - first:
+      213: 7263457693001265172
+    second: ToxicEnemy_22
+  - first:
+      213: -2866996677415793658
+    second: ToxicEnemy_23
+  - first:
+      213: -2253690557681835602
+    second: ToxicEnemy_24
+  - first:
+      213: 6650893094415661890
+    second: ToxicEnemy_25
+  - first:
+      213: 1099616775655170313
+    second: ToxicEnemy_26
+  - first:
+      213: -4715700790370716904
+    second: ToxicEnemy_27
+  - first:
+      213: -1104453544015326844
+    second: ToxicEnemy_28
+  - first:
+      213: -5998951840375604336
+    second: ToxicEnemy_29
+  - first:
+      213: -7135499631143785886
+    second: ToxicEnemy_30
+  - first:
+      213: -2412746438106706927
+    second: ToxicEnemy_31
+  - first:
+      213: 1423673260815914208
+    second: ToxicEnemy_32
+  - first:
+      213: -3940082081925977790
+    second: ToxicEnemy_33
+  - first:
+      213: 243267239599557986
+    second: ToxicEnemy_34
+  - first:
+      213: 3105004668854019105
+    second: ToxicEnemy_35
+  - first:
+      213: 4322860219603707020
+    second: ToxicEnemy_36
+  - first:
+      213: -3657037906763538350
+    second: ToxicEnemy_37
+  - first:
+      213: -2426159859492000047
+    second: ToxicEnemy_38
+  - first:
+      213: -654942106790068974
+    second: ToxicEnemy_39
+  - first:
+      213: -641197831553617021
+    second: ToxicEnemy_40
+  - first:
+      213: 3485237231951069760
+    second: ToxicEnemy_41
+  - first:
+      213: -3830235450193560852
+    second: ToxicEnemy_42
+  - first:
+      213: -9077866662763188703
+    second: ToxicEnemy_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ToxicEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2141
+        width: 236
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cdd1db9b3acac80800000000000000
+      internalID: -8310087194268279742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2141
+        width: 227
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76896045017b06e0800000000000000
+      internalID: -1870276952872876417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2148
+        width: 227
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bfeda542626ee80800000000000000
+      internalID: -8149784538095092945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 2148
+        width: 237
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1687c22356fd5ad70800000000000000
+      internalID: 9053888251624716385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_10
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 2263
+        width: 161
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb4858afc9a7d9a0800000000000000
+      internalID: -6208306851959256142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_11
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 2263
+        width: 161
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d59c22d0804ea860800000000000000
+      internalID: 7543037347918288345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_12
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 2260
+        width: 160
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee7ef3ac3a584c60800000000000000
+      internalID: 7802585570915286755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_13
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 2255
+        width: 160
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a082ca413dd447f0800000000000000
+      internalID: -629134844147629917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1781
+        width: 227
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f184e6f6b24a0d230800000000000000
+      internalID: 3661607003512260639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_21
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1781
+        width: 234
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2a228c5b1468db0800000000000000
+      internalID: -4790068904659344653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_22
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1781
+        width: 288
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4103b60d94cfcc460800000000000000
+      internalID: 7263457693001265172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_23
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1467
+        width: 236
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c086e36b16638d0800000000000000
+      internalID: -2866996677415793658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_24
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 554
+        width: 690
+        height: 1269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1e8bbd06849b0e0800000000000000
+      internalID: -2253690557681835602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_25
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 1470
+        width: 228
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b7ebb0808bc4c50800000000000000
+      internalID: 6650893094415661890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_26
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1472
+        width: 227
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901acf5a1af924f00800000000000000
+      internalID: 1099616775655170313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_27
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1469
+        width: 234
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813bce2bd177e8eb0800000000000000
+      internalID: -4715700790370716904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1528
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4819b067a513ca0f0800000000000000
+      internalID: -1104453544015326844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_29
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1528
+        width: 195
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b7cb1c5117fbca0800000000000000
+      internalID: -5998951840375604336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_30
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1528
+        width: 198
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a6eb614ec99fc90800000000000000
+      internalID: -7135499631143785886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_31
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1528
+        width: 188
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c8f87d5e3348ed0800000000000000
+      internalID: -2412746438106706927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1179
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4972ba947e1c310800000000000000
+      internalID: 1423673260815914208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_33
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1179
+        width: 195
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249abe0d8340259c0800000000000000
+      internalID: -3940082081925977790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_34
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1179
+        width: 198
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d42d9f342406300800000000000000
+      internalID: 243267239599557986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_35
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1179
+        width: 188
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12429f89b41371b20800000000000000
+      internalID: 3105004668854019105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_36
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 868
+        width: 193
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84652b5772edfb30800000000000000
+      internalID: 4322860219603707020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_37
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 872
+        width: 195
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250a83d46679f3dc0800000000000000
+      internalID: -3657037906763538350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_38
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 867
+        width: 198
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deeaae467c845ed0800000000000000
+      internalID: -2426159859492000047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_39
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 868
+        width: 188
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21df458bf9d29e6f0800000000000000
+      internalID: -654942106790068974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_40
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 167
+        width: 82
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383fe7b28f10a17f0800000000000000
+      internalID: -641197831553617021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_41
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 167
+        width: 90
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042c8600ccc0e5030800000000000000
+      internalID: 3485237231951069760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_42
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 167
+        width: 90
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceaba19c62548dac0800000000000000
+      internalID: -3830235450193560852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicEnemy_43
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 167
+        width: 83
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ea3a7ed50f40280800000000000000
+      internalID: -9077866662763188703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 222dbdc72f80fba458733e24c62fd86b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ToxicEnemy_0: -8310087194268279742
+      ToxicEnemy_1: -1870276952872876417
+      ToxicEnemy_10: -6208306851959256142
+      ToxicEnemy_11: 7543037347918288345
+      ToxicEnemy_12: 7802585570915286755
+      ToxicEnemy_13: -629134844147629917
+      ToxicEnemy_2: -8149784538095092945
+      ToxicEnemy_20: 3661607003512260639
+      ToxicEnemy_21: -4790068904659344653
+      ToxicEnemy_22: 7263457693001265172
+      ToxicEnemy_23: -2866996677415793658
+      ToxicEnemy_24: -2253690557681835602
+      ToxicEnemy_25: 6650893094415661890
+      ToxicEnemy_26: 1099616775655170313
+      ToxicEnemy_27: -4715700790370716904
+      ToxicEnemy_28: -1104453544015326844
+      ToxicEnemy_29: -5998951840375604336
+      ToxicEnemy_3: 9053888251624716385
+      ToxicEnemy_30: -7135499631143785886
+      ToxicEnemy_31: -2412746438106706927
+      ToxicEnemy_32: 1423673260815914208
+      ToxicEnemy_33: -3940082081925977790
+      ToxicEnemy_34: 243267239599557986
+      ToxicEnemy_35: 3105004668854019105
+      ToxicEnemy_36: 4322860219603707020
+      ToxicEnemy_37: -3657037906763538350
+      ToxicEnemy_38: -2426159859492000047
+      ToxicEnemy_39: -654942106790068974
+      ToxicEnemy_40: -641197831553617021
+      ToxicEnemy_41: 3485237231951069760
+      ToxicEnemy_42: -3830235450193560852
+      ToxicEnemy_43: -9077866662763188703
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
