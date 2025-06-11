@@ -65,6 +65,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      propertyPath: KillReward
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 1605639332031882719}

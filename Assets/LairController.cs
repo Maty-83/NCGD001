@@ -83,6 +83,7 @@ public class LairController : BasicEnemyController
             timer = 0f;
         }
     }
+
     private bool IsSpawnerReady()
     {
         if (Spawners == null || Spawners.Count == 0)

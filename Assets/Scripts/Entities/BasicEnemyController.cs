@@ -12,12 +12,12 @@ namespace Assets.Scripts.Entities
         [SerializeField] float ShootingRange = 5f;
         [SerializeField] float KillReward = 500f;
         [SerializeField] List<ResistanceObject> Resistances = null;
-        [SerializeField] GameObject ResistantText;
+        [SerializeField] internal GameObject ResistantText;
 
         private IBehaviour behaviour;
 
-        private int timer = 0;
-        private float ResistantTimer = 0f;
+        internal int timer = 0;
+        internal float ResistantTimer = 0f;
 
         private new void Start()
         {

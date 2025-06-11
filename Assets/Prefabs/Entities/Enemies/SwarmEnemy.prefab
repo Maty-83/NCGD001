@@ -421,7 +421,7 @@ MonoBehaviour:
   HealthBarTimer: 50
   barControll: {fileID: 2722168426085307987}
   ShootingRange: 5
-  KillReward: 500
+  KillReward: 50
   Resistances: []
   ResistantText: {fileID: 3860651534933008026}
 --- !u!82 &-8219171629449147316
