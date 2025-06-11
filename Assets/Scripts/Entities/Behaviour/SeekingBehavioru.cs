@@ -65,9 +65,16 @@ public class SeekingBehaviour : MonoBehaviour, IBehaviour
             {
                 ownRB.linearVelocity = positionDiff.normalized * maxSpeed;
             }
-            else if (positionDiff.magnitude < seekDistMinimum)
+            else
             {
-                ownRB.linearVelocity = -positionDiff.normalized * maxSpeed;
+                if (positionDiff.magnitude < seekDistMinimum)
+                {
+                    ownRB.linearVelocity = -positionDiff.normalized * maxSpeed;
+                }
+                else
+                {
+                    ownRB.linearVelocity = Vector2.zero;
+                }
             }
         }
         else if (enableTracking)
