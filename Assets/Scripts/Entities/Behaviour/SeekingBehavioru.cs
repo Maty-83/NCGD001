@@ -13,6 +13,10 @@ public class SeekingBehaviour : MonoBehaviour, IBehaviour
     private float Pause = 0.5f;
     private Rigidbody2D ownRB=null;
     private BasicEnemyController enemyController;
+
+    public float seekDistMinimum = -1;//How close are we to be before seeking stops. -1 for permanent seeking.
+    public float safetyMarginOuter = 0.5;//This exists to make the target not chase constantly. If we're within seek dist min+safety margin, we will stay still.
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,14 +51,23 @@ public class SeekingBehaviour : MonoBehaviour, IBehaviour
         if (enableTracking && ownRB != null && trackedGameObject != null)
         {
             Vector2 positionDiff = trackedGameObject.transform.position - transform.position;
-            ownRB.linearVelocity = positionDiff.normalized*maxSpeed;
-
+            
+            //always do this since it represents looking at the player
             if (enemyController != null)
             {
                 if (positionDiff.x < 0)
                     enemyController.IsMovingRight = false;
                 else if(positionDiff.x > 0)
                     enemyController.IsMovingRight = true;
+            }
+
+            if (positionDiff.magnitude > safetyMarginOuter + seekDistMinimum)
+            {
+                ownRB.linearVelocity = positionDiff.normalized * maxSpeed;
+            }
+            else if (positionDiff.magnitude < seekDistMinimum)
+            {
+                ownRB.linearVelocity = -positionDiff.normalized * maxSpeed;
             }
         }
         else if (enableTracking)
