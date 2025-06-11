@@ -15,7 +15,7 @@ public class SeekingBehaviour : MonoBehaviour, IBehaviour
     private BasicEnemyController enemyController;
 
     public float seekDistMinimum = -1;//How close are we to be before seeking stops. -1 for permanent seeking.
-    public float safetyMarginOuter = 0.5;//This exists to make the target not chase constantly. If we're within seek dist min+safety margin, we will stay still.
+    public float safetyMarginOuter = 0.5f;//This exists to make the target not chase constantly. If we're within seek dist min+safety margin, we will stay still.
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
