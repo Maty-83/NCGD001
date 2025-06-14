@@ -32,7 +32,7 @@ namespace Assets.Scripts.Entities
         }
         private new void Update()
         {
-            if (!IsAlive) return;
+            if (!IsAlive || IsPaused) return;
 
             base.Update();
 

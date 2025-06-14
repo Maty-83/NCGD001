@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3088487288684574397}
   - component: {fileID: 7069455827904222738}
   m_Layer: 0
-  m_Name: SakuraLeaf
+  m_Name: SakuraLeaf 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6790204412751183009, guid: 51021be10ad8aa8478e1ab5845a2bd89, type: 3}
+  m_Sprite: {fileID: 519434034065765687, guid: 51021be10ad8aa8478e1ab5845a2bd89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -210,7 +210,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.56, y: 0.99}
+    oldSize: {x: 0.61, y: 0.90999997}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
