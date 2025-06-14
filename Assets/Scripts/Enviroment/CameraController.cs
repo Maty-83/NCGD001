@@ -15,8 +15,8 @@ public class CameraController : MonoBehaviour, IObjectController
     public float verticalOffset = 4f;
     public float screenshakeMaxOffset = 1.2f;//Fairly light shaking
     public float mouseMaxOffset = 3.4f;
-    public float maxSpeedOffset = 3.4f;
-
+    public float speedOffsetPerVelocityHoriz = 0.1f;
+    public float speedOffsetPerVelocityVert = 0;
     public void Initialize(Transform transform)
     {
         FollowTransform = transform;
@@ -53,7 +53,9 @@ public class CameraController : MonoBehaviour, IObjectController
             //if (manager.ActivePlayers.Count != 0)
             //{
                 followTransformId = manager.ActivePlayers.Keys.First();
-                FollowTransform = manager.ActivePlayers[followTransformId].transform;
+                FollowTransform = manager.ActivePlayers[followTransformId].transform;              
+
+
                 return true;
             //}
         }
@@ -81,13 +83,18 @@ public class CameraController : MonoBehaviour, IObjectController
     {
         if (IsEnabled)
         {
-        //    if (!CheckFollowTransform())
-        //        return;
+            //    if (!CheckFollowTransform())
+            //        return;
 
-        //    if (FollowTransform == null)
-        //        return;
+            //    if (FollowTransform == null)
+            //        return;
+            Vector2 velocityOffset = Vector2.zero;
+            if (FollowTransform.gameObject.TryGetComponent<Rigidbody2D>(out var rb))
+            {
+                velocityOffset=rb.linearVelocity;
+            }
 
-            transform.position = new Vector3(FollowTransform.position.x, FollowTransform.position.y + verticalOffset, transform.position.z);
+            transform.position = new Vector3(FollowTransform.position.x+velocityOffset.x*speedOffsetPerVelocityHoriz, FollowTransform.position.y + verticalOffset+velocityOffset.y*speedOffsetPerVelocityVert, transform.position.z);
         }
     }
 }

@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Objects\Weapons\Gun.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />
+    <Compile Include="Assets\Scripts\KillWhenObjectsAreKilled.cs" />
     <Compile Include="Assets\Scripts\Entities\Behaviour\IBehaviour.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\SpawnSpell.cs" />
     <Compile Include="Assets\ProtectionPanelManager.cs" />
@@ -122,6 +123,7 @@
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Sprites\ImportedTilesets\QuietCabin\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Sprites\ImportedTilesets\stringstar fields\!readme!.txt" />
