@@ -33,6 +33,7 @@ public class EndGamePanelController : MonoBehaviour
 
     public void Quit()
     {
+        GameManager.LevelCounter = 0;
         GameManager.Instance.Resume();
         SceneManager.LoadScene("MainMenu");
     }

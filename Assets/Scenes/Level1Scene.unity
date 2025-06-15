@@ -1509,7 +1509,7 @@ MonoBehaviour:
   - {fileID: 1410305087}
   - {fileID: 313227601}
   MissonDesciprion: {fileID: 1826805304}
-  MissonDesciprionText: Search and destroy all lairs
+  MissonDesciprionText: Search for and destroy all lairs
   ProtectionPanel: {fileID: 917370154}
   Mask: {fileID: 2122024055}
   MaskTransitionDuration: 2
@@ -5305,7 +5305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: SpawnRate
-      value: 9000
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: KillReward
@@ -5729,7 +5729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: SpawnRate
-      value: 9000
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: EnemyPrefab
@@ -11150,6 +11150,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 79195921}
     m_Modifications:
     - target: {fileID: 341638424339064107, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
+      propertyPath: HP
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 341638424339064107, guid: 24ff0b6d6129c8c4ba7c3048aa9a0d68, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 761120223}
@@ -13612,7 +13616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: SpawnRate
-      value: 9000
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: KillReward

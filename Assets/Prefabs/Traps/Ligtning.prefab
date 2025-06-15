@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageType: 4
-  Damage: 10
+  Damage: 100
   DamageTicks: 50
 --- !u!114 &1041785698463456852
 MonoBehaviour:

@@ -16,6 +16,10 @@ public class PauseMenuController : MonoBehaviour
         var player = GameManager.Instance.PlayerController;
         if(player != null )
             ScoreText.text = $"XP: {player.Score.ToString()}";
+
+        LevelText.text = $"Level: {GameManager.LevelCounter.ToString()}";
+        MissionDescription.text = GameManager.Instance.ActualMissionDesription;
+        UnbuyedSpells.text = $"Locked spells: {GameManager.Instance.GetAvalibleWeapons().Count.ToString()}";
     }
 
     public void Pause()
@@ -37,6 +41,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void Quit()
     {
+        GameManager.LevelCounter = 0;
         GameManager.Instance.Resume();
         SceneManager.LoadScene("MainMenu");
     }

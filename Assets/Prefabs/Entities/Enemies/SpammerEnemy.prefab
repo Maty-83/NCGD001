@@ -98,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 55c6ae2bf5d89634eadfcc401bac1578, type: 3}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: minTimeBetweenBullets
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: Resistances.Array.size
@@ -195,9 +195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d280d75157c98a54f8110b0806960504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableTracking: 0
-  maxSpeed: 15
+  enableTracking: 1
+  maxSpeed: 5
   trackedGameObject: {fileID: 0}
-  maxSeekStartDist: 5
-  seekDistMinimum: 30
+  maxSeekStartDist: 20
+  seekDistMinimum: 5
   safetyMarginOuter: 0.5

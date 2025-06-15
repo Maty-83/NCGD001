@@ -31,6 +31,7 @@ namespace Assets.Scripts
         [SerializeField] private float MaskTransitionDuration;
 
 
+        public string ActualMissionDesription { get; private set; }
         public CameraController Camera { get; set; }
         //public BackgroundController Background { get; set; }
         public Dictionary<int, IObjectController> ActiveObjects { get; set; }
@@ -38,6 +39,7 @@ namespace Assets.Scripts
 
         private int lairCount = 0;
 
+        public static int LevelCounter = 0;
         public static bool IsLoadingLevel;
         public static List<LairController> RemovedLairs = new List<LairController>();
         public static List<Weapon> OwnedWeapons;
@@ -60,7 +62,7 @@ namespace Assets.Scripts
                 {
                     RemovedLairs.Add(Lairs[i]);
                     Lairs.RemoveAt(i);
-                    MissonDesciprion.text = $"{MissonDesciprionText} {RemovedLairs.Count}/{lairCount}";
+                    SetDescription();
                 }
             }
         }
@@ -98,6 +100,7 @@ namespace Assets.Scripts
 
         public void LoadNextLevel()
         {
+            LevelCounter += 0;
             IsLoadingLevel = true;
             OwnedWeapons =PlayerController.OwnedWeapons;
             BindedWeapons = PlayerController.BindedWeapons;
@@ -162,6 +165,20 @@ namespace Assets.Scripts
             Mask.color = color;
         }
 
+        private void SetDescription()
+        {
+            if (lairCount == 0)
+            {
+                MissonDesciprion.text = $"{MissonDesciprionText} or escape.";
+            }
+            else
+            {
+                MissonDesciprion.text = $"{MissonDesciprionText} {RemovedLairs.Count}/{Lairs.Count}";
+            }
+
+            ActualMissionDesription = MissonDesciprion.text;
+        }
+
         protected override void Awake()
         {
             base.Awake();
@@ -173,7 +190,7 @@ namespace Assets.Scripts
         private void Start()
         {
             lairCount = Lairs.Count;
-            MissonDesciprion.text = $"{MissonDesciprionText} {RemovedLairs.Count}/{Lairs.Count}";
+            SetDescription();
 
             if (PlayerDeathPosition.y != float.NegativeInfinity)
             {

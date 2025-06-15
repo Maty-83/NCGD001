@@ -986,7 +986,7 @@ MonoBehaviour:
   - {fileID: 368248984}
   - {fileID: 1941672149}
   MissonDesciprion: {fileID: 1518946283}
-  MissonDesciprionText: Search and destroy all lairs
+  MissonDesciprionText: Search for and destroy all lairs
   ProtectionPanel: {fileID: 1518946284}
   Mask: {fileID: 1518946282}
   MaskTransitionDuration: 1
@@ -3559,7 +3559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: SpawnRate
-      value: 9000
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: KillReward
@@ -3569,6 +3569,10 @@ PrefabInstance:
       propertyPath: EnemyPrefab
       value: 
       objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HealthBarTimer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: TriggerDistance
       value: 20
@@ -4205,7 +4209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: SpawnRate
-      value: 9000
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: KillReward
@@ -17376,7 +17380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: SpawnRate
-      value: 9000
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: KillReward

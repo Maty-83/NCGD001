@@ -128,8 +128,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f1f98c1e31a6164e8f3d94b52578209, type: 2}
   ResistantText: {fileID: 2457282762027482818}
   EnemyPrefab: {fileID: 608048487261427747, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
-  SpawnRate: 5
-  TriggerDistance: 4
+  SpawnRate: 20
+  TriggerDistance: 10
   Spawners:
   - {fileID: 6709983018956905292}
   - {fileID: 6247059366536228036}

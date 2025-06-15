@@ -22,6 +22,7 @@ public class LairController : BasicEnemyController
     private float fadeTimer = 0f;
     private bool pendingDestroy = false;
     private bool pendingDestroyFlag = false;
+    private bool HasEntered = false;
 
     public override void OnDeath(bool destroy = true)
     {
@@ -72,8 +73,9 @@ public class LairController : BasicEnemyController
         {
             timer += Time.deltaTime;
 
-            if (timer >= SpawnRate && IsSpawnerReady())
+            if ((timer >= SpawnRate || !HasEntered) && IsSpawnerReady())
             {
+                HasEntered = true;
                 SpawnEnemies();
                 timer = 0f;
             }
