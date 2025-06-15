@@ -293833,6 +293833,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9be057e65066d694d904465d8967a81a, type: 2}
   - m_RefCount: 1771
     m_Data: {fileID: 11400000, guid: c7de23df509cdcf489762cbaad4d86fb, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 829
     m_Data: {fileID: 1600405908, guid: fabeea21d70771a4caf3a1687f0077b5, type: 3}
@@ -293866,6 +293868,8 @@ Tilemap:
     m_Data: {fileID: 1546755496, guid: fabeea21d70771a4caf3a1687f0077b5, type: 3}
   - m_RefCount: 1771
     m_Data: {fileID: 1695380009, guid: fabeea21d70771a4caf3a1687f0077b5, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 6276
     m_Data:
