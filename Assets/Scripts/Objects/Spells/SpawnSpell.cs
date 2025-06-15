@@ -14,6 +14,8 @@ namespace Assets.Scripts.Objects.Spells
         public float SafeSpawnRadius = 0.5f;
         public float ProjectileSpeed = 10f;
 
+        public LayerMask obstacleMask;
+
         private GameObject Shooter;
         private IDamager Weapon;
         private Rigidbody2D rBody;
@@ -35,7 +37,7 @@ namespace Assets.Scripts.Objects.Spells
 
         public virtual void AfterHit()
         {
-            TTL = -1;
+            Destroy(gameObject);
         }
 
         public virtual void Destroy()
@@ -102,16 +104,16 @@ namespace Assets.Scripts.Objects.Spells
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (hasHit) return;
+            if (collision.gameObject.GetInstanceID() == Shooter.GetInstanceID()) return;
 
             hasHit = true;
-
-            SpawnEnemiesAround(transform.position);
+            SpawnEnemiesAround(collision.transform.position);
             AfterHit();
         }
 
         private void SpawnEnemiesAround(Vector3 center)
         {
-            if (audioSource != null)
+            if (audioSource != null && spawnClip != null)
                 audioSource.PlayOneShot(spawnClip);
 
             int spawned = 0;
@@ -122,13 +124,14 @@ namespace Assets.Scripts.Objects.Spells
             {
                 attempts++;
 
-                Vector2 randomPos = center + (Vector3) ( UnityEngine.Random.insideUnitCircle * SpawnRadius );
+                Vector2 randomOffset = UnityEngine.Random.insideUnitCircle * SpawnRadius;
+                Vector2 spawnPos = center + (Vector3) randomOffset;
 
-                Collider2D hit = Physics2D.OverlapCircle(randomPos, SafeSpawnRadius);
 
+                Collider2D hit = Physics2D.OverlapCircle(spawnPos, SafeSpawnRadius, obstacleMask);
                 if (hit == null)
                 {
-                    Instantiate(EnemyPrefab, randomPos, Quaternion.identity);
+                    Instantiate(EnemyPrefab, spawnPos, Quaternion.identity);
                     spawned++;
                 }
             }

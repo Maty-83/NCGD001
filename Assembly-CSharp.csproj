@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\Objects\ProjectileController.cs" />
     <Compile Include="Assets\Scripts\UI\SpellPanelController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\LevelSelectionController.cs" />
     <Compile Include="Assets\Helpers\Enums\DamageType.cs" />
     <Compile Include="Assets\RaidTriggerTrapController.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\IProtectiveSpell.cs" />

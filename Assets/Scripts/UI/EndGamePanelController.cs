@@ -1,5 +1,8 @@
+using Assets.Scripts;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EndGamePanelController : MonoBehaviour
@@ -30,6 +33,7 @@ public class EndGamePanelController : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        GameManager.Instance.Resume();
+        SceneManager.LoadScene("MainMenu");
     }
 }

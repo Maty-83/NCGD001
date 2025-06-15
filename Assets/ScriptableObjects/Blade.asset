@@ -15,7 +15,7 @@ MonoBehaviour:
   Prefab: {fileID: 0}
   PreviewImage: {fileID: 0}
   Sound: {fileID: 8300000, guid: e00ffc5bf89f12145a2f5b992c433383, type: 3}
-  Range: 5
+  Range: 2
   Binding: 324
   WeaponType: 0
   ManaCost: 0

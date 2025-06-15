@@ -280,7 +280,7 @@ public class PlayerController : Entity
 
     public override void OnMelee(Weapon weapon, Vector2 dir)
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weapon.Range);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weapon.Range * 2);
         Vector2 forward = IsMovingRight ? Vector2.right : Vector2.left;
 
         foreach (var hit in hits)

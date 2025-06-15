@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Assets.Scripts.Entities;
+using Assets.Scripts.Entities.Behaviour;
 
 public class TornadoController : MonoBehaviour
 {
@@ -125,12 +126,18 @@ public class TornadoController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Rigidbody2D rb = null;
-        var entity = collision.GetComponent<Entity>();
-        var airParticle = collision.GetComponent<SakuraLeafController>();
+        var entity = collision.gameObject.GetComponent<Entity>();
+        var airParticle = collision.gameObject.GetComponent<SakuraLeafController>();
 
         if (entity != null)
         {
-            entity.IsPaused = false;
+            entity.IsPaused = true;
+            IBehaviour behav = collision.gameObject.GetComponent<IBehaviour>();
+            if (behav != null)
+            {
+                behav.Pause(false);
+            }
+
             rb = collision.attachedRigidbody;
         }
         else if (airParticle != null)
@@ -147,12 +154,18 @@ public class TornadoController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         Rigidbody2D rb = null;
-        var entity = collision.GetComponent<Entity>();
-        var airParticle = collision.GetComponent<SakuraLeafController>();
+        var entity = collision.gameObject.GetComponent<Entity>();
+        var airParticle = collision.gameObject.GetComponent<SakuraLeafController>();
 
         if (entity != null)
         {
             entity.IsPaused = false;
+            IBehaviour behav = collision.gameObject.GetComponent<IBehaviour>();
+            if(behav != null)
+            {
+                behav.Pause(false);
+            }
+
             rb = collision.attachedRigidbody;
         }
         else if(airParticle != null)
