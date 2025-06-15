@@ -99,11 +99,11 @@ PrefabInstance:
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: 'Resistances.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 792c6cbaf3c91494a82b1126ba50330c, type: 2}
+      objectReference: {fileID: 11400000, guid: 119663a3eeb5cac4a91cba9565642ce8, type: 2}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: 'Resistances.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 119663a3eeb5cac4a91cba9565642ce8, type: 2}
+      objectReference: {fileID: 11400000, guid: 6308728cf5b54fc4aae5e95a84f27802, type: 2}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: 'DefaultWeapons.Array.data[0]'
       value: 

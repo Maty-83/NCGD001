@@ -20,7 +20,7 @@ MonoBehaviour:
   WeaponType: 2
   ManaCost: 30
   Decription: 'Heal: Because a healthy demon slayer kills more demons!\n Cost: 30
-    Mana Healing: 20 HP'
+    Mana'
   BuyCost: 200
   DamageType: 0
   Damage: 0

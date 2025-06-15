@@ -979,6 +979,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c662fc9f25e8d8743bbc35ffad9b86d0, type: 2}
   - {fileID: 11400000, guid: f3d7423e92b603245afdba388955adde, type: 2}
   - {fileID: 11400000, guid: 2c668fb0f69f93c4cb3702219c8d2057, type: 2}
+  - {fileID: 11400000, guid: 299e66c437760054aa55856bb78f7f27, type: 2}
   PlayerDeathPlacePrefab: {fileID: 1339163677349929423, guid: 0ba710855ed484d458e0ad9c5089ff3b, type: 3}
   Lairs:
   - {fileID: 342552667}
@@ -3553,8 +3554,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: SpawnRate
+      value: 9000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: KillReward
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: TriggerDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: Spawners.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Resistances.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Resistances.Array.data[0]'
@@ -3569,7 +3594,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 268c9ffff67fac54485a06c09427960d, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6247059366536228036, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
@@ -4174,12 +4200,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: SpawnRate
+      value: 9000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: KillReward
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: EnemiesPerSpawn
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: TriggerDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: Spawners.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Resistances.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Resistances.Array.data[0]'
@@ -4194,7 +4244,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 268c9ffff67fac54485a06c09427960d, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6247059366536228036, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
@@ -17320,12 +17371,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: SpawnRate
+      value: 9000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: KillReward
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: TriggerDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Spawners.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Resistances.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Spawners.Array.data[2]'
@@ -17344,7 +17415,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 268c9ffff67fac54485a06c09427960d, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6247059366536228036, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5175440576323166237, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       insertIndex: -1
