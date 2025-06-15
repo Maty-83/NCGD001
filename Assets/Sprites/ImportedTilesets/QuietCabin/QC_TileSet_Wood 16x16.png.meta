@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QC_TileSet_Wood 16x16_0: 3994841722897669140
+      QC_TileSet_Wood 16x16_1: -7496980361475428699
+      QC_TileSet_Wood 16x16_2: -4207536537845004001
+      QC_TileSet_Wood 16x16_3: 9037300586391009750
+      QC_TileSet_Wood 16x16_4: 4483210389482652931
+      QC_TileSet_Wood 16x16_5: -2566910555093705529
+      QC_TileSet_Wood 16x16_6: 6328479995157615416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

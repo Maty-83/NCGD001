@@ -79,12 +79,15 @@ public class PlayerController : Entity
 
     private new void Update()
     {
+        if (!IsAlive || IsPaused)
+            return;
+
         base.Update();
     }
 
     private new void FixedUpdate()
     {
-        if(!IsAlive)
+        if(!IsAlive || IsPaused)
             return;
 
         Reload();

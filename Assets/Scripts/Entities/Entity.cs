@@ -41,6 +41,7 @@ namespace Assets.Scripts.Entities
         public float MaxMana { get; private set; }
         public bool IsAlive { get; internal set; } = true;
         public bool IsMovingRight { get; internal set; } = true;
+        public bool IsPaused { get; internal set; } = false ;
 
         internal SpriteRenderer renderer;
         internal Rigidbody2D rb;
@@ -128,7 +129,7 @@ namespace Assets.Scripts.Entities
 
         internal void Update()
         {
-            if (!IsAlive)
+            if (!IsAlive || IsPaused)
                 return;
 
             if (HP <= 0)
@@ -142,6 +143,9 @@ namespace Assets.Scripts.Entities
 
         internal void FixedUpdate()
         {
+            if (!IsAlive || IsPaused)
+                return;
+
             foreach (var weapon in BindedWeapons)
             {
                 if (!Input.GetKey(weapon.Key))

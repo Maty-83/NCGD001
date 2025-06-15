@@ -66,6 +66,7 @@
     <Compile Include="Assets\StormTrapController.cs" />
     <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Objects\Spells\Lightning.cs" />
     <Compile Include="Assets\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\StoryTelling\StoryPartController.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\AirBlast.cs" />
@@ -93,6 +94,8 @@
     <Compile Include="Assets\Scripts\UI\PauseCanvasControll.cs" />
     <Compile Include="Assets\Scripts\Objects\Spells\HealSpell.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerController.cs" />
+    <Compile Include="Assets\TornadoController.cs" />
+    <Compile Include="Assets\TornadoTrapController.cs" />
     <Compile Include="Assets\Scripts\Objects\Weapons\Gun.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Objects\IDamager.cs" />

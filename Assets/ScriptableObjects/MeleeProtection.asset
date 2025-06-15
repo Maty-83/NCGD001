@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MeleeProtection
   m_EditorClassIdentifier: 
   Prefab: {fileID: 5461004825411389311, guid: 370eba3cfa7fcfc4ca849f42c4ab4e6e, type: 3}
-  PreviewImage: {fileID: -2113586774, guid: c2dc8677a54bf724f9c659e7510c1b7f, type: 3}
+  PreviewImage: {fileID: 2307852071008026061, guid: 0608c80124b52654295d2624bdd7d8e2, type: 3}
   Sound: {fileID: 8300000, guid: 950ddb9690d0d624e8cf5fb8265e4a12, type: 3}
   Range: 0
   Binding: 55

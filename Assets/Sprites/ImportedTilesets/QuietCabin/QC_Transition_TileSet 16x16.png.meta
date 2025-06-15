@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QC_Transition_TileSet 16x16_0: 6307813295595749842
+      QC_Transition_TileSet 16x16_1: -6306722897317060432
+      QC_Transition_TileSet 16x16_2: -3761051373468964512
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
