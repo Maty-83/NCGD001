@@ -19,8 +19,8 @@ MonoBehaviour:
   Binding: 0
   WeaponType: 1
   ManaCost: 80
-  Decription: 'Arcane Artillery: Summon an artillery shell! Guaranteed kill on a
-    ghost, but at what price?\nCost: 80 mana Damage:200'
+  Decription: 'Arcane Artillery: Summon an artillery shell! Guaranteed kill on almost
+    any ghost!\nCost: 80 mana Damage:200'
   BuyCost: 4000
   DamageType: 5
   Damage: 200

@@ -22,4 +22,4 @@ MonoBehaviour:
   Decription: Basic ranged weapon.
   BuyCost: 0
   DamageType: 1
-  Damage: 25
+  Damage: 20

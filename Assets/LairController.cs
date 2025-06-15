@@ -15,7 +15,7 @@ public class LairController : BasicEnemyController
     [SerializeField] private float FadeDuration = 1f;
 
     private List<GameObject> enemies = new List<GameObject>();
-    private float timer = 5f;
+    private float timer = 10000f;
 
     // Fade variables
     private bool isFadingOut = false;

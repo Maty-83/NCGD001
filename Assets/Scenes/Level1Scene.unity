@@ -5300,16 +5300,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: SpawnRate
+      value: 9000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: KillReward
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: EnemiesPerSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: TriggerDistance
-      value: 15
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: Spawners.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Resistances.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Resistances.Array.data[0]'
@@ -5704,16 +5724,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: SpawnRate
+      value: 9000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: TriggerDistance
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Spawners.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Resistances.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Spawners.Array.data[2]'
@@ -13575,12 +13607,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: HP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: SpawnRate
+      value: 9000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: KillReward
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
+      propertyPath: TriggerDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Spawners.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Resistances.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: 'Spawners.Array.data[2]'

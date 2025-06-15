@@ -18,8 +18,8 @@ MonoBehaviour:
   Range: 0
   Binding: 55
   WeaponType: 2
-  ManaCost: 70
-  Decription: With this spell you gain 70% protection against bullets.
+  ManaCost: 40
+  Decription: 'With this spell you gain 70% protection against bullets. Cost: 40'
   BuyCost: 200
   DamageType: 0
   Damage: 0

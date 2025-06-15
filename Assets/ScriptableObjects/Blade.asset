@@ -22,4 +22,4 @@ MonoBehaviour:
   Decription: Basic melee weapon.
   BuyCost: 0
   DamageType: 2
-  Damage: 40
+  Damage: 50

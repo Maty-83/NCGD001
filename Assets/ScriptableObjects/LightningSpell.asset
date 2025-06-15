@@ -20,7 +20,7 @@ MonoBehaviour:
   WeaponType: 1
   ManaCost: 40
   Decription: Powerful bolt of lightning that jumps between nearby enemies and stuns
-    them
-  BuyCost: 0
+    them\nDamage:20 Cost:40
+  BuyCost: 1000
   DamageType: 4
   Damage: 20
