@@ -409,18 +409,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: -8219171629449147316}
-  HP: 20
+  HP: 25
   Mana: 100
   ManaRecoverySpeed: 0.05
   ShootKnockbackForce: 10
   DefaultWeapons:
   - {fileID: 11400000, guid: 16ae2ca8d053d5547941ace178934451, type: 2}
-  minTimeBetweenBullets: 0.2
-  minTimeBetweenMelee: 0.4
+  - {fileID: 11400000, guid: bbfe4b49c1aceef44a684633c218a17d, type: 2}
+  minTimeBetweenBullets: 0.6
+  minTimeBetweenMelee: 0.7
   DeathAudioClip: {fileID: 8300000, guid: 57a477dd7fea831478cbf6a8eb28a582, type: 3}
   HealthBarTimer: 50
   barControll: {fileID: 2722168426085307987}
-  ShootingRange: 5
+  ShootingRange: 10
   KillReward: 50
   Resistances: []
   ResistantText: {fileID: 3860651534933008026}
@@ -537,6 +538,8 @@ MonoBehaviour:
   maxSpeed: 5
   trackedGameObject: {fileID: 0}
   maxSeekStartDist: 20
+  seekDistMinimum: -1
+  safetyMarginOuter: 0.5
 --- !u!95 &4654959736108149462
 Animator:
   serializedVersion: 7

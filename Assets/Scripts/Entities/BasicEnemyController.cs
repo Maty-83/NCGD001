@@ -32,9 +32,10 @@ namespace Assets.Scripts.Entities
         }
         private new void Update()
         {
-            if (!IsAlive || IsPaused) return;
-
-            base.Update();
+            if (IsAlive)
+            {
+                base.Update();
+            }
 
             if (barControll != null)
             {
@@ -54,13 +55,13 @@ namespace Assets.Scripts.Entities
         {
             if (ResistantTimer < 0 && ResistantTimer > -0.5f)
                 ResistantText.SetActive(false);
-            else if(ResistantTimer  > 0)
+            else if (ResistantTimer > 0)
                 ResistantTimer -= Time.deltaTime;
 
-            if (!IsAlive) return;
+            if (!IsAlive || IsPaused) return;
 
             var player = GameManager.Instance.PlayerController;
-            var dir = -1 * ( gameObject.transform.position - player.transform.position);
+            var dir = -1 * ( gameObject.transform.position - player.transform.position );
             var distance = ( player.transform.position - transform.position ).magnitude;
 
             if (curTimeBetweenAttacks > minTimeBetweenMelee)
@@ -82,7 +83,7 @@ namespace Assets.Scripts.Entities
                     return;
 
                 var randomChoose = Random.Range(0, weaponCount);
-                OnShoot(RangeWeapons[randomChoose], dir);   
+                OnShoot(RangeWeapons[randomChoose], dir);
             }
 
 

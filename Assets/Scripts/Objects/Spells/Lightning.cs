@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Entities;
-using Assets.Scripts.Objects.ScriptableObjects;
 using Assets.Scripts.Objects;
 using Assets.Scripts.Entities.Behaviour;
 
@@ -35,55 +34,31 @@ public class LightningSpellController : MonoBehaviour, IProjectile
     {
         alreadyHit.Clear();
 
-        Vector2 currentOrigin = shooter.transform.position;
-        Vector2 currentDirection = direction;
-        float currentRange = Range;
-
-        bool hitOccurred = false;
-
-        for (int i = 0; i < maxJumps; i++)
+        var hit = new Hit
         {
-            Entity target = FindTarget(currentOrigin, currentDirection, currentRange);
+            currentOrigin = shooter.transform.position,
+            currentDirection = direction,
+            currentRange = Range,
+            hitOccurred = false
+        };
 
-            if (target == null)
-                break;
-
-            hitOccurred = true;
-
-            alreadyHit.Add(target);
-
-            Vector2 targetPos = target.transform.position;
-            CreateLightningSegment(currentOrigin, targetPos);
-
-            target.RecieveDamage(weapon);
-
-            IBehaviour behavior = target.GetComponent<IBehaviour>();
-            if (behavior != null)
-            {
-                behavior.Pause(true);
-
-                if (stunEffectPrefab != null)
-                {
-                    GameObject stunFx = Instantiate(stunEffectPrefab, target.transform.position, Quaternion.identity);
-                    Destroy(stunFx, stunDuration);
-                }
-
-                DelayedUnpause(target.gameObject, stunDuration);
-            }
-
-            currentOrigin = targetPos;
-            currentDirection = ( targetPos - currentOrigin ).normalized;
-            currentRange /= jumpRangeDivider;
-        }
-
-        // No hit? Show a default lightning
-        if (!hitOccurred)
+        Entity firstTarget = FindTarget(hit.currentOrigin, hit.currentDirection, hit.currentRange);
+        if(firstTarget == null)
         {
             Vector2 endPoint = (Vector2) shooter.transform.position + direction * defaultLength;
             CreateLightningSegment(shooter.transform.position, endPoint);
+            return;
         }
 
-        AfterHit();
+        HandleHit(firstTarget, hit);
+        for (int i = 0; i < maxJumps; i++)
+        {
+            Entity target = FindJumper(hit.currentOrigin, hit.currentDirection, hit.currentRange);
+            if (target == null)
+                break;
+
+            HandleHit(target, hit);
+        }
     }
 
     private void DelayedUnpause(GameObject target, float delay)
@@ -100,6 +75,10 @@ public class LightningSpellController : MonoBehaviour, IProjectile
             IBehaviour behavior = target.GetComponent<IBehaviour>();
             if (behavior != null)
                 behavior.Pause(false);
+
+            Entity ent = target.GetComponent<Entity>();
+            if (ent != null)
+                ent.IsPaused = false;
         }
     }
 
@@ -107,7 +86,6 @@ public class LightningSpellController : MonoBehaviour, IProjectile
 
     public void AfterHit()
     {
-        Destroy(gameObject, 0.1f);
     }
 
     public void Destroy()
@@ -131,7 +109,7 @@ public class LightningSpellController : MonoBehaviour, IProjectile
             sprite.size = new Vector2(distance * 10 , sprite.size.y);
         }
 
-        Destroy(segment, 1f);
+        Destroy(segment, 0.5f);
     }
 
     private Entity FindTarget(Vector2 origin, Vector2 direction, float range)
@@ -142,11 +120,15 @@ public class LightningSpellController : MonoBehaviour, IProjectile
             foreach(var hit in rayhits)
             {
                 Entity e = hit.collider.GetComponent<Entity>();
-                if (e != null && !alreadyHit.Contains(e) && e.IsAlive && e.gameObject != shooter)
+                if (e != null && !alreadyHit.Contains(e) && e.IsAlive && e.gameObject.GetInstanceID() != shooter.GetInstanceID())
                     return e;
             }
         }
+        return null;
+    }
 
+    private Entity FindJumper(Vector2 origin, Vector2 direction, float range)
+    {
         Collider2D[] hits = Physics2D.OverlapCircleAll(origin, range);
         Entity closest = null;
         float closestDist = float.MaxValue;
@@ -154,7 +136,7 @@ public class LightningSpellController : MonoBehaviour, IProjectile
         foreach (var h in hits)
         {
             Entity e = h.GetComponent<Entity>();
-            if (e != null && !alreadyHit.Contains(e) && e.IsAlive && e.gameObject != shooter)
+            if (e != null && !alreadyHit.Contains(e) && e.IsAlive && e.gameObject.GetInstanceID() != shooter.GetInstanceID())
             {
                 float dist = Vector2.Distance(origin, e.transform.position);
                 if (dist < closestDist)
@@ -167,4 +149,40 @@ public class LightningSpellController : MonoBehaviour, IProjectile
 
         return closest;
     }
+
+    private void HandleHit(Entity target, Hit hit)
+    {
+        hit.hitOccurred = true;
+        alreadyHit.Add(target);
+
+        Vector2 targetPos = target.transform.position;
+        CreateLightningSegment(hit.currentOrigin, targetPos);
+        target.RecieveDamage(weapon);
+
+        IBehaviour behavior = target.GetComponent<IBehaviour>();
+        if (behavior != null)
+        {
+            behavior.Pause(true);
+            target.IsPaused = true;
+
+            if (stunEffectPrefab != null)
+            {
+                GameObject stunFx = Instantiate(stunEffectPrefab, target.transform.position, Quaternion.identity);
+                Destroy(stunFx, stunDuration);
+            }
+
+            DelayedUnpause(target.gameObject, stunDuration);
+        }
+
+        hit.currentOrigin = targetPos;
+        hit.currentDirection = ( targetPos - hit.currentOrigin ).normalized;
+        hit.currentRange /= jumpRangeDivider;
+    }
+}
+class Hit
+{
+    public Vector2 currentOrigin;
+    public Vector2 currentDirection;
+    public float currentRange;
+    public bool hitOccurred;
 }
