@@ -147,6 +147,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 436573875286609112}
+    - targetCorrespondingSourceObject: {fileID: 7037589145563048632, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3511253068028974788}
   m_SourcePrefab: {fileID: 100100000, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
 --- !u!82 &1605639332031882719 stripped
 AudioSource:
@@ -180,3 +183,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3511253068028974788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8794765424630612779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d280d75157c98a54f8110b0806960504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableTracking: 0
+  maxSpeed: 15
+  trackedGameObject: {fileID: 0}
+  maxSeekStartDist: 5
+  seekDistMinimum: 30
+  safetyMarginOuter: 0.5

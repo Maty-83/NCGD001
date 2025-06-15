@@ -7,6 +7,9 @@ public class PauseMenuController : MonoBehaviour
 {
     [SerializeField] PauseCanvasControll CanvasControll;
     [SerializeField] TMP_Text ScoreText;
+    [SerializeField] TMP_Text LevelText;
+    [SerializeField] TMP_Text MissionDescription;
+    [SerializeField] TMP_Text UnbuyedSpells;
 
     private void OnEnable()
     {
