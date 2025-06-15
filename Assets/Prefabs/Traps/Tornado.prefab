@@ -143,10 +143,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TTL: 5
-  SuctionForce: 100
-  RotationForce: 100
-  ThrowForce: 200
-  HoldDuration: 1.5
+  SuctionForce: 10
+  RotationForce: 20
+  ThrowForce: 20
+  HoldDuration: 1
 --- !u!61 &5858294216035492284
 BoxCollider2D:
   m_ObjectHideFlags: 0
