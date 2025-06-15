@@ -6,6 +6,7 @@ using Assets.Scripts.Objects;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using System;
 
 namespace Assets.Scripts.Entities
 {
@@ -25,7 +26,7 @@ namespace Assets.Scripts.Entities
         //internal float curTimeBetweenBullets = 0;
         public float minTimeBetweenBullets = 0.2f;
         public float minTimeBetweenMelee = 0.4f;
-        internal float curTimeBetweenAttacks = 0;
+        internal float curTimeBetweenAttacks = 0f;
 
         [Header("Audio Clips")]
         public AudioClip DeathAudioClip;
@@ -110,6 +111,7 @@ namespace Assets.Scripts.Entities
             MeleeWeapons = new();
             RangeWeapons = new();
             ProtectiveWeapons = new();
+            curTimeBetweenAttacks = Math.Max(minTimeBetweenBullets, minTimeBetweenMelee);
 
             rb = GetComponent<Rigidbody2D>();
             renderer = GetComponent<SpriteRenderer>();

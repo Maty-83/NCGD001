@@ -280,6 +280,7 @@ MonoBehaviour:
   audioSource: {fileID: 2995906471880855581}
   clip: {fileID: 8300000, guid: f08efe0db456cc542bb991b373d37434, type: 3}
   ScaleSpeed: 1
+  isActivated: 0
 --- !u!82 &2995906471880855581
 AudioSource:
   m_ObjectHideFlags: 0

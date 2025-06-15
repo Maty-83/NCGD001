@@ -343,7 +343,7 @@ MonoBehaviour:
   spawnClip: {fileID: 8300000, guid: 272094c5d7b8d1d48b44c3800a1d15ef, type: 3}
   EnemyPrefab: {fileID: 7037589145563048632, guid: 35c56b7308a941746b5dcc2c6afb7123, type: 3}
   EnemiesToSpawn: 4
-  SpawnRadius: 5
+  SpawnRadius: 4
   SafeSpawnRadius: 0.5
   ProjectileSpeed: 10
   obstacleMask:
