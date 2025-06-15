@@ -1100,42 +1100,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 79195921}
     m_Modifications:
-    - target: {fileID: 297566576712396680, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 297566576712396680, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 297566576712396680, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_LinearDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 297566576712396680, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_AngularDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 772577542357490232, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208857498503343890, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208857498503343890, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208857498503343890, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_LinearDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208857498503343890, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_AngularDamping
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2353925791015315676, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1143,18 +1107,6 @@ PrefabInstance:
     - target: {fileID: 3113850890501427524, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190635583494165431, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586218776777910352, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: BackgroundWidth
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586218776777910352, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: BackgroundHeight
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4867754487741149684, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1208,21 +1160,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialLevelPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 8510767798610235298, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8510767798610235298, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_LinearDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8510767798610235298, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
-      propertyPath: m_AngularDamping
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2981696961032952986, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
