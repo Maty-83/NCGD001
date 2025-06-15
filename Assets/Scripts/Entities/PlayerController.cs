@@ -43,6 +43,7 @@ public class PlayerController : Entity
 
     private int reloadTime = 0;
     private float score = 0;
+    private bool jumpedStillPressing = false;
 
     public float Score
     {
@@ -170,7 +171,7 @@ public class PlayerController : Entity
 
         if (up)
         {
-            if (isGrounded)
+            if (isGrounded && !jumpedStillPressing)
                 OnJump();
             if (rb.linearVelocityY > 0 && doNotReduceGravityGoingUp)
             {
@@ -184,6 +185,7 @@ public class PlayerController : Entity
         else
         {
             rb.gravityScale = gravityNormal * gravityMultNoUpKey;
+            jumpedStillPressing = false;
         }
 
 
@@ -256,6 +258,7 @@ public class PlayerController : Entity
     public void OnJump()
     {
         rb.linearVelocityY = jumpSpeed;
+        jumpedStillPressing = true;
     }
 
     public override void OnShoot(Weapon weapon, Vector2 dir)
