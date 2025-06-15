@@ -110201,6 +110201,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 79195921}
     m_Modifications:
+    - target: {fileID: 3159382288452403736, guid: de80afa8fabcfa247a0b7aeaaaaa2dc9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5a95f18c648847148ba0fa5753b2e249, type: 2}
     - target: {fileID: 5605604279890984998, guid: de80afa8fabcfa247a0b7aeaaaaa2dc9, type: 3}
       propertyPath: m_Name
       value: ToxicBarel
@@ -110781,6 +110785,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 79195921}
     m_Modifications:
+    - target: {fileID: 3159382288452403736, guid: de80afa8fabcfa247a0b7aeaaaaa2dc9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5a95f18c648847148ba0fa5753b2e249, type: 2}
     - target: {fileID: 5605604279890984998, guid: de80afa8fabcfa247a0b7aeaaaaa2dc9, type: 3}
       propertyPath: m_Name
       value: ToxicBarel

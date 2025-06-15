@@ -129,7 +129,7 @@ namespace Assets.Scripts.Entities
 
         internal void Update()
         {
-            if (!IsAlive || IsPaused)
+            if (!IsAlive)
                 return;
 
             if (HP <= 0)
@@ -138,46 +138,50 @@ namespace Assets.Scripts.Entities
                 IsAlive = false;
             }
 
-            HandleOrientation();
+            if(!IsPaused)
+                HandleOrientation();
         }
 
         internal void FixedUpdate()
         {
-            if (!IsAlive || IsPaused)
+            if (!IsAlive)
                 return;
 
-            foreach (var weapon in BindedWeapons)
+            if (!IsPaused)
             {
-                if (!Input.GetKey(weapon.Key))
-                    continue;
+                foreach (var weapon in BindedWeapons)
+                {
+                    if (!Input.GetKey(weapon.Key))
+                        continue;
 
-                if (weapon.Value.WeaponType == WeaponType.Melee)
-                {
-                    if (curTimeBetweenAttacks > minTimeBetweenMelee)
+                    if (weapon.Value.WeaponType == WeaponType.Melee)
                     {
-                        Vector2 dir = Vector2.left;
-                        if (IsMovingRight)
-                            dir = Vector2.right;
+                        if (curTimeBetweenAttacks > minTimeBetweenMelee)
+                        {
+                            Vector2 dir = Vector2.left;
+                            if (IsMovingRight)
+                                dir = Vector2.right;
 
-                        OnMelee(weapon.Value, dir);
+                            OnMelee(weapon.Value, dir);
+                        }
                     }
-                }
-                else if (weapon.Value.WeaponType == WeaponType.Range)
-                {
-                    if (curTimeBetweenAttacks > minTimeBetweenBullets && weapon.Value.ManaCost < Mana)
+                    else if (weapon.Value.WeaponType == WeaponType.Range)
                     {
-                        Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                        var dir = -1 * ( gameObject.transform.position - mouse );
-                        OnShoot(weapon.Value, dir);
-                        Mana -= weapon.Value.ManaCost;
+                        if (curTimeBetweenAttacks > minTimeBetweenBullets && weapon.Value.ManaCost < Mana)
+                        {
+                            Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                            var dir = -1 * ( gameObject.transform.position - mouse );
+                            OnShoot(weapon.Value, dir);
+                            Mana -= weapon.Value.ManaCost;
+                        }
                     }
-                }
-                else if (weapon.Value.WeaponType == WeaponType.Protective)
-                {
-                    if (curTimeBetweenAttacks > minTimeBetweenBullets && weapon.Value.ManaCost < Mana)
+                    else if (weapon.Value.WeaponType == WeaponType.Protective)
                     {
-                        OnProtectiveSpell(weapon.Value);
-                        Mana -= weapon.Value.ManaCost;
+                        if (curTimeBetweenAttacks > minTimeBetweenBullets && weapon.Value.ManaCost < Mana)
+                        {
+                            OnProtectiveSpell(weapon.Value);
+                            Mana -= weapon.Value.ManaCost;
+                        }
                     }
                 }
             }

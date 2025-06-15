@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -37,7 +38,15 @@ namespace Assets.Scripts
 
         private int lairCount = 0;
 
-        public static Entity Player = null;
+        public static bool IsLoadingLevel;
+        public static List<LairController> RemovedLairs = new List<LairController>();
+        public static List<Weapon> OwnedWeapons;
+        public static Dictionary<KeyCode, Weapon> BindedWeapons;
+        public static List<Weapon> MeleeWeapons;
+        public static List<Weapon> RangeWeapons;
+        public static List<Weapon> ProtectiveWeapons;
+        public static float PlayerScore = 0f;
+
         public static Vector3 PlayerDeathPosition = Vector3.negativeInfinity;
         public static Vector3 LastCheckpoint = Vector3.negativeInfinity;
         public static CheckPointController CheckPointController = null;
@@ -49,8 +58,9 @@ namespace Assets.Scripts
             {
                 if (Lairs[i].gameObject.GetInstanceID() == lair.GetInstanceID())
                 {
+                    RemovedLairs.Add(Lairs[i]);
                     Lairs.RemoveAt(i);
-                    MissonDesciprion.text = $"{MissonDesciprionText} {Lairs.Count}/{lairCount}";
+                    MissonDesciprion.text = $"{MissonDesciprionText} {RemovedLairs.Count}/{lairCount}";
                 }
             }
         }
@@ -88,16 +98,32 @@ namespace Assets.Scripts
 
         public void LoadNextLevel()
         {
+            IsLoadingLevel = true;
+            OwnedWeapons =PlayerController.OwnedWeapons;
+            BindedWeapons = PlayerController.BindedWeapons;
+            MeleeWeapons = PlayerController.MeleeWeapons;
+            RangeWeapons = PlayerController.RangeWeapons;
+            ProtectiveWeapons = PlayerController.ProtectiveWeapons;
+            PlayerDeathPosition = transform.position;
+            PlayerScore = PlayerController.Score;
+
             PlayerDeathPosition = Vector3.negativeInfinity;
             CheckPointController = null;
+            RemovedLairs.Clear();
             LastCheckpoint = Vector3.negativeInfinity;
             DroppedScore = 0;
         }
 
         public void ClearCheckpoint()
         {
-            Player = null;
+            OwnedWeapons.Clear();
+            BindedWeapons.Clear();
+            MeleeWeapons.Clear();
+            RangeWeapons.Clear();
+            ProtectiveWeapons.Clear();
+
             PlayerDeathPosition = Vector3.negativeInfinity;
+            RemovedLairs.Clear();
             CheckPointController = null;
             LastCheckpoint = Vector3.negativeInfinity;
             DroppedScore = 0;
@@ -147,7 +173,7 @@ namespace Assets.Scripts
         private void Start()
         {
             lairCount = Lairs.Count;
-            MissonDesciprion.text = $"{MissonDesciprionText} {lairCount}/{Lairs.Count}";
+            MissonDesciprion.text = $"{MissonDesciprionText} {RemovedLairs.Count}/{Lairs.Count}";
 
             if (PlayerDeathPosition.y != float.NegativeInfinity)
             {
@@ -155,6 +181,18 @@ namespace Assets.Scripts
                 controller.gameObject.transform.position = new Vector3(PlayerDeathPosition.x, PlayerDeathPosition.y, 0);
                 if (controller != null)
                     controller.Init(DroppedScore);
+
+                if(RemovedLairs.Count > 0)
+                {
+                    foreach (var l in RemovedLairs)
+                    {
+                        if (Lairs.Count != 0)
+                        {
+                            Destroy(Lairs[0].gameObject);
+                            Lairs.RemoveAt(0);
+                        }
+                    }
+                }
             }
 
             if (Mask != null)

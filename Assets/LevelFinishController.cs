@@ -2,6 +2,7 @@ using Assets.Scripts;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class LevelFinishController : MonoBehaviour
 {
@@ -79,6 +80,7 @@ public class LevelFinishController : MonoBehaviour
             yield return GameManager.Instance.StartCoroutine(GameManager.Instance.FadeMask(0f, 1f));
         }
 
+        GameManager.Instance.LoadNextLevel();
         SceneManager.LoadScene(PortalDestination);
     }
 }

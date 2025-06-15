@@ -65,21 +65,23 @@ public class PlayerController : Entity
         hpBarController.SetValues(HP, true, 0, HP);
         manaController.SetValues(Mana, true, 0, Mana);
 
-        if(GameManager.LastCheckpoint.y != float.NegativeInfinity)
+        if(GameManager.LastCheckpoint.y != float.NegativeInfinity || GameManager.IsLoadingLevel)
         {
             transform.position = GameManager.LastCheckpoint;
-            OwnedWeapons = GameManager.Player.OwnedWeapons;
-            BindedWeapons = GameManager.Player.BindedWeapons;
-            MeleeWeapons = GameManager.Player.MeleeWeapons;
-            RangeWeapons = GameManager.Player.RangeWeapons;
-            ProtectiveWeapons = GameManager.Player.ProtectiveWeapons;
+            OwnedWeapons = GameManager.OwnedWeapons;
+            BindedWeapons = GameManager.BindedWeapons;
+            MeleeWeapons = GameManager.MeleeWeapons;
+            RangeWeapons = GameManager.RangeWeapons;
+            ProtectiveWeapons = GameManager.ProtectiveWeapons;
             GameManager.Instance.SpellPanel.UpdatePanel();
+            GameManager.IsLoadingLevel = false;
+            Score = GameManager.PlayerScore;
         }
     }
 
     private new void Update()
     {
-        if (!IsAlive || IsPaused)
+        if (!IsAlive)
             return;
 
         base.Update();
@@ -87,12 +89,15 @@ public class PlayerController : Entity
 
     private new void FixedUpdate()
     {
-        if(!IsAlive || IsPaused)
+        if(!IsAlive)
             return;
 
         Reload();
         HandleAudio();
-        HandleInput();
+        if (!IsPaused)
+        {
+            HandleInput();
+        }
         HandleAnimations();
         base.FixedUpdate();
         manaController.SetValues(Mana, true);
@@ -292,6 +297,7 @@ public class PlayerController : Entity
                     controller.rBody.linearVelocityX = 0;
                     controller.rBody.linearVelocityY = 0;
                     controller.Direction = objectDirection;
+                    controller.TTL = 10;
                     controller.Shoot();
                     AudioSource.PlayOneShot(BulletBounce);
                 }
@@ -308,9 +314,14 @@ public class PlayerController : Entity
     }
     public override void OnDeath(bool destroy = false)
     {
-        GameManager.Player = this;
+        GameManager.OwnedWeapons = OwnedWeapons;
+        GameManager.BindedWeapons = BindedWeapons;
+        GameManager.MeleeWeapons = MeleeWeapons;
+        GameManager.RangeWeapons = RangeWeapons;
+        GameManager.ProtectiveWeapons = ProtectiveWeapons;
         GameManager.PlayerDeathPosition = transform.position;
         GameManager.DroppedScore = Score;
+        GameManager.PlayerScore = 0;
 
         base.OnDeath(false);
         GameManager.Instance.EndPanel.Invoke("You died!", "Restart", () =>

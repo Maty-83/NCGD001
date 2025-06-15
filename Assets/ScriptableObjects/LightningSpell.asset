@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b44f1f2d94ae7a4db7eebf4daeec7ad, type: 3}
   m_Name: LightningSpell
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 6558058357626481252, guid: 202776c14ebb18a47a2861762d31aaf6, type: 3}
+  Prefab: {fileID: 6558058357626481252, guid: cf86bc0d71b3d1d498350470f016e657, type: 3}
   PreviewImage: {fileID: -604649934463621270, guid: fd0a4ea9fcf285443bbdbc5917746a08, type: 3}
   Sound: {fileID: 8300000, guid: 91766b3bb86c71649a3d72cfa3dd0847, type: 3}
   Range: -1
   Binding: 49
   WeaponType: 1
-  ManaCost: 10
+  ManaCost: 40
   Decription: Powerful bolt of lightning that jumps between nearby enemies and stuns
     them
   BuyCost: 0
   DamageType: 4
-  Damage: 50
+  Damage: 20

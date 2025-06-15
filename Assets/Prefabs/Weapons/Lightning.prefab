@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6435204958410058007}
   - component: {fileID: 8073704183466819061}
   - component: {fileID: 2269202292978996255}
-  - component: {fileID: 7165339876894275066}
   - component: {fileID: -5879794583278155252}
   - component: {fileID: -4523635784810645746}
   m_Layer: 0
@@ -81,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -604649934463621270, guid: fd0a4ea9fcf285443bbdbc5917746a08, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 0.9716981, g: 0.96889824, b: 0.9671146, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,7 +88,7 @@ SpriteRenderer:
   m_Size: {x: 25, y: 2}
   m_AdaptiveModeThreshold: 1
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &8073704183466819061
@@ -155,58 +154,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &7165339876894275066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6558058357626481252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
-  m_LightType: 3
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
-  m_LightVolumeIntensity: 1
-  m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowsEnabled: 1
-  m_ShadowIntensity: 0.75
-  m_ShadowSoftness: 0.3
-  m_ShadowSoftnessFalloffIntensity: 0.5
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.2
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!82 &-5879794583278155252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -316,13 +263,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa741302415922f47a3f749335e79e4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 20
-  lightningSegmentPrefab: {fileID: 6558058357626481252}
   stunEffectPrefab: {fileID: 7545712944364837011, guid: edb93aecb6f6d174c9f60ea0ff843cfb, type: 3}
+  stunDuration: 2
+  Range: 30
+  lightningSegmentPrefab: {fileID: 6558058357626481252, guid: 202776c14ebb18a47a2861762d31aaf6, type: 3}
   jumpRangeDivider: 2
   maxJumps: 5
   entityLayerMask:
     serializedVersion: 2
     m_Bits: 0
-  defaultLength: 3
-  stunDuration: 0.5
+  defaultLength: 2

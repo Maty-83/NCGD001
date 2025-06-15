@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: HP
-      value: 300
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1177133672432125366, guid: bcbc59e734fd88f4d8b1aa5cc88629e5, type: 3}
       propertyPath: KillReward

@@ -92,9 +92,16 @@ public class SeekingBehaviour : MonoBehaviour, IBehaviour
 
     void IBehaviour.Pause(bool isPaused)
     {
-        if(isPaused)
+        if (isPaused)
+        {
+            ownRB.bodyType = RigidbodyType2D.Static;
+            ownRB.linearVelocity = new Vector2(0, 0);
             Pause = float.MaxValue;
+        }
         else
+        {
+            ownRB.bodyType = RigidbodyType2D.Dynamic;
             Pause = 0f;
+        }
     }
 }
