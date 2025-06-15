@@ -11359,7 +11359,8 @@ MonoBehaviour:
   verticalOffset: 4
   screenshakeMaxOffset: 1.2
   mouseMaxOffset: 3.4
-  maxSpeedOffset: 3.4
+  speedOffsetPerVelocityHoriz: 0.01
+  speedOffsetPerVelocityVert: 0
 --- !u!114 &1594177906
 MonoBehaviour:
   m_ObjectHideFlags: 0

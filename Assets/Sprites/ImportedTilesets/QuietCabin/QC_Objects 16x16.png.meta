@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      QC_Objects 16x16_0: 5794913071488323311
+      QC_Objects 16x16_1: -816553239281282380
+      QC_Objects 16x16_10: -5721848528516182056
+      QC_Objects 16x16_11: -7045568819479501959
+      QC_Objects 16x16_12: -5688525587034908824
+      QC_Objects 16x16_13: 8177946944978105603
+      QC_Objects 16x16_14: 356324681255890002
+      QC_Objects 16x16_2: -5872790154617422242
+      QC_Objects 16x16_3: 229933743037642031
+      QC_Objects 16x16_4: -2984962895306102726
+      QC_Objects 16x16_5: 351707756196459479
+      QC_Objects 16x16_6: -4070541971720212361
+      QC_Objects 16x16_7: 8483224850117154958
+      QC_Objects 16x16_8: -1524583679283080211
+      QC_Objects 16x16_9: -3098229330089911310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

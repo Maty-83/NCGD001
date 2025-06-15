@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Assets.Scripts.Entities;
 using Assets.Scripts.Objects.ScriptableObjects;
 using Assets.Scripts.Objects;
+using Assets.Scripts.Entities.Behaviour;
 
 public class LightningSpellController : MonoBehaviour, IProjectile
 {
@@ -12,13 +12,16 @@ public class LightningSpellController : MonoBehaviour, IProjectile
     private Rigidbody2D rigid;
     private Vector2 direction;
 
-    [SerializeField] private float jumpRangeDivider = 2f; // How much to reduce range each jump
-    [SerializeField] private int maxJumps = 5; // Max number of jumps
-    [SerializeField] private LayerMask entityLayerMask; // Set in inspector to your Entity layer
-    [SerializeField] private float Range = 5f;
+    [SerializeField] private GameObject stunEffectPrefab;
+    [SerializeField] private float stunDuration = 0.5f;
+    [SerializeField] private float Range = 10f;
+    [SerializeField] private GameObject lightningSegmentPrefab;
+    [SerializeField] private float jumpRangeDivider = 2f;
+    [SerializeField] private int maxJumps = 5;
+    [SerializeField] private LayerMask entityLayerMask;
+    [SerializeField] private float defaultLength = 3f;
 
     private List<Entity> alreadyHit = new List<Entity>();
-    private SpriteRenderer spriteRenderer;
 
     public void Init(GameObject shooter, IDamager weapon, Rigidbody2D rigid, Vector2 direction)
     {
@@ -32,16 +35,11 @@ public class LightningSpellController : MonoBehaviour, IProjectile
     {
         alreadyHit.Clear();
 
-        Vector2 currentOrigin = transform.position;
+        Vector2 currentOrigin = shooter.transform.position;
         Vector2 currentDirection = direction;
         float currentRange = Range;
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer == null)
-        {
-            Debug.LogError("LightningSpellController requires SpriteRenderer with Tiled mode.");
-            return;
-        }
+        bool hitOccurred = false;
 
         for (int i = 0; i < maxJumps; i++)
         {
@@ -50,29 +48,65 @@ public class LightningSpellController : MonoBehaviour, IProjectile
             if (target == null)
                 break;
 
+            hitOccurred = true;
+
             alreadyHit.Add(target);
 
-            target.RecieveDamage(weapon);
             Vector2 targetPos = target.transform.position;
-            Vector2 dirToTarget = targetPos - currentOrigin;
-            float distance = dirToTarget.magnitude;
+            CreateLightningSegment(currentOrigin, targetPos);
 
-            transform.right = dirToTarget.normalized;
-            transform.position = currentOrigin;
-            spriteRenderer.size = new Vector2(distance, spriteRenderer.size.y);
+            target.RecieveDamage(weapon);
+
+            IBehaviour behavior = target.GetComponent<IBehaviour>();
+            if (behavior != null)
+            {
+                behavior.Pause(true);
+
+                if (stunEffectPrefab != null)
+                {
+                    GameObject stunFx = Instantiate(stunEffectPrefab, target.transform.position, Quaternion.identity);
+                    Destroy(stunFx, stunDuration);
+                }
+
+                DelayedUnpause(target.gameObject, stunDuration);
+            }
 
             currentOrigin = targetPos;
+            currentDirection = ( targetPos - currentOrigin ).normalized;
             currentRange /= jumpRangeDivider;
+        }
+
+        // No hit? Show a default lightning
+        if (!hitOccurred)
+        {
+            Vector2 endPoint = (Vector2) shooter.transform.position + direction * defaultLength;
+            CreateLightningSegment(shooter.transform.position, endPoint);
         }
 
         AfterHit();
     }
 
-    public void OnHit(){}
+    private void DelayedUnpause(GameObject target, float delay)
+    {
+        StartCoroutine(UnpauseAfterDelay(target, delay));
+    }
+
+    private System.Collections.IEnumerator UnpauseAfterDelay(GameObject target, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (target != null)
+        {
+            IBehaviour behavior = target.GetComponent<IBehaviour>();
+            if (behavior != null)
+                behavior.Pause(false);
+        }
+    }
+
+    public void OnHit() { }
 
     public void AfterHit()
     {
-        // Destroy lightning object after short time so it can display visually
         Destroy(gameObject, 0.1f);
     }
 
@@ -81,19 +115,39 @@ public class LightningSpellController : MonoBehaviour, IProjectile
         Destroy(gameObject);
     }
 
+    private void CreateLightningSegment(Vector2 from, Vector2 to)
+    {
+        Vector2 midPoint = ( from + to ) / 2f;
+        Vector2 dir = to - from;
+        float distance = dir.magnitude;
+
+        GameObject segment = Instantiate(lightningSegmentPrefab, midPoint, Quaternion.identity);
+        segment.transform.right = dir.normalized;
+
+        var sprite = segment.GetComponent<SpriteRenderer>();
+        if (sprite != null)
+        {
+            sprite.drawMode = SpriteDrawMode.Tiled; // Just in case
+            sprite.size = new Vector2(distance * 10 , sprite.size.y);
+        }
+
+        Destroy(segment, 1f);
+    }
+
     private Entity FindTarget(Vector2 origin, Vector2 direction, float range)
     {
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction, range, entityLayerMask);
-        if (hit.collider != null)
+        var rayhits = Physics2D.RaycastAll(origin, direction, range);
+        if (rayhits != null)
         {
-            Entity entity = hit.collider.GetComponent<Entity>();
-            if (entity != null && !alreadyHit.Contains(entity) && entity.IsAlive)
+            foreach(var hit in rayhits)
             {
-                return entity;
+                Entity e = hit.collider.GetComponent<Entity>();
+                if (e != null && !alreadyHit.Contains(e) && e.IsAlive && e.gameObject != shooter)
+                    return e;
             }
         }
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(origin, range, entityLayerMask);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(origin, range);
         Entity closest = null;
         float closestDist = float.MaxValue;
 

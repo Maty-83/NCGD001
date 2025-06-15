@@ -1768,7 +1768,7 @@ MonoBehaviour:
   BackgroundLayer: {fileID: 1111992160}
   ParentLayer: {fileID: 1111992159}
   BackgroundWidth: 1000
-  BackgroundHeight: 300
+  BackgroundHeight: 350
   SpawnInterval: 0.5
   MinLeaves: 15
   MaxLeaves: 20
@@ -2630,7 +2630,7 @@ MonoBehaviour:
   BackgroundLayer: {fileID: 1840883882}
   ParentLayer: {fileID: 1840883881}
   BackgroundWidth: 1000
-  BackgroundHeight: 300
+  BackgroundHeight: 350
   SpawnInterval: 0.5
   MinLeaves: 3
   MaxLeaves: 7
@@ -2699,7 +2699,7 @@ MonoBehaviour:
   BackgroundLayer: {fileID: 1857536358}
   ParentLayer: {fileID: 1857536357}
   BackgroundWidth: 1000
-  BackgroundHeight: 300
+  BackgroundHeight: 350
   SpawnInterval: 0.5
   MinLeaves: 1
   MaxLeaves: 5
@@ -3179,7 +3179,8 @@ MonoBehaviour:
   verticalOffset: 4
   screenshakeMaxOffset: 1.2
   mouseMaxOffset: 3.4
-  maxSpeedOffset: 3.4
+  speedOffsetPerVelocityHoriz: 0.1
+  speedOffsetPerVelocityVert: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
