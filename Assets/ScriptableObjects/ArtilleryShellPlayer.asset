@@ -22,5 +22,5 @@ MonoBehaviour:
   Decription: 'Arcane Artillery: Summon an artillery shell! Guaranteed kill on almost
     any ghost!\nCost: 80 mana Damage:200'
   BuyCost: 4000
-  DamageType: 5
+  DamageType: 1
   Damage: 200

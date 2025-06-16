@@ -275,6 +275,7 @@ MonoBehaviour:
   PlayerController: {fileID: 920412377}
   damagers:
   - {fileID: 11400000, guid: f77209897b0a10648a9961582959ebfe, type: 2}
+  - {fileID: 11400000, guid: 8986c73f2a9e330498c305f0e21d27b7, type: 2}
   - {fileID: 11400000, guid: 1c4921be0200c464d9333c153a783bbf, type: 2}
   - {fileID: 11400000, guid: e66003d319434f94a951bfcdbc86462b, type: 2}
   - {fileID: 11400000, guid: 30041241edc57144683e3859b804dcd3, type: 2}
@@ -1140,6 +1141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 79195921}
     m_Modifications:
+    - target: {fileID: 1924000610937515285, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
+      propertyPath: KillReward
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2353925791015315676, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1194,6 +1199,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6486595929244160874, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570196842145879036, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
+      propertyPath: KillReward
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8319874655080930908, guid: 66e41f9e9bd1dc94faa430d2f7a221d6, type: 3}
