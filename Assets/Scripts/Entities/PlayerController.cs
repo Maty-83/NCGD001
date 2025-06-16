@@ -6,6 +6,7 @@ using Assets.Scripts.Entities;
 using Assets.Scripts.Objects.ScriptableObjects;
 
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -68,7 +69,10 @@ public class PlayerController : Entity
 
         if(GameManager.LastCheckpoint.y != float.NegativeInfinity || GameManager.IsLoadingLevel)
         {
-            transform.position = GameManager.LastCheckpoint;
+            if (GameManager.LastCheckpoint.y != float.NegativeInfinity)
+            {
+                transform.position = GameManager.LastCheckpoint;
+            }
             OwnedWeapons = GameManager.OwnedWeapons;
             BindedWeapons = GameManager.BindedWeapons;
             MeleeWeapons = GameManager.MeleeWeapons;

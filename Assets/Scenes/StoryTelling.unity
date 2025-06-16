@@ -160,7 +160,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 795f5da1fb010db4085dc66449746bc6, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 6639617744099980785, guid: 795f5da1fb010db4085dc66449746bc6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1767,8 +1767,8 @@ MonoBehaviour:
   - {fileID: 8843441529459176893, guid: 03d72735baec8294f851c5421c1bb45b, type: 3}
   BackgroundLayer: {fileID: 1111992160}
   ParentLayer: {fileID: 1111992159}
-  BackgroundWidth: 1000
-  BackgroundHeight: 350
+  BackgroundWidth: 1200
+  BackgroundHeight: 355
   SpawnInterval: 0.5
   MinLeaves: 15
   MaxLeaves: 20
@@ -2629,8 +2629,8 @@ MonoBehaviour:
   - {fileID: 8843441529459176893, guid: 121b64a2cb0319340a07ad321c1b5cd6, type: 3}
   BackgroundLayer: {fileID: 1840883882}
   ParentLayer: {fileID: 1840883881}
-  BackgroundWidth: 1000
-  BackgroundHeight: 350
+  BackgroundWidth: 1200
+  BackgroundHeight: 355
   SpawnInterval: 0.5
   MinLeaves: 3
   MaxLeaves: 7
@@ -2698,8 +2698,8 @@ MonoBehaviour:
   - {fileID: 8843441529459176893, guid: ea5dd0d2b5382f94d9ac479b3e3ffe67, type: 3}
   BackgroundLayer: {fileID: 1857536358}
   ParentLayer: {fileID: 1857536357}
-  BackgroundWidth: 1000
-  BackgroundHeight: 350
+  BackgroundWidth: 1200
+  BackgroundHeight: 355
   SpawnInterval: 0.5
   MinLeaves: 1
   MaxLeaves: 5

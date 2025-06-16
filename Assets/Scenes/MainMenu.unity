@@ -1615,7 +1615,7 @@ MonoBehaviour:
   - {fileID: 8843441529459176893, guid: 03d72735baec8294f851c5421c1bb45b, type: 3}
   BackgroundLayer: {fileID: 1251933811}
   ParentLayer: {fileID: 1251933810}
-  BackgroundWidth: 1000
+  BackgroundWidth: 1200
   BackgroundHeight: 450
   SpawnInterval: 0.5
   MinLeaves: 5
