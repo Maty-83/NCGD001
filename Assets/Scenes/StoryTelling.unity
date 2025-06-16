@@ -1768,7 +1768,7 @@ MonoBehaviour:
   BackgroundLayer: {fileID: 1111992160}
   ParentLayer: {fileID: 1111992159}
   BackgroundWidth: 1200
-  BackgroundHeight: 355
+  BackgroundHeight: 370
   SpawnInterval: 0.5
   MinLeaves: 15
   MaxLeaves: 20
@@ -2286,6 +2286,7 @@ MonoBehaviour:
   narratorAudio: {fileID: 1325619677}
   midPanel: {fileID: 947934950}
   fadeDuration: 1
+  LoadedScene: TutorialScene
 --- !u!1 &1552883376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2631,7 @@ MonoBehaviour:
   BackgroundLayer: {fileID: 1840883882}
   ParentLayer: {fileID: 1840883881}
   BackgroundWidth: 1200
-  BackgroundHeight: 355
+  BackgroundHeight: 370
   SpawnInterval: 0.5
   MinLeaves: 3
   MaxLeaves: 7
@@ -2699,7 +2700,7 @@ MonoBehaviour:
   BackgroundLayer: {fileID: 1857536358}
   ParentLayer: {fileID: 1857536357}
   BackgroundWidth: 1200
-  BackgroundHeight: 355
+  BackgroundHeight: 370
   SpawnInterval: 0.5
   MinLeaves: 1
   MaxLeaves: 5
