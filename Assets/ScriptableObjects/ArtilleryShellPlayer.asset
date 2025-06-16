@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 6558058357626481252, guid: 41dbeca451b1aae42bd5e70c27cddb5c, type: 3}
   PreviewImage: {fileID: -2346302928887187388, guid: 11ee2b7f3e97cf54283fb09d52e8b18f, type: 3}
-  Sound: {fileID: 8300000, guid: 7de38d9f7ad5b3f4b86f1994bd26a69f, type: 3}
+  Sound: {fileID: 8300000, guid: 3bd19bc4ff5cb3f46a2a6e2febccca42, type: 3}
   Range: -1
   Binding: 0
   WeaponType: 1

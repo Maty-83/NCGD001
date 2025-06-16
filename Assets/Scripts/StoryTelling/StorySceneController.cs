@@ -11,6 +11,7 @@ public class StorySceneController : MonoBehaviour
     public GameObject midPanel;
 
     public float fadeDuration = 1f;
+    public string LoadedScene = "TutorialScene";
 
     private int currentPartIndex = 0;
     private bool isTransitioning = false;
@@ -137,7 +138,7 @@ public class StorySceneController : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("TutorialScene");
+            SceneManager.LoadScene(LoadedScene);
         }
     }
 
