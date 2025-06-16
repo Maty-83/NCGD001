@@ -21,7 +21,7 @@ namespace Assets.Scripts.Objects.Spells
         private Rigidbody2D rBody;
         private Vector2 Direction;
         public float Speed = 1000f;
-        public float TTL { get; set; } = 1f;
+        public float TTL { get; set; } = 10f;
 
         private bool isPaused = false;
         private bool isFlying = false;

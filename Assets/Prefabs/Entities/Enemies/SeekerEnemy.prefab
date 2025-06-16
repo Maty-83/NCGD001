@@ -234,6 +234,8 @@ MonoBehaviour:
   maxSpeed: 5
   trackedGameObject: {fileID: 0}
   maxSeekStartDist: 20
+  seekDistMinimum: -1
+  safetyMarginOuter: 0.5
 --- !u!114 &3704348608684520163
 MonoBehaviour:
   m_ObjectHideFlags: 0

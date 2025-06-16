@@ -54,6 +54,7 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: 74bf68852e2852f4c8e84b990819f631, type: 3}
   Portal: {fileID: 6654722164645958165}
   ScaleSpeed: 2
+  IsTeleporting: 1
 --- !u!82 &8556250989710980880
 AudioSource:
   m_ObjectHideFlags: 0
