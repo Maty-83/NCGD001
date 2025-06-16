@@ -54,8 +54,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
+      propertyPath: 'Resistances.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6308728cf5b54fc4aae5e95a84f27802, type: 2}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: 'DefaultWeapons.Array.data[0]'
       value: 

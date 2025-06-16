@@ -1285,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4406437476582715446, guid: 513aa5aee419d0946b3489ea0d70e82e, type: 3}
       propertyPath: PortalDestination
-      value: '"MainMenu"'
+      value: MainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4226,7 +4226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: TriggerDistance
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Spawners.Array.size
@@ -13487,7 +13487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4406437476582715446, guid: 513aa5aee419d0946b3489ea0d70e82e, type: 3}
       propertyPath: PortalDestination
-      value: '"MainMenu"'
+      value: MainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17393,7 +17393,7 @@ PrefabInstance:
       objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: TriggerDistance
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Spawners.Array.size

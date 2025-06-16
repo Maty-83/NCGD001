@@ -2278,6 +2278,10 @@ PrefabInstance:
       propertyPath: IsTeleporting
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4406437476582715446, guid: 513aa5aee419d0946b3489ea0d70e82e, type: 3}
+      propertyPath: PortalDestination
+      value: Level1Scene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
