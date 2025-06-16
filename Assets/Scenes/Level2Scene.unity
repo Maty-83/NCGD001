@@ -249,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -692,7 +692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -1515,7 +1515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -1693,7 +1693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -2310,7 +2310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -2860,7 +2860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -3368,7 +3368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -3836,7 +3836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -4626,7 +4626,7 @@ PrefabInstance:
     - target: {fileID: 5042116101349187806, guid: e6a9ba376b4a71c4293c79e7025e2e4c, type: 3}
       propertyPath: 'MustStayAlive.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 368248985}
     - target: {fileID: 7163830819335379476, guid: e6a9ba376b4a71c4293c79e7025e2e4c, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -4878,7 +4878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -5552,7 +5552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -6050,7 +6050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -8258,7 +8258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -8551,7 +8551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -8776,7 +8776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -9927,7 +9927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -11230,7 +11230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -12192,7 +12192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: HP
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8758575747355359021, guid: d7840bb17b790c94f90dbeee509003f8, type: 3}
       propertyPath: Mana
@@ -12511,7 +12511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -14532,7 +14532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -15852,7 +15852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -16152,7 +16152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -16625,7 +16625,7 @@ PrefabInstance:
     - target: {fileID: 5042116101349187806, guid: e6a9ba376b4a71c4293c79e7025e2e4c, type: 3}
       propertyPath: 'MustStayAlive.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1941672151}
     - target: {fileID: 7163830819335379476, guid: e6a9ba376b4a71c4293c79e7025e2e4c, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -17392,7 +17392,7 @@ PrefabInstance:
       objectReference: {fileID: 8794765424630612779, guid: 2a846b85a6cccfe4096dba90008b47af, type: 3}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: TriggerDistance
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7559357670068362487, guid: 306d2b2621dba5747854ee1cffdfa26e, type: 3}
       propertyPath: Spawners.Array.size
@@ -17519,7 +17519,7 @@ PrefabInstance:
     - target: {fileID: 5042116101349187806, guid: e6a9ba376b4a71c4293c79e7025e2e4c, type: 3}
       propertyPath: 'MustStayAlive.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1941672151}
     - target: {fileID: 7163830819335379476, guid: e6a9ba376b4a71c4293c79e7025e2e4c, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -17945,7 +17945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
@@ -18191,7 +18191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: HP
-      value: 50
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4253135756682742340, guid: d29b52c7585c2cc4da053386bf084e39, type: 3}
       propertyPath: Mana
